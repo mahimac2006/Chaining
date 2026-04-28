@@ -36,9 +36,6 @@ python3 chains/scripts/02_build_callgraph.py
 python3 chains/scripts/03_static_chains.py
 ```
 
-No build, no Docker, no API keys. Pure Python standard library.
-Runs in a couple of seconds. Python 3.10+.
-
 ---
 
 ## 3. What each step does
