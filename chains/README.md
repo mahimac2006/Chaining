@@ -121,10 +121,10 @@ and reports both crashes. Compiled against the **real** tcpdump
 under `confirmed/<bug>/asan_real/`), so the call edges in the
 binary match the call edges in the static graph.
 
--Compile the actual tcpdump source — the same source the static graph is built from — into one program, with ASan turned on. 
--Then for each pair (A, B) that the matrix says is reachable, build a tiny driver that runs A's bug-triggering input followed by B's bug-triggering
+- Compile the actual tcpdump source — the same source the static graph is built from — into one program, with ASan turned on. 
+- Then for each pair (A, B) that the matrix says is reachable, build a tiny driver that runs A's bug-triggering input followed by B's bug-triggering
   input, in the same process. ASan will report a crash for each one it sees.
--If both crashes show up → concrete proof that real tcpdump can hit both bugs in one execution. Static claim confirmed.
+- If both crashes show up → concrete proof that real tcpdump can hit both bugs in one execution. Static claim confirmed.
 
 ---
 
