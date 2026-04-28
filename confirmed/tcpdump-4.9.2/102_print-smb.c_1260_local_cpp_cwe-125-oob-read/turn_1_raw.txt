@@ -1,0 +1,2 @@
+
+{"thought":"I’ve read the vulnerability summary. Next I need the exact source context and driver hint from the same file, since that contains the switch/case path and sink text needed for a minimal driver/harness.","tool":"ReadSAContext","args":{"file":"vulnerability_summary.json"}}

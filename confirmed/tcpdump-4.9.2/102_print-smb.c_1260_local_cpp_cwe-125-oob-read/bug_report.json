@@ -1,0 +1,62 @@
+{
+  "summary": {
+    "verdict": "LIKELY_TP_DIFFERENT_CRASH",
+    "asan_confirmed": true,
+    "crash_relevance": "different_location",
+    "cwe": "unknown",
+    "cwe_description": "",
+    "total_asan_crashes": 0,
+    "target_asan_crashes": 0,
+    "secondary_asan_crashes": 0,
+    "target_crashes": 1,
+    "secondary_bugs": 0
+  },
+  "vulnerability": {
+    "original_file": "print-smb.c",
+    "original_line": 1260,
+    "function": "smb_tcp_print",
+    "entry_point": "smb_tcp_print",
+    "spine": [
+      "smb_tcp_print"
+    ],
+    "original_context": "1255:     caplen -= 4;\n1256: \n1257:     startbuf = data;\n1258:     data += 4;\n1259: \n1260:     if (smb_len >= 4 && caplen >= 4 && memcmp(data,\"\\377SMB\",4) == 0) {\n1261: \tif ((int)smb_len > caplen) {\n1262: \t    if ((int)smb_len > length)\n1263: \t\tND_PRINT((ndo, \" WARNING: Packet is continued in later TCP segments\\n\"));\n1264: \t    else\n1265: \t\tND_PRINT((ndo, \" WARNING: Short packet. Try increasing the snap length by %d\\n\","
+  },
+  "klee_crash": {
+    "harness_file": "print-smb.c",
+    "harness_line": 21,
+    "original_file": "print-smb.c",
+    "original_line": 917,
+    "original_code": "return;",
+    "original_context": "    914:     }\n    915: \n    916:     ND_PRINT((ndo, \"\\n\"));\n>>> 917:     return;\n    918: trunc:\n    919:     ND_PRINT((ndo, \"%s\", tstr));\n    920: }",
+    "error_type": "ptr",
+    "error_details": "Error: memory error: out of bound pointer\nFile: print-smb.c\nLine: 21\nassembly.ll line: 169\nState: 1\nStack: \n\t#000000169 in smb_tcp_print(137096450514944, 137079270645760, 64) at print-smb.c:21\n\t#100000069 in main() at driver.c:25\nInfo: \n\taddress: 137079270645889\n\tnext: object at 136516629929984 of size 1\n\t\tMO59[1] allocated at smb_tcp_print():  %9 = alloca i8, align 1\n"
+  },
+  "concrete_inputs": [],
+  "asan_result": {
+    "triggered": true,
+    "harness_artifact": false,
+    "error_type": "SEGV",
+    "crash_function": "",
+    "crash_file": "",
+    "crash_line": 0,
+    "original_file": "",
+    "original_line": 0,
+    "original_code": "",
+    "original_context": "",
+    "output": "\nAddressSanitizer:DEADLYSIGNAL\n=================================================================\n==13925==ERROR: AddressSanitizer: SEGV on unknown address 0x000000000000 (pc 0x000000000000 bp 0x7ffe449a86c0 sp 0x7ffe449a8678 T0)\n==13925==Hint: pc points to the zero page.\n==13925==The signal is caused by a READ memory access.\n==13925==Hint: address points to the zero page.\n    #0 0x0  (<unknown module>)\n\nAddressSanitizer can not provide additional info.\nSUMMARY: AddressSanitizer: SEGV (<unknown module>) \n==13925==ABORTING\n"
+  },
+  "line_map_file": "/app/se_runs/sailor_engine/tcpdump-4.9.2/102_print-smb.c_1260_local_cpp_cwe-125-oob-read/harness/line_map.json",
+  "all_crashes": [
+    {
+      "harness_file": "print-smb.c",
+      "harness_line": 21,
+      "original_file": "print-smb.c",
+      "original_line": 917,
+      "error_type": "ptr",
+      "crash_function": "smb_tcp_print",
+      "relevance": "target_crash",
+      "ktest": "/app/se_runs/sailor_engine/tcpdump-4.9.2/102_print-smb.c_1260_local_cpp_cwe-125-oob-read/logs/klee_run_5/test000001.ktest"
+    }
+  ],
+  "all_asan_crashes": []
+}

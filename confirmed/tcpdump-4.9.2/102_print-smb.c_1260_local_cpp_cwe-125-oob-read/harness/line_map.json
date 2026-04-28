@@ -1,0 +1,34 @@
+{
+  "print-smb.c": {
+    "15": {
+      "orig_file": "print-smb.c",
+      "orig_line": 937,
+      "code": "if (ndo->ndo_snapend < data)"
+    },
+    "16": {
+      "orig_file": "print-smb.c",
+      "orig_line": 917,
+      "code": "return;"
+    },
+    "18": {
+      "orig_file": "print-smb.c",
+      "orig_line": 917,
+      "code": "return;"
+    },
+    "24": {
+      "orig_file": "print-smb.c",
+      "orig_line": 920,
+      "code": "}"
+    },
+    "25": {
+      "orig_file": "print-smb.c",
+      "orig_line": 920,
+      "code": "}"
+    },
+    "26": {
+      "orig_file": "print-smb.c",
+      "orig_line": 920,
+      "code": "}"
+    }
+  }
+}

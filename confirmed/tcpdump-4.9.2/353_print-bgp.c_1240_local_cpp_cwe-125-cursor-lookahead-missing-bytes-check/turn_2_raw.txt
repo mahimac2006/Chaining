@@ -1,0 +1,2 @@
+{"thought":"Need gather code for bgp_print and decode_clnp_prefix only once; include relevant types if available from summary later.
+{"tool":"GatherCode","args":{"functions":"bgp_print,decode_clnp_prefix","types":"netdissect_options"}}

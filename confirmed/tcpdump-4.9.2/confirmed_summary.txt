@@ -1,0 +1,67 @@
+ASan Confirmed Specs: 16
+============================================================
+
+1. 049_print-802_11.c_1150_local_cpp_cwe-120-overflow
+   Error: heap-buffer-overflow
+   Location: ieee802_11_if_print @ print-802_11.c:2140
+
+2. 052_print-802_11.c_1180_local_cpp_cwe-120-overflow
+   Error: heap-buffer-overflow
+   Location: ieee802_11_print @ print-802_11.c:2059
+
+3. 055_print-bgp.c_1248_local_cpp_cwe-120-overflow
+   Error: heap-buffer-overflow
+   Location: bgp_print @ print-bgp.c:2797
+
+4. 058_print-bgp.c_1173_local_cpp_cwe-120-overflow
+   Error: heap-buffer-overflow
+   Location: bgp_print @ print-bgp.c:2797
+
+5. 092_print-beep.c_45_local_cpp_cwe-125-oob-read
+   Error: heap-buffer-overflow
+   Location: beep_print @ print-beep.c:67
+
+6. 093_print-cdp.c_322_local_cpp_cwe-125-oob-read
+   Error: heap-buffer-overflow
+   Location: cdp_print @ print-cdp.c:107
+
+7. 094_print-cip.c_80_local_cpp_cwe-125-oob-read
+   Error: heap-buffer-overflow
+   Location: cip_print @ print-cip.c:50
+
+8. 096_print-babel.c_127_local_cpp_cwe-125-oob-read
+   Error: heap-buffer-overflow
+   Location: babel_print @ print-babel.c:52
+
+9. 102_print-smb.c_1260_local_cpp_cwe-125-oob-read
+   Error: SEGV
+   Location:  @ :0
+
+10. 171_print-bgp.c_2810_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check
+   Error: heap-buffer-overflow
+   Location: bgp_print @ print-bgp.c:2797
+
+11. 217_print-dvmrp.c_79_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check
+   Error: heap-buffer-overflow
+   Location: dvmrp_print @ print-dvmrp.c:75
+
+12. 219_print-dvmrp.c_80_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check
+   Error: heap-buffer-overflow
+   Location: dvmrp_print @ print-dvmrp.c:75
+
+13. 233_print-802_11.c_1596_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check
+   Error: heap-buffer-overflow
+   Location: ieee802_11_if_print @ print-802_11.c:2140
+
+14. 353_print-bgp.c_1240_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check
+   Error: heap-buffer-overflow
+   Location: bgp_print @ print-bgp.c:2797
+
+15. 354_print-bgp.c_1241_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check
+   Error: heap-buffer-overflow
+   Location: bgp_print @ print-bgp.c:2797
+
+16. 370_print-bgp.c_1183_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check
+   Error: heap-buffer-overflow
+   Location: bgp_print @ print-bgp.c:2797
+

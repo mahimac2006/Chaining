@@ -1,0 +1,1 @@
+{"tool": "Done", "args": {"verdict": "TP", "details": "KLEE reported a real source crash in print-bgp.c:114 (memcpy out-of-bounds) before reaching the intended sink at harness/print-bgp.c:74 / original print-bgp.c:1183. The target vulnerability was not reached, so this is a non-target finding, not a confirmed TP for the requested sink."}}

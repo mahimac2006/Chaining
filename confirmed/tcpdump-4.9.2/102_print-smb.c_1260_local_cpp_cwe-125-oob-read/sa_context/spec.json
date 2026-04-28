@@ -1,0 +1,89 @@
+{
+  "schema": "llmse.vul_spec.v1",
+  "id": "local_cpp_cwe-125-oob-read@print-smb.c:1260",
+  "project": null,
+  "rule_id": "local/cpp/cwe-125-oob-read",
+  "family": "OOB_MEMCMP",
+  "file": "/app/dataset/tcp/tcpdump-4.9.2/print-smb.c",
+  "line": 1260,
+  "column": 40,
+  "end_line": 1260,
+  "end_column": 46,
+  "message": "CWE-125: Potential OOB Read via memcmp (unchecked length).",
+  "context": {
+    "contextStart": 1240,
+    "contextEnd": 1280,
+    "snippet": "{\n    int caplen;\n    u_int smb_len;\n    const u_char *maxbuf;\n\n    if (length < 4)\n\tgoto trunc;\n    if (ndo->ndo_snapend < data)\n\tgoto trunc;\n    caplen = ndo->ndo_snapend - data;\n    if (caplen < 4)\n\tgoto trunc;\n    maxbuf = data + caplen;\n    smb_len = EXTRACT_24BITS(data + 1);\n    length -= 4;\n    caplen -= 4;\n\n    startbuf = data;\n    data += 4;\n\n    if (smb_len >= 4 && caplen >= 4 && memcmp(data,\"\\377SMB\",4) == 0) {\n\tif ((int)smb_len > caplen) {\n\t    if ((int)smb_len > length)\n\t\tND_PRINT((ndo, \" WARNING: Packet is continued in later TCP segments\\n\"));\n\t    else\n\t\tND_PRINT((ndo, \" WARNING: Short packet. Try increasing the snap length by %d\\n\",\n\t\t    smb_len - caplen));\n\t} else\n\t    ND_PRINT((ndo, \" \"));\n\tprint_smb(ndo, data, maxbuf > data + smb_len ? data + smb_len : maxbuf);\n    } else\n\tND_PRINT((ndo, \" SMB-over-TCP packet:(raw data or continuation?)\\n\"));\n    return;\ntrunc:\n    ND_PRINT((ndo, \"%s\", tstr));\n}\n\n/*\n * print a NBT packet received across udp on port 138\n */\nvoid"
+  },
+  "target_statement": {
+    "text": null,
+    "line": 1260,
+    "column_start": 40,
+    "column_end": 46
+  },
+  "facts": {
+    "suspect_calls": [
+      "EXTRACT_24BITS",
+      "ND_PRINT",
+      "memcmp",
+      "print_smb"
+    ],
+    "pointer_vars": [
+      "maxbuf"
+    ],
+    "length_vars": [
+      "caplen",
+      "continuation",
+      "in",
+      "on",
+      "return",
+      "smb_len"
+    ],
+    "bounds_hints": [
+      {
+        "var": "caplen",
+        "relation": ">= 0",
+        "source": "heuristic"
+      },
+      {
+        "var": "continuation",
+        "relation": ">= 0",
+        "source": "heuristic"
+      },
+      {
+        "var": "in",
+        "relation": ">= 0",
+        "source": "heuristic"
+      },
+      {
+        "var": "on",
+        "relation": ">= 0",
+        "source": "heuristic"
+      },
+      {
+        "var": "return",
+        "relation": ">= 0",
+        "source": "heuristic"
+      },
+      {
+        "var": "smb_len",
+        "relation": ">= 0",
+        "source": "heuristic"
+      }
+    ]
+  },
+  "llm_hints": {
+    "entrypoint": {
+      "strategy": "LLM_INFER",
+      "candidates": []
+    },
+    "assertions": {
+      "presence_assertion_hint": "/* model: n <= min(len(lhs), len(rhs)) */ /* fill with program vars */",
+      "reachability_assertion": "klee_assert(0);  /* must be placed immediately before the vulnerable instruction */"
+    },
+    "notes": [
+      "Non-in-path helpers should be stub candidates.",
+      "Groom all in-path data structures to avoid null derefs."
+    ]
+  }
+}

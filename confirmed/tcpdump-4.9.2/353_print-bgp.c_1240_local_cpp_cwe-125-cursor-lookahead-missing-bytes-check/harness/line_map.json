@@ -1,0 +1,99 @@
+{
+  "print-bgp.c": {
+    "3": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 42,
+      "code": "#include <string.h>"
+    },
+    "4": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 41,
+      "code": "#include <stdio.h>"
+    },
+    "17": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 37,
+      "code": "#endif"
+    },
+    "21": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 523,
+      "code": "}"
+    },
+    "24": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 670,
+      "code": "const u_char *pptr, char *buf, u_int buflen)"
+    },
+    "25": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 671,
+      "code": "{"
+    },
+    "27": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1237,
+      "code": "uint8_t addr[19];"
+    },
+    "28": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1238,
+      "code": "u_int plen;"
+    },
+    "31": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 538,
+      "code": "plen = pptr[0];"
+    },
+    "33": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1243,
+      "code": "if (152 < plen)"
+    },
+    "34": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1244,
+      "code": "return -1;"
+    },
+    "36": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1246,
+      "code": "memset(&addr, 0, sizeof(addr));"
+    },
+    "38": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1248,
+      "code": "memcpy(&addr, &pptr[4], (plen + 7) / 8);"
+    },
+    "39": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1252,
+      "code": "}"
+    },
+    "40": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1249,
+      "code": "if (plen % 8) {"
+    },
+    "42": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1252,
+      "code": "}"
+    },
+    "45": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1257,
+      "code": "return 1 + (plen + 7) / 8;"
+    },
+    "46": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1261,
+      "code": "}"
+    },
+    "53": {
+      "orig_file": "print-bgp.c",
+      "orig_line": 1261,
+      "code": "}"
+    }
+  }
+}

@@ -1,0 +1,1 @@
+{"thought": "Need inspect parser.c includes maybe via GrepSource count 1.", "tool": "GrepSource", "args": {"pattern": "#include", "file": "parser.c"}}

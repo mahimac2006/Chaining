@@ -1,0 +1,8021 @@
+{
+  "src_root": "confirmed/tcpdump-4.9.2/049_print-802_11.c_1150_local_cpp_cwe-120-overflow/src_copy",
+  "files_scanned": [
+    "addrtoname.c",
+    "addrtostr.c",
+    "af.c",
+    "ascii_strcasecmp.c",
+    "bpf_dump.c",
+    "checksum.c",
+    "cpack.c",
+    "gmpls.c",
+    "gmt2local.c",
+    "in_cksum.c",
+    "ipproto.c",
+    "l2vpn.c",
+    "machdep.c",
+    "netdissect.c",
+    "nlpid.c",
+    "oui.c",
+    "parsenfsfh.c",
+    "pcap_dump_ftell.c",
+    "print-802_11.c",
+    "print-802_15_4.c",
+    "print-ah.c",
+    "print-ahcp.c",
+    "print-aodv.c",
+    "print-aoe.c",
+    "print-ap1394.c",
+    "print-arcnet.c",
+    "print-arp.c",
+    "print-ascii.c",
+    "print-atalk.c",
+    "print-atm.c",
+    "print-babel.c",
+    "print-beep.c",
+    "print-bfd.c",
+    "print-bgp.c",
+    "print-bootp.c",
+    "print-bt.c",
+    "print-calm-fast.c",
+    "print-carp.c",
+    "print-cdp.c",
+    "print-cfm.c",
+    "print-chdlc.c",
+    "print-cip.c",
+    "print-cnfp.c",
+    "print-dccp.c",
+    "print-decnet.c",
+    "print-dhcp6.c",
+    "print-domain.c",
+    "print-dtp.c",
+    "print-dvmrp.c",
+    "print-eap.c",
+    "print-egp.c",
+    "print-eigrp.c",
+    "print-enc.c",
+    "print-esp.c",
+    "print-ether.c",
+    "print-fddi.c",
+    "print-forces.c",
+    "print-fr.c",
+    "print-frag6.c",
+    "print-ftp.c",
+    "print-geneve.c",
+    "print-geonet.c",
+    "print-gre.c",
+    "print-hncp.c",
+    "print-hsrp.c",
+    "print-http.c",
+    "print-icmp.c",
+    "print-icmp6.c",
+    "print-igmp.c",
+    "print-igrp.c",
+    "print-ip.c",
+    "print-ip6.c",
+    "print-ip6opts.c",
+    "print-ipcomp.c",
+    "print-ipfc.c",
+    "print-ipnet.c",
+    "print-ipx.c",
+    "print-isakmp.c",
+    "print-isoclns.c",
+    "print-juniper.c",
+    "print-krb.c",
+    "print-l2tp.c",
+    "print-lane.c",
+    "print-ldp.c",
+    "print-lisp.c",
+    "print-llc.c",
+    "print-lldp.c",
+    "print-lmp.c",
+    "print-loopback.c",
+    "print-lspping.c",
+    "print-lwapp.c",
+    "print-lwres.c",
+    "print-m3ua.c",
+    "print-medsa.c",
+    "print-mobile.c",
+    "print-mobility.c",
+    "print-mpcp.c",
+    "print-mpls.c",
+    "print-mptcp.c",
+    "print-msdp.c",
+    "print-msnlb.c",
+    "print-nflog.c",
+    "print-nfs.c",
+    "print-nsh.c",
+    "print-ntp.c",
+    "print-null.c",
+    "print-olsr.c",
+    "print-openflow-1.0.c",
+    "print-openflow.c",
+    "print-ospf.c",
+    "print-ospf6.c",
+    "print-otv.c",
+    "print-pflog.c",
+    "print-pgm.c",
+    "print-pim.c",
+    "print-pktap.c",
+    "print-ppi.c",
+    "print-ppp.c",
+    "print-pppoe.c",
+    "print-pptp.c",
+    "print-radius.c",
+    "print-raw.c",
+    "print-resp.c",
+    "print-rip.c",
+    "print-ripng.c",
+    "print-rpki-rtr.c",
+    "print-rrcp.c",
+    "print-rsvp.c",
+    "print-rt6.c",
+    "print-rtsp.c",
+    "print-rx.c",
+    "print-sctp.c",
+    "print-sflow.c",
+    "print-sip.c",
+    "print-sl.c",
+    "print-sll.c",
+    "print-slow.c",
+    "print-smb.c",
+    "print-smtp.c",
+    "print-snmp.c",
+    "print-stp.c",
+    "print-sunatm.c",
+    "print-sunrpc.c",
+    "print-symantec.c",
+    "print-syslog.c",
+    "print-tcp.c",
+    "print-telnet.c",
+    "print-tftp.c",
+    "print-timed.c",
+    "print-tipc.c",
+    "print-token.c",
+    "print-udld.c",
+    "print-udp.c",
+    "print-usb.c",
+    "print-vjc.c",
+    "print-vqp.c",
+    "print-vrrp.c",
+    "print-vtp.c",
+    "print-vxlan-gpe.c",
+    "print-vxlan.c",
+    "print-wb.c",
+    "print-zephyr.c",
+    "print-zeromq.c",
+    "print.c",
+    "setsignal.c",
+    "signature.c",
+    "smbutil.c",
+    "strtoaddr.c",
+    "tcpdump.c",
+    "util-print.c",
+    "version.c",
+    "vfprintf.c"
+  ],
+  "functions": {
+    "win32_gethostbyaddr": {
+      "file": "addrtoname.c",
+      "line": 70,
+      "callees": []
+    },
+    "intoa": {
+      "file": "addrtoname.c",
+      "line": 144,
+      "callees": []
+    },
+    "getname": {
+      "file": "addrtoname.c",
+      "line": 178,
+      "callees": [
+        "newhnamemem",
+        "intoa"
+      ]
+    },
+    "getname6": {
+      "file": "addrtoname.c",
+      "line": 221,
+      "callees": [
+        "newh6namemem",
+        "addrtostr6"
+      ]
+    },
+    "lookup_emem": {
+      "file": "addrtoname.c",
+      "line": 276,
+      "callees": []
+    },
+    "lookup_bytestring": {
+      "file": "addrtoname.c",
+      "line": 306,
+      "callees": []
+    },
+    "lookup_nsap": {
+      "file": "addrtoname.c",
+      "line": 354,
+      "callees": []
+    },
+    "lookup_protoid": {
+      "file": "addrtoname.c",
+      "line": 399,
+      "callees": []
+    },
+    "etheraddr_string": {
+      "file": "addrtoname.c",
+      "line": 425,
+      "callees": [
+        "lookup_emem",
+        "tok2str"
+      ]
+    },
+    "le64addr_string": {
+      "file": "addrtoname.c",
+      "line": 471,
+      "callees": [
+        "lookup_bytestring"
+      ]
+    },
+    "linkaddr_string": {
+      "file": "addrtoname.c",
+      "line": 501,
+      "callees": [
+        "etheraddr_string",
+        "q922_string",
+        "lookup_bytestring"
+      ]
+    },
+    "etherproto_string": {
+      "file": "addrtoname.c",
+      "line": 536,
+      "callees": [
+        "newhnamemem"
+      ]
+    },
+    "protoid_string": {
+      "file": "addrtoname.c",
+      "line": 564,
+      "callees": [
+        "lookup_protoid"
+      ]
+    },
+    "isonsap_string": {
+      "file": "addrtoname.c",
+      "line": 594,
+      "callees": [
+        "lookup_nsap"
+      ]
+    },
+    "tcpport_string": {
+      "file": "addrtoname.c",
+      "line": 625,
+      "callees": [
+        "newhnamemem"
+      ]
+    },
+    "udpport_string": {
+      "file": "addrtoname.c",
+      "line": 646,
+      "callees": [
+        "newhnamemem"
+      ]
+    },
+    "ipxsap_string": {
+      "file": "addrtoname.c",
+      "line": 667,
+      "callees": [
+        "newhnamemem"
+      ]
+    },
+    "init_servarray": {
+      "file": "addrtoname.c",
+      "line": 695,
+      "callees": [
+        "newhnamemem"
+      ]
+    },
+    "init_eprotoarray": {
+      "file": "addrtoname.c",
+      "line": 756,
+      "callees": [
+        "newhnamemem"
+      ]
+    },
+    "init_protoidarray": {
+      "file": "addrtoname.c",
+      "line": 786,
+      "callees": [
+        "lookup_protoid"
+      ]
+    },
+    "init_etherarray": {
+      "file": "addrtoname.c",
+      "line": 827,
+      "callees": [
+        "lookup_emem"
+      ]
+    },
+    "init_ipxsaparray": {
+      "file": "addrtoname.c",
+      "line": 1090,
+      "callees": [
+        "newhnamemem"
+      ]
+    },
+    "init_addrtoname": {
+      "file": "addrtoname.c",
+      "line": 1108,
+      "callees": [
+        "init_etherarray",
+        "init_servarray",
+        "init_eprotoarray",
+        "init_protoidarray",
+        "init_ipxsaparray"
+      ]
+    },
+    "dnaddr_string": {
+      "file": "addrtoname.c",
+      "line": 1126,
+      "callees": [
+        "newhnamemem",
+        "dnnum_string",
+        "dnname_string"
+      ]
+    },
+    "newhnamemem": {
+      "file": "addrtoname.c",
+      "line": 1147,
+      "callees": []
+    },
+    "newh6namemem": {
+      "file": "addrtoname.c",
+      "line": 1166,
+      "callees": []
+    },
+    "ieee8021q_tci_string": {
+      "file": "addrtoname.c",
+      "line": 1185,
+      "callees": []
+    },
+    "addrtostr": {
+      "file": "addrtostr.c",
+      "line": 23,
+      "callees": []
+    },
+    "addrtostr6": {
+      "file": "addrtostr.c",
+      "line": 58,
+      "callees": [
+        "addrtostr"
+      ]
+    },
+    "ascii_strcasecmp": {
+      "file": "ascii_strcasecmp.c",
+      "line": 41,
+      "callees": []
+    },
+    "ascii_strncasecmp": {
+      "file": "ascii_strcasecmp.c",
+      "line": 54,
+      "callees": []
+    },
+    "bpf_dump": {
+      "file": "bpf_dump.c",
+      "line": 13,
+      "callees": []
+    },
+    "init_crc10_table": {
+      "file": "checksum.c",
+      "line": 53,
+      "callees": []
+    },
+    "verify_crc10_cksum": {
+      "file": "checksum.c",
+      "line": 76,
+      "callees": []
+    },
+    "init_checksum": {
+      "file": "checksum.c",
+      "line": 91,
+      "callees": [
+        "init_crc10_table"
+      ]
+    },
+    "create_osi_cksum": {
+      "file": "checksum.c",
+      "line": 99,
+      "callees": []
+    },
+    "cpack_next_boundary": {
+      "file": "cpack.c",
+      "line": 14,
+      "callees": []
+    },
+    "cpack_align_and_reserve": {
+      "file": "cpack.c",
+      "line": 26,
+      "callees": [
+        "cpack_next_boundary"
+      ]
+    },
+    "cpack_advance": {
+      "file": "cpack.c",
+      "line": 42,
+      "callees": []
+    },
+    "cpack_init": {
+      "file": "cpack.c",
+      "line": 52,
+      "callees": []
+    },
+    "cpack_uint64": {
+      "file": "cpack.c",
+      "line": 65,
+      "callees": [
+        "cpack_align_and_reserve"
+      ]
+    },
+    "cpack_uint32": {
+      "file": "cpack.c",
+      "line": 81,
+      "callees": [
+        "cpack_align_and_reserve"
+      ]
+    },
+    "cpack_uint16": {
+      "file": "cpack.c",
+      "line": 97,
+      "callees": [
+        "cpack_align_and_reserve"
+      ]
+    },
+    "cpack_uint8": {
+      "file": "cpack.c",
+      "line": 113,
+      "callees": []
+    },
+    "gmt2local": {
+      "file": "gmt2local.c",
+      "line": 18,
+      "callees": []
+    },
+    "in_cksum": {
+      "file": "in_cksum.c",
+      "line": 18,
+      "callees": []
+    },
+    "in_cksum_shouldbe": {
+      "file": "in_cksum.c",
+      "line": 99,
+      "callees": []
+    },
+    "netdb_protoname": {
+      "file": "ipproto.c",
+      "line": 305,
+      "callees": []
+    },
+    "abort_on_misalignment": {
+      "file": "machdep.c",
+      "line": 30,
+      "callees": []
+    },
+    "nd_init": {
+      "file": "netdissect.c",
+      "line": 17,
+      "callees": []
+    },
+    "nd_cleanup": {
+      "file": "netdissect.c",
+      "line": 46,
+      "callees": []
+    },
+    "nd_have_smi_support": {
+      "file": "netdissect.c",
+      "line": 60,
+      "callees": []
+    },
+    "nd_load_smi_module": {
+      "file": "netdissect.c",
+      "line": 73,
+      "callees": []
+    },
+    "nd_smi_version_string": {
+      "file": "netdissect.c",
+      "line": 91,
+      "callees": []
+    },
+    "Parse_fh": {
+      "file": "parsenfsfh.c",
+      "line": 61,
+      "callees": [
+        "is_UCX"
+      ]
+    },
+    "is_UCX": {
+      "file": "parsenfsfh.c",
+      "line": 373,
+      "callees": []
+    },
+    "pcap_dump_ftell": {
+      "file": "pcap_dump_ftell.c",
+      "line": 8,
+      "callees": []
+    },
+    "wep_print": {
+      "file": "print-802_11.c",
+      "line": 947,
+      "callees": []
+    },
+    "parse_elements": {
+      "file": "print-802_11.c",
+      "line": 963,
+      "callees": []
+    },
+    "handle_beacon": {
+      "file": "print-802_11.c",
+      "line": 1131,
+      "callees": [
+        "parse_elements"
+      ]
+    },
+    "handle_assoc_request": {
+      "file": "print-802_11.c",
+      "line": 1168,
+      "callees": [
+        "parse_elements"
+      ]
+    },
+    "handle_assoc_response": {
+      "file": "print-802_11.c",
+      "line": 1196,
+      "callees": [
+        "parse_elements"
+      ]
+    },
+    "handle_reassoc_request": {
+      "file": "print-802_11.c",
+      "line": 1233,
+      "callees": [
+        "parse_elements",
+        "etheraddr_string"
+      ]
+    },
+    "handle_reassoc_response": {
+      "file": "print-802_11.c",
+      "line": 1267,
+      "callees": [
+        "handle_assoc_response"
+      ]
+    },
+    "handle_probe_request": {
+      "file": "print-802_11.c",
+      "line": 1275,
+      "callees": [
+        "parse_elements"
+      ]
+    },
+    "handle_probe_response": {
+      "file": "print-802_11.c",
+      "line": 1293,
+      "callees": [
+        "parse_elements"
+      ]
+    },
+    "handle_atim": {
+      "file": "print-802_11.c",
+      "line": 1328,
+      "callees": []
+    },
+    "handle_disassoc": {
+      "file": "print-802_11.c",
+      "line": 1335,
+      "callees": []
+    },
+    "handle_auth": {
+      "file": "print-802_11.c",
+      "line": 1357,
+      "callees": [
+        "parse_elements"
+      ]
+    },
+    "handle_deauth": {
+      "file": "print-802_11.c",
+      "line": 1411,
+      "callees": [
+        "etheraddr_string"
+      ]
+    },
+    "handle_action": {
+      "file": "print-802_11.c",
+      "line": 1496,
+      "callees": [
+        "etheraddr_string"
+      ]
+    },
+    "mgmt_body_print": {
+      "file": "print-802_11.c",
+      "line": 1534,
+      "callees": [
+        "tok2str",
+        "wep_print",
+        "handle_assoc_request",
+        "handle_assoc_response",
+        "handle_reassoc_request",
+        "handle_reassoc_response",
+        "handle_probe_request",
+        "handle_probe_response",
+        "handle_beacon",
+        "handle_atim",
+        "handle_disassoc",
+        "handle_auth",
+        "handle_deauth",
+        "handle_action"
+      ]
+    },
+    "ctrl_body_print": {
+      "file": "print-802_11.c",
+      "line": 1576,
+      "callees": [
+        "tok2str",
+        "etheraddr_string"
+      ]
+    },
+    "get_data_src_dst_mac": {
+      "file": "print-802_11.c",
+      "line": 1650,
+      "callees": []
+    },
+    "get_mgmt_src_dst_mac": {
+      "file": "print-802_11.c",
+      "line": 1687,
+      "callees": []
+    },
+    "data_header_print": {
+      "file": "print-802_11.c",
+      "line": 1700,
+      "callees": [
+        "etheraddr_string"
+      ]
+    },
+    "mgmt_header_print": {
+      "file": "print-802_11.c",
+      "line": 1751,
+      "callees": [
+        "etheraddr_string"
+      ]
+    },
+    "ctrl_header_print": {
+      "file": "print-802_11.c",
+      "line": 1761,
+      "callees": [
+        "etheraddr_string"
+      ]
+    },
+    "extract_header_length": {
+      "file": "print-802_11.c",
+      "line": 1810,
+      "callees": []
+    },
+    "extract_mesh_header_length": {
+      "file": "print-802_11.c",
+      "line": 1854,
+      "callees": []
+    },
+    "ieee_802_11_hdr_print": {
+      "file": "print-802_11.c",
+      "line": 1861,
+      "callees": [
+        "etheraddr_string",
+        "mgmt_header_print",
+        "ctrl_header_print",
+        "data_header_print"
+      ]
+    },
+    "ieee802_11_print": {
+      "file": "print-802_11.c",
+      "line": 1921,
+      "callees": [
+        "extract_header_length",
+        "extract_mesh_header_length",
+        "ieee_802_11_hdr_print",
+        "get_mgmt_src_dst_mac",
+        "mgmt_body_print",
+        "ctrl_body_print",
+        "wep_print",
+        "get_data_src_dst_mac",
+        "llc_print"
+      ]
+    },
+    "ieee802_11_if_print": {
+      "file": "print-802_11.c",
+      "line": 2025,
+      "callees": [
+        "ieee802_11_print"
+      ]
+    },
+    "print_chaninfo": {
+      "file": "print-802_11.c",
+      "line": 2203,
+      "callees": []
+    },
+    "print_radiotap_field": {
+      "file": "print-802_11.c",
+      "line": 2244,
+      "callees": [
+        "cpack_uint64",
+        "cpack_uint8",
+        "cpack_uint16",
+        "print_chaninfo",
+        "cpack_uint32"
+      ]
+    },
+    "print_in_radiotap_namespace": {
+      "file": "print-802_11.c",
+      "line": 2653,
+      "callees": [
+        "print_radiotap_field"
+      ]
+    },
+    "ieee802_11_radio_print": {
+      "file": "print-802_11.c",
+      "line": 2690,
+      "callees": [
+        "cpack_init",
+        "cpack_advance",
+        "print_in_radiotap_namespace",
+        "cpack_align_and_reserve",
+        "cpack_uint8",
+        "cpack_uint16",
+        "ieee802_11_print"
+      ]
+    },
+    "ieee802_11_avs_radio_print": {
+      "file": "print-802_11.c",
+      "line": 2842,
+      "callees": [
+        "ieee802_11_print"
+      ]
+    },
+    "prism_if_print": {
+      "file": "print-802_11.c",
+      "line": 2876,
+      "callees": [
+        "ieee802_11_avs_radio_print",
+        "ieee802_11_print"
+      ]
+    },
+    "ieee802_11_radio_if_print": {
+      "file": "print-802_11.c",
+      "line": 2904,
+      "callees": [
+        "ieee802_11_radio_print"
+      ]
+    },
+    "ieee802_11_radio_avs_if_print": {
+      "file": "print-802_11.c",
+      "line": 2912,
+      "callees": [
+        "ieee802_11_avs_radio_print"
+      ]
+    },
+    "ieee802_15_4_if_print": {
+      "file": "print-802_15_4.c",
+      "line": 42,
+      "callees": [
+        "le64addr_string"
+      ]
+    },
+    "ah_print": {
+      "file": "print-ah.c",
+      "line": 18,
+      "callees": []
+    },
+    "ahcp_time_print": {
+      "file": "print-ahcp.c",
+      "line": 75,
+      "callees": []
+    },
+    "ahcp_seconds_print": {
+      "file": "print-ahcp.c",
+      "line": 103,
+      "callees": []
+    },
+    "ahcp_ipv6_addresses_print": {
+      "file": "print-ahcp.c",
+      "line": 121,
+      "callees": []
+    },
+    "ahcp_ipv4_addresses_print": {
+      "file": "print-ahcp.c",
+      "line": 145,
+      "callees": []
+    },
+    "ahcp_ipv6_prefixes_print": {
+      "file": "print-ahcp.c",
+      "line": 169,
+      "callees": []
+    },
+    "ahcp_ipv4_prefixes_print": {
+      "file": "print-ahcp.c",
+      "line": 193,
+      "callees": []
+    },
+    "ahcp1_options_print": {
+      "file": "print-ahcp.c",
+      "line": 236,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "ahcp1_body_print": {
+      "file": "print-ahcp.c",
+      "line": 277,
+      "callees": [
+        "tok2str",
+        "ahcp1_options_print"
+      ]
+    },
+    "ahcp_print": {
+      "file": "print-ahcp.c",
+      "line": 322,
+      "callees": [
+        "linkaddr_string",
+        "ahcp1_body_print"
+      ]
+    },
+    "aodv_extension": {
+      "file": "print-aodv.c",
+      "line": 143,
+      "callees": []
+    },
+    "aodv_rreq": {
+      "file": "print-aodv.c",
+      "line": 174,
+      "callees": [
+        "aodv_extension"
+      ]
+    },
+    "aodv_rrep": {
+      "file": "print-aodv.c",
+      "line": 205,
+      "callees": [
+        "aodv_extension"
+      ]
+    },
+    "aodv_rerr": {
+      "file": "print-aodv.c",
+      "line": 233,
+      "callees": []
+    },
+    "aodv_v6_rreq": {
+      "file": "print-aodv.c",
+      "line": 263,
+      "callees": [
+        "aodv_extension"
+      ]
+    },
+    "aodv_v6_rrep": {
+      "file": "print-aodv.c",
+      "line": 294,
+      "callees": [
+        "aodv_extension"
+      ]
+    },
+    "aodv_v6_rerr": {
+      "file": "print-aodv.c",
+      "line": 322,
+      "callees": []
+    },
+    "aodv_v6_draft_01_rreq": {
+      "file": "print-aodv.c",
+      "line": 352,
+      "callees": [
+        "aodv_extension"
+      ]
+    },
+    "aodv_v6_draft_01_rrep": {
+      "file": "print-aodv.c",
+      "line": 383,
+      "callees": [
+        "aodv_extension"
+      ]
+    },
+    "aodv_v6_draft_01_rerr": {
+      "file": "print-aodv.c",
+      "line": 411,
+      "callees": []
+    },
+    "aodv_print": {
+      "file": "print-aodv.c",
+      "line": 441,
+      "callees": [
+        "aodv_v6_rreq",
+        "aodv_rreq",
+        "aodv_v6_rrep",
+        "aodv_rrep",
+        "aodv_v6_rerr",
+        "aodv_rerr",
+        "aodv_v6_draft_01_rreq",
+        "aodv_v6_draft_01_rrep",
+        "aodv_v6_draft_01_rerr"
+      ]
+    },
+    "aoev1_issue_print": {
+      "file": "print-aoe.c",
+      "line": 117,
+      "callees": [
+        "bittok2str"
+      ]
+    },
+    "aoev1_query_print": {
+      "file": "print-aoe.c",
+      "line": 181,
+      "callees": [
+        "tok2str",
+        "fn_printn"
+      ]
+    },
+    "aoev1_mac_print": {
+      "file": "print-aoe.c",
+      "line": 230,
+      "callees": [
+        "tok2str",
+        "etheraddr_string"
+      ]
+    },
+    "aoev1_reserve_print": {
+      "file": "print-aoe.c",
+      "line": 281,
+      "callees": [
+        "tok2str",
+        "etheraddr_string"
+      ]
+    },
+    "aoev1_print": {
+      "file": "print-aoe.c",
+      "line": 317,
+      "callees": [
+        "bittok2str",
+        "tok2str"
+      ]
+    },
+    "aoe_print": {
+      "file": "print-aoe.c",
+      "line": 374,
+      "callees": [
+        "aoev1_print"
+      ]
+    },
+    "fwaddr_string": {
+      "file": "print-ap1394.c",
+      "line": 27,
+      "callees": [
+        "linkaddr_string"
+      ]
+    },
+    "ap1394_hdr_print": {
+      "file": "print-ap1394.c",
+      "line": 33,
+      "callees": [
+        "fwaddr_string",
+        "tok2str"
+      ]
+    },
+    "ap1394_if_print": {
+      "file": "print-ap1394.c",
+      "line": 58,
+      "callees": [
+        "ap1394_hdr_print",
+        "ethertype_print"
+      ]
+    },
+    "arcnet_print": {
+      "file": "print-arcnet.c",
+      "line": 82,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "arcnet_if_print": {
+      "file": "print-arcnet.c",
+      "line": 130,
+      "callees": [
+        "arcnet_print",
+        "arcnet_encap_print"
+      ]
+    },
+    "arcnet_linux_if_print": {
+      "file": "print-arcnet.c",
+      "line": 205,
+      "callees": [
+        "arcnet_print",
+        "arcnet_encap_print"
+      ]
+    },
+    "arcnet_encap_print": {
+      "file": "print-arcnet.c",
+      "line": 255,
+      "callees": [
+        "ip_print",
+        "ip6_print",
+        "arp_print",
+        "atalk_print",
+        "ipx_print"
+      ]
+    },
+    "isnonzero": {
+      "file": "print-arp.c",
+      "line": 138,
+      "callees": []
+    },
+    "tpaddr_print_ip": {
+      "file": "print-arp.c",
+      "line": 150,
+      "callees": []
+    },
+    "spaddr_print_ip": {
+      "file": "print-arp.c",
+      "line": 162,
+      "callees": []
+    },
+    "atmarp_addr_print": {
+      "file": "print-arp.c",
+      "line": 174,
+      "callees": [
+        "linkaddr_string"
+      ]
+    },
+    "atmarp_tpaddr_print": {
+      "file": "print-arp.c",
+      "line": 189,
+      "callees": []
+    },
+    "atmarp_spaddr_print": {
+      "file": "print-arp.c",
+      "line": 201,
+      "callees": []
+    },
+    "atmarp_print": {
+      "file": "print-arp.c",
+      "line": 213,
+      "callees": [
+        "tok2str",
+        "atmarp_tpaddr_print",
+        "atmarp_addr_print",
+        "atmarp_spaddr_print"
+      ]
+    },
+    "arp_print": {
+      "file": "print-arp.c",
+      "line": 314,
+      "callees": [
+        "atmarp_print",
+        "tok2str",
+        "tpaddr_print_ip",
+        "isnonzero",
+        "linkaddr_string",
+        "spaddr_print_ip"
+      ]
+    },
+    "ascii_print": {
+      "file": "print-ascii.c",
+      "line": 23,
+      "callees": []
+    },
+    "hex_and_ascii_print_with_offset": {
+      "file": "print-ascii.c",
+      "line": 51,
+      "callees": []
+    },
+    "hex_and_ascii_print": {
+      "file": "print-ascii.c",
+      "line": 102,
+      "callees": [
+        "hex_and_ascii_print_with_offset"
+      ]
+    },
+    "hex_print_with_offset": {
+      "file": "print-ascii.c",
+      "line": 110,
+      "callees": []
+    },
+    "hex_print": {
+      "file": "print-ascii.c",
+      "line": 140,
+      "callees": [
+        "hex_print_with_offset"
+      ]
+    },
+    "main": {
+      "file": "print-ascii.c",
+      "line": 147,
+      "callees": [
+        "hex_print",
+        "hex_and_ascii_print",
+        "ascii_print",
+        "hex_print_with_offset",
+        "hex_and_ascii_print_with_offset",
+        "nd_init",
+        "error",
+        "ndo_set_function_pointers",
+        "abort_on_misalignment",
+        "warning",
+        "print_usage",
+        "exit_tcpdump",
+        "nd_have_smi_support",
+        "nd_load_smi_module",
+        "ascii_strcasecmp",
+        "getWflagChars",
+        "pcap_set_parser_debug",
+        "print_version",
+        "tstamp_precision_from_string",
+        "show_devices_and_exit",
+        "gmt2local",
+        "get_next_file",
+        "open_interface",
+        "parse_interface_number",
+        "find_interface_by_number",
+        "show_dlts_and_exit",
+        "read_infile",
+        "copy_argv",
+        "bpf_dump",
+        "init_print",
+        "droproot",
+        "MakeFilename",
+        "set_dumper_capsicum_rights",
+        "get_if_printer",
+        "info"
+      ]
+    },
+    "ltalk_if_print": {
+      "file": "print-atalk.c",
+      "line": 55,
+      "callees": [
+        "llap_print"
+      ]
+    },
+    "llap_print": {
+      "file": "print-atalk.c",
+      "line": 70,
+      "callees": [
+        "ataddr_string",
+        "ddpskt_string",
+        "ddp_print"
+      ]
+    },
+    "atalk_print": {
+      "file": "print-atalk.c",
+      "line": 151,
+      "callees": [
+        "ataddr_string",
+        "ddpskt_string",
+        "ddp_print"
+      ]
+    },
+    "aarp_print": {
+      "file": "print-atalk.c",
+      "line": 182,
+      "callees": [
+        "ataddr_string",
+        "etheraddr_string"
+      ]
+    },
+    "ddp_print": {
+      "file": "print-atalk.c",
+      "line": 224,
+      "callees": [
+        "nbp_print",
+        "atp_print",
+        "eigrp_print",
+        "tok2str"
+      ]
+    },
+    "atp_print": {
+      "file": "print-atalk.c",
+      "line": 250,
+      "callees": [
+        "atp_bitmap_print"
+      ]
+    },
+    "atp_bitmap_print": {
+      "file": "print-atalk.c",
+      "line": 347,
+      "callees": []
+    },
+    "nbp_print": {
+      "file": "print-atalk.c",
+      "line": 375,
+      "callees": [
+        "nbp_name_print",
+        "ataddr_string",
+        "nbp_tuple_print"
+      ]
+    },
+    "print_cstring": {
+      "file": "print-atalk.c",
+      "line": 439,
+      "callees": []
+    },
+    "nbp_tuple_print": {
+      "file": "print-atalk.c",
+      "line": 466,
+      "callees": [
+        "nbp_name_print",
+        "ataddr_string"
+      ]
+    },
+    "nbp_name_print": {
+      "file": "print-atalk.c",
+      "line": 495,
+      "callees": [
+        "print_cstring"
+      ]
+    },
+    "ataddr_string": {
+      "file": "print-atalk.c",
+      "line": 529,
+      "callees": [
+        "newhnamemem"
+      ]
+    },
+    "ddpskt_string": {
+      "file": "print-atalk.c",
+      "line": 610,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "atm_llc_print": {
+      "file": "print-atm.c",
+      "line": 168,
+      "callees": [
+        "llc_print"
+      ]
+    },
+    "atm_if_print": {
+      "file": "print-atm.c",
+      "line": 188,
+      "callees": [
+        "isoclns_print",
+        "atm_llc_print"
+      ]
+    },
+    "sig_print": {
+      "file": "print-atm.c",
+      "line": 261,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "atm_print": {
+      "file": "print-atm.c",
+      "line": 289,
+      "callees": [
+        "sig_print",
+        "oam_print",
+        "snmp_print",
+        "atm_llc_print",
+        "lane_print"
+      ]
+    },
+    "oam_print": {
+      "file": "print-atm.c",
+      "line": 352,
+      "callees": [
+        "tok2str",
+        "verify_crc10_cksum"
+      ]
+    },
+    "babel_print": {
+      "file": "print-babel.c",
+      "line": 22,
+      "callees": [
+        "babel_print_v2"
+      ]
+    },
+    "format_id": {
+      "file": "print-babel.c",
+      "line": 84,
+      "callees": []
+    },
+    "format_prefix": {
+      "file": "print-babel.c",
+      "line": 97,
+      "callees": []
+    },
+    "format_address": {
+      "file": "print-babel.c",
+      "line": 109,
+      "callees": []
+    },
+    "format_interval": {
+      "file": "print-babel.c",
+      "line": 118,
+      "callees": []
+    },
+    "format_interval_update": {
+      "file": "print-babel.c",
+      "line": 129,
+      "callees": [
+        "format_interval"
+      ]
+    },
+    "format_timestamp": {
+      "file": "print-babel.c",
+      "line": 135,
+      "callees": []
+    },
+    "network_prefix": {
+      "file": "print-babel.c",
+      "line": 144,
+      "callees": []
+    },
+    "network_address": {
+      "file": "print-babel.c",
+      "line": 209,
+      "callees": [
+        "network_prefix"
+      ]
+    },
+    "subtlvs_print": {
+      "file": "print-babel.c",
+      "line": 217,
+      "callees": [
+        "tok2str",
+        "format_timestamp"
+      ]
+    },
+    "babel_print_v2": {
+      "file": "print-babel.c",
+      "line": 289,
+      "callees": [
+        "format_interval",
+        "subtlvs_print",
+        "network_address",
+        "format_address",
+        "format_id",
+        "network_prefix",
+        "format_prefix",
+        "format_interval_update"
+      ]
+    },
+    "l_strnstart": {
+      "file": "print-beep.c",
+      "line": 17,
+      "callees": []
+    },
+    "beep_print": {
+      "file": "print-beep.c",
+      "line": 31,
+      "callees": [
+        "l_strnstart"
+      ]
+    },
+    "auth_print": {
+      "file": "print-bfd.c",
+      "line": 123,
+      "callees": [
+        "tok2str",
+        "fn_printn"
+      ]
+    },
+    "bfd_print": {
+      "file": "print-bfd.c",
+      "line": 196,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "auth_print",
+        "print_unknown_data"
+      ]
+    },
+    "as_printf": {
+      "file": "print-bgp.c",
+      "line": 477,
+      "callees": []
+    },
+    "decode_prefix4": {
+      "file": "print-bgp.c",
+      "line": 491,
+      "callees": []
+    },
+    "decode_labeled_prefix4": {
+      "file": "print-bgp.c",
+      "line": 524,
+      "callees": []
+    },
+    "bgp_vpn_ip_print": {
+      "file": "print-bgp.c",
+      "line": 573,
+      "callees": []
+    },
+    "bgp_vpn_sg_print": {
+      "file": "print-bgp.c",
+      "line": 603,
+      "callees": [
+        "bgp_vpn_ip_print"
+      ]
+    },
+    "bgp_vpn_rd_print": {
+      "file": "print-bgp.c",
+      "line": 645,
+      "callees": [
+        "as_printf"
+      ]
+    },
+    "decode_rt_routing_info": {
+      "file": "print-bgp.c",
+      "line": 686,
+      "callees": [
+        "as_printf",
+        "bgp_vpn_rd_print"
+      ]
+    },
+    "decode_labeled_vpn_prefix4": {
+      "file": "print-bgp.c",
+      "line": 736,
+      "callees": [
+        "bgp_vpn_rd_print"
+      ]
+    },
+    "decode_mdt_vpn_nlri": {
+      "file": "print-bgp.c",
+      "line": 779,
+      "callees": [
+        "bgp_vpn_rd_print"
+      ]
+    },
+    "decode_multicast_vpn": {
+      "file": "print-bgp.c",
+      "line": 836,
+      "callees": [
+        "tok2str",
+        "bgp_vpn_rd_print",
+        "bgp_vpn_ip_print",
+        "as_printf",
+        "bgp_vpn_sg_print"
+      ]
+    },
+    "decode_labeled_vpn_l2": {
+      "file": "print-bgp.c",
+      "line": 932,
+      "callees": [
+        "bgp_vpn_rd_print"
+      ]
+    },
+    "decode_prefix6": {
+      "file": "print-bgp.c",
+      "line": 1021,
+      "callees": []
+    },
+    "decode_labeled_prefix6": {
+      "file": "print-bgp.c",
+      "line": 1054,
+      "callees": []
+    },
+    "decode_labeled_vpn_prefix6": {
+      "file": "print-bgp.c",
+      "line": 1099,
+      "callees": [
+        "bgp_vpn_rd_print"
+      ]
+    },
+    "decode_clnp_prefix": {
+      "file": "print-bgp.c",
+      "line": 1138,
+      "callees": [
+        "isonsap_string"
+      ]
+    },
+    "decode_labeled_vpn_clnp_prefix": {
+      "file": "print-bgp.c",
+      "line": 1168,
+      "callees": [
+        "bgp_vpn_rd_print",
+        "isonsap_string"
+      ]
+    },
+    "bgp_attr_get_as_size": {
+      "file": "print-bgp.c",
+      "line": 1208,
+      "callees": []
+    },
+    "bgp_attr_print": {
+      "file": "print-bgp.c",
+      "line": 1242,
+      "callees": [
+        "tok2str",
+        "bgp_attr_get_as_size",
+        "as_printf",
+        "print_unknown_data",
+        "bgp_vpn_rd_print",
+        "isonsap_string",
+        "decode_prefix4",
+        "decode_labeled_prefix4",
+        "decode_labeled_vpn_prefix4",
+        "decode_rt_routing_info",
+        "decode_multicast_vpn",
+        "decode_mdt_vpn_nlri",
+        "decode_prefix6",
+        "decode_labeled_prefix6",
+        "decode_labeled_vpn_prefix6",
+        "decode_labeled_vpn_l2",
+        "decode_clnp_prefix",
+        "decode_labeled_vpn_clnp_prefix",
+        "bittok2str"
+      ]
+    },
+    "bgp_capabilities_print": {
+      "file": "print-bgp.c",
+      "line": 2193,
+      "callees": [
+        "tok2str",
+        "as_printf",
+        "print_unknown_data"
+      ]
+    },
+    "bgp_open_print": {
+      "file": "print-bgp.c",
+      "line": 2292,
+      "callees": [
+        "as_printf",
+        "tok2str",
+        "bgp_capabilities_print"
+      ]
+    },
+    "bgp_update_print": {
+      "file": "print-bgp.c",
+      "line": 2355,
+      "callees": [
+        "tok2str",
+        "bgp_attr_print",
+        "decode_prefix4"
+      ]
+    },
+    "bgp_notification_print": {
+      "file": "print-bgp.c",
+      "line": 2481,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "bgp_route_refresh_print": {
+      "file": "print-bgp.c",
+      "line": 2560,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "bgp_header_print": {
+      "file": "print-bgp.c",
+      "line": 2593,
+      "callees": [
+        "tok2str",
+        "bgp_open_print",
+        "bgp_update_print",
+        "bgp_notification_print",
+        "bgp_route_refresh_print",
+        "print_unknown_data"
+      ]
+    },
+    "bgp_print": {
+      "file": "print-bgp.c",
+      "line": 2634,
+      "callees": [
+        "bgp_header_print",
+        "tok2str"
+      ]
+    },
+    "bootp_print": {
+      "file": "print-bootp.c",
+      "line": 233,
+      "callees": [
+        "tok2str",
+        "etheraddr_string",
+        "bittok2str",
+        "fn_printztn",
+        "rfc1048_print",
+        "cmu_print"
+      ]
+    },
+    "rfc1048_print": {
+      "file": "print-bootp.c",
+      "line": 533,
+      "callees": [
+        "tok2str",
+        "fn_printn",
+        "client_fqdn_flags",
+        "print_unknown_data"
+      ]
+    },
+    "cmu_print": {
+      "file": "print-bootp.c",
+      "line": 981,
+      "callees": []
+    },
+    "client_fqdn_flags": {
+      "file": "print-bootp.c",
+      "line": 1013,
+      "callees": []
+    },
+    "bt_if_print": {
+      "file": "print-bt.c",
+      "line": 19,
+      "callees": []
+    },
+    "calm_fast_print": {
+      "file": "print-calm-fast.c",
+      "line": 17,
+      "callees": []
+    },
+    "carp_print": {
+      "file": "print-carp.c",
+      "line": 16,
+      "callees": [
+        "in_cksum"
+      ]
+    },
+    "cdp_print": {
+      "file": "print-cdp.c",
+      "line": 69,
+      "callees": [
+        "tok2str",
+        "fn_printn",
+        "cdp_print_addr",
+        "bittok2str",
+        "fn_print_char",
+        "cdp_print_prefixes",
+        "cdp_get_number",
+        "print_unknown_data"
+      ]
+    },
+    "cdp_print_addr": {
+      "file": "print-cdp.c",
+      "line": 244,
+      "callees": []
+    },
+    "cdp_print_prefixes": {
+      "file": "print-cdp.c",
+      "line": 326,
+      "callees": []
+    },
+    "cdp_get_number": {
+      "file": "print-cdp.c",
+      "line": 348,
+      "callees": []
+    },
+    "cfm_network_addr_print": {
+      "file": "print-cfm.c",
+      "line": 196,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "cfm_print": {
+      "file": "print-cfm.c",
+      "line": 242,
+      "callees": [
+        "tok2str",
+        "safeputs",
+        "etheraddr_string",
+        "print_unknown_data",
+        "bittok2str",
+        "cfm_network_addr_print",
+        "hex_print"
+      ]
+    },
+    "chdlc_if_print": {
+      "file": "print-chdlc.c",
+      "line": 27,
+      "callees": [
+        "chdlc_print"
+      ]
+    },
+    "chdlc_print": {
+      "file": "print-chdlc.c",
+      "line": 33,
+      "callees": [
+        "tok2str",
+        "ip_print",
+        "ip6_print",
+        "chdlc_slarp_print",
+        "mpls_print",
+        "isoclns_print"
+      ]
+    },
+    "chdlc_slarp_print": {
+      "file": "print-chdlc.c",
+      "line": 120,
+      "callees": [
+        "print_unknown_data"
+      ]
+    },
+    "cip_print": {
+      "file": "print-cip.c",
+      "line": 24,
+      "callees": []
+    },
+    "cip_if_print": {
+      "file": "print-cip.c",
+      "line": 32,
+      "callees": [
+        "cip_print",
+        "llc_print",
+        "ip_print"
+      ]
+    },
+    "cnfp_v1_print": {
+      "file": "print-cnfp.c",
+      "line": 123,
+      "callees": [
+        "intoa",
+        "netdb_protoname"
+      ]
+    },
+    "cnfp_v5_print": {
+      "file": "print-cnfp.c",
+      "line": 206,
+      "callees": [
+        "intoa",
+        "netdb_protoname"
+      ]
+    },
+    "cnfp_v6_print": {
+      "file": "print-cnfp.c",
+      "line": 296,
+      "callees": [
+        "intoa",
+        "netdb_protoname"
+      ]
+    },
+    "cnfp_print": {
+      "file": "print-cnfp.c",
+      "line": 389,
+      "callees": [
+        "cnfp_v1_print",
+        "cnfp_v5_print",
+        "cnfp_v6_print"
+      ]
+    },
+    "dccp_csum_coverage": {
+      "file": "print-dccp.c",
+      "line": 143,
+      "callees": []
+    },
+    "dccp_cksum": {
+      "file": "print-dccp.c",
+      "line": 153,
+      "callees": [
+        "nextproto4_cksum",
+        "dccp_csum_coverage"
+      ]
+    },
+    "dccp6_cksum": {
+      "file": "print-dccp.c",
+      "line": 160,
+      "callees": [
+        "nextproto6_cksum",
+        "dccp_csum_coverage"
+      ]
+    },
+    "dccp_reset_code": {
+      "file": "print-dccp.c",
+      "line": 167,
+      "callees": []
+    },
+    "dccp_seqno": {
+      "file": "print-dccp.c",
+      "line": 174,
+      "callees": []
+    },
+    "dccp_basic_hdr_len": {
+      "file": "print-dccp.c",
+      "line": 189,
+      "callees": []
+    },
+    "dccp_print_ack_no": {
+      "file": "print-dccp.c",
+      "line": 194,
+      "callees": [
+        "dccp_basic_hdr_len"
+      ]
+    },
+    "dccp_print": {
+      "file": "print-dccp.c",
+      "line": 216,
+      "callees": [
+        "dccp_basic_hdr_len",
+        "dccp_cksum",
+        "dccp6_cksum",
+        "in_cksum_shouldbe",
+        "tok2str",
+        "dccp_reset_code",
+        "dccp_print_ack_no",
+        "dccp_seqno",
+        "dccp_print_option"
+      ]
+    },
+    "dccp_print_option": {
+      "file": "print-dccp.c",
+      "line": 481,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "decnet_print": {
+      "file": "print-decnet.c",
+      "line": 462,
+      "callees": [
+        "print_decnet_ctlmsg",
+        "dnaddr_string",
+        "print_nsp"
+      ]
+    },
+    "print_decnet_ctlmsg": {
+      "file": "print-decnet.c",
+      "line": 575,
+      "callees": [
+        "print_t_info",
+        "dnaddr_string",
+        "print_l1_routes",
+        "print_l2_routes",
+        "print_i_info",
+        "print_elist"
+      ]
+    },
+    "print_t_info": {
+      "file": "print-decnet.c",
+      "line": 711,
+      "callees": []
+    },
+    "print_l1_routes": {
+      "file": "print-decnet.c",
+      "line": 728,
+      "callees": []
+    },
+    "print_l2_routes": {
+      "file": "print-decnet.c",
+      "line": 759,
+      "callees": []
+    },
+    "print_i_info": {
+      "file": "print-decnet.c",
+      "line": 790,
+      "callees": []
+    },
+    "print_elist": {
+      "file": "print-decnet.c",
+      "line": 809,
+      "callees": []
+    },
+    "print_nsp": {
+      "file": "print-decnet.c",
+      "line": 816,
+      "callees": [
+        "print_reason"
+      ]
+    },
+    "print_reason": {
+      "file": "print-decnet.c",
+      "line": 1197,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "dnnum_string": {
+      "file": "print-decnet.c",
+      "line": 1204,
+      "callees": []
+    },
+    "dnname_string": {
+      "file": "print-decnet.c",
+      "line": 1219,
+      "callees": [
+        "dnnum_string"
+      ]
+    },
+    "dhcp6stcode": {
+      "file": "print-dhcp6.c",
+      "line": 234,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "dhcp6opt_print": {
+      "file": "print-dhcp6.c",
+      "line": 240,
+      "callees": [
+        "tok2str",
+        "dhcp6_print",
+        "ns_nprint",
+        "dhcp6stcode",
+        "fn_printn"
+      ]
+    },
+    "dhcp6_print": {
+      "file": "print-dhcp6.c",
+      "line": 731,
+      "callees": [
+        "tok2str",
+        "dhcp6opt_print"
+      ]
+    },
+    "ns_nskip": {
+      "file": "print-domain.c",
+      "line": 34,
+      "callees": []
+    },
+    "blabel_print": {
+      "file": "print-domain.c",
+      "line": 67,
+      "callees": []
+    },
+    "labellen": {
+      "file": "print-domain.c",
+      "line": 104,
+      "callees": []
+    },
+    "ns_nprint": {
+      "file": "print-domain.c",
+      "line": 128,
+      "callees": [
+        "labellen",
+        "blabel_print",
+        "fn_printn"
+      ]
+    },
+    "ns_cprint": {
+      "file": "print-domain.c",
+      "line": 205,
+      "callees": [
+        "fn_printn"
+      ]
+    },
+    "ns_qprint": {
+      "file": "print-domain.c",
+      "line": 294,
+      "callees": [
+        "ns_nskip",
+        "tok2str",
+        "ns_nprint"
+      ]
+    },
+    "ns_rprint": {
+      "file": "print-domain.c",
+      "line": 329,
+      "callees": [
+        "ns_nprint",
+        "ns_nskip",
+        "tok2str",
+        "unsigned_relts_print",
+        "intoa",
+        "ns_cprint",
+        "addrtostr6",
+        "fn_printn"
+      ]
+    },
+    "ns_print": {
+      "file": "print-domain.c",
+      "line": 548,
+      "callees": [
+        "ns_qprint",
+        "ns_nskip",
+        "ns_rprint"
+      ]
+    },
+    "dtp_print": {
+      "file": "print-dtp.c",
+      "line": 31,
+      "callees": [
+        "tok2str",
+        "fn_printzp",
+        "etheraddr_string"
+      ]
+    },
+    "dvmrp_print": {
+      "file": "print-dvmrp.c",
+      "line": 44,
+      "callees": [
+        "print_probe",
+        "print_report",
+        "print_neighbors",
+        "print_neighbors2",
+        "print_prune",
+        "print_graft",
+        "print_graft_ack"
+      ]
+    },
+    "print_report": {
+      "file": "print-dvmrp.c",
+      "line": 135,
+      "callees": [
+        "intoa"
+      ]
+    },
+    "print_probe": {
+      "file": "print-dvmrp.c",
+      "line": 193,
+      "callees": []
+    },
+    "print_neighbors": {
+      "file": "print-dvmrp.c",
+      "line": 224,
+      "callees": []
+    },
+    "print_neighbors2": {
+      "file": "print-dvmrp.c",
+      "line": 256,
+      "callees": []
+    },
+    "print_prune": {
+      "file": "print-dvmrp.c",
+      "line": 306,
+      "callees": [
+        "unsigned_relts_print"
+      ]
+    },
+    "print_graft": {
+      "file": "print-dvmrp.c",
+      "line": 320,
+      "callees": []
+    },
+    "print_graft_ack": {
+      "file": "print-dvmrp.c",
+      "line": 331,
+      "callees": []
+    },
+    "eap_print": {
+      "file": "print-eap.c",
+      "line": 129,
+      "callees": [
+        "tok2str",
+        "safeputs",
+        "bittok2str"
+      ]
+    },
+    "egpnrprint": {
+      "file": "print-egp.c",
+      "line": 112,
+      "callees": []
+    },
+    "egp_print": {
+      "file": "print-egp.c",
+      "line": 211,
+      "callees": [
+        "egpnrprint"
+      ]
+    },
+    "eigrp_print": {
+      "file": "print-eigrp.c",
+      "line": 191,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "enc_if_print": {
+      "file": "print-enc.c",
+      "line": 37,
+      "callees": [
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "EVP_CIPHER_CTX_new": {
+      "file": "print-esp.c",
+      "line": 73,
+      "callees": []
+    },
+    "EVP_CIPHER_CTX_free": {
+      "file": "print-esp.c",
+      "line": 85,
+      "callees": []
+    },
+    "set_cipher_parameters": {
+      "file": "print-esp.c",
+      "line": 95,
+      "callees": []
+    },
+    "esp_print_decrypt_buffer_by_ikev2": {
+      "file": "print-esp.c",
+      "line": 114,
+      "callees": [
+        "EVP_CIPHER_CTX_new",
+        "set_cipher_parameters",
+        "EVP_CIPHER_CTX_free"
+      ]
+    },
+    "esp_print_addsa": {
+      "file": "print-esp.c",
+      "line": 177,
+      "callees": []
+    },
+    "hexdigit": {
+      "file": "print-esp.c",
+      "line": 200,
+      "callees": []
+    },
+    "hex2byte": {
+      "file": "print-esp.c",
+      "line": 214,
+      "callees": [
+        "hexdigit"
+      ]
+    },
+    "espprint_decode_hex": {
+      "file": "print-esp.c",
+      "line": 223,
+      "callees": [
+        "hex2byte"
+      ]
+    },
+    "espprint_decode_encalgo": {
+      "file": "print-esp.c",
+      "line": 250,
+      "callees": [
+        "espprint_decode_hex"
+      ]
+    },
+    "espprint_decode_authalgo": {
+      "file": "print-esp.c",
+      "line": 314,
+      "callees": [
+        "ascii_strcasecmp"
+      ]
+    },
+    "esp_print_decode_ikeline": {
+      "file": "print-esp.c",
+      "line": 337,
+      "callees": [
+        "espprint_decode_hex",
+        "espprint_decode_encalgo",
+        "espprint_decode_authalgo",
+        "esp_print_addsa"
+      ]
+    },
+    "esp_print_decode_onesecret": {
+      "file": "print-esp.c",
+      "line": 396,
+      "callees": [
+        "ascii_strcasecmp",
+        "esp_print_decode_ikeline",
+        "strtoaddr6",
+        "strtoaddr",
+        "espprint_decode_encalgo",
+        "esp_print_addsa"
+      ]
+    },
+    "esp_init": {
+      "file": "print-esp.c",
+      "line": 494,
+      "callees": []
+    },
+    "esp_print_decodesecret": {
+      "file": "print-esp.c",
+      "line": 503,
+      "callees": [
+        "esp_init",
+        "esp_print_decode_onesecret"
+      ]
+    },
+    "esp_print": {
+      "file": "print-esp.c",
+      "line": 536,
+      "callees": [
+        "esp_print_decodesecret",
+        "EVP_CIPHER_CTX_new",
+        "set_cipher_parameters",
+        "EVP_CIPHER_CTX_free"
+      ]
+    },
+    "ether_hdr_print": {
+      "file": "print-ether.c",
+      "line": 72,
+      "callees": [
+        "etheraddr_string",
+        "tok2str"
+      ]
+    },
+    "ether_print": {
+      "file": "print-ether.c",
+      "line": 106,
+      "callees": [
+        "ether_hdr_print",
+        "llc_print",
+        "ieee8021q_tci_string",
+        "tok2str",
+        "ethertype_print"
+      ]
+    },
+    "ether_if_print": {
+      "file": "print-ether.c",
+      "line": 213,
+      "callees": [
+        "ether_print"
+      ]
+    },
+    "netanalyzer_if_print": {
+      "file": "print-ether.c",
+      "line": 221,
+      "callees": [
+        "ether_print"
+      ]
+    },
+    "netanalyzer_transparent_if_print": {
+      "file": "print-ether.c",
+      "line": 236,
+      "callees": [
+        "ether_print"
+      ]
+    },
+    "ethertype_print": {
+      "file": "print-ether.c",
+      "line": 253,
+      "callees": [
+        "ip_print",
+        "ip6_print",
+        "arp_print",
+        "decnet_print",
+        "atalk_print",
+        "aarp_print",
+        "ipx_print",
+        "isoclns_print",
+        "pppoe_print",
+        "eap_print",
+        "rrcp_print",
+        "ppp_print",
+        "mpcp_print",
+        "slow_print",
+        "cfm_print",
+        "lldp_print",
+        "loopback_print",
+        "mpls_print",
+        "tipc_print",
+        "msnlb_print",
+        "geonet_print",
+        "calm_fast_print",
+        "aoe_print",
+        "medsa_print"
+      ]
+    },
+    "print_fddi_fc": {
+      "file": "print-fddi.c",
+      "line": 99,
+      "callees": []
+    },
+    "extract_fddi_addrs": {
+      "file": "print-fddi.c",
+      "line": 167,
+      "callees": []
+    },
+    "fddi_hdr_print": {
+      "file": "print-fddi.c",
+      "line": 186,
+      "callees": [
+        "etheraddr_string",
+        "print_fddi_fc"
+      ]
+    },
+    "fddi_smt_print": {
+      "file": "print-fddi.c",
+      "line": 203,
+      "callees": []
+    },
+    "fddi_print": {
+      "file": "print-fddi.c",
+      "line": 209,
+      "callees": [
+        "extract_fddi_addrs",
+        "fddi_hdr_print",
+        "llc_print",
+        "fddi_smt_print"
+      ]
+    },
+    "fddi_if_print": {
+      "file": "print-fddi.c",
+      "line": 264,
+      "callees": [
+        "fddi_print"
+      ]
+    },
+    "tom_valid": {
+      "file": "print-forces.c",
+      "line": 73,
+      "callees": []
+    },
+    "ForCES_node": {
+      "file": "print-forces.c",
+      "line": 87,
+      "callees": []
+    },
+    "get_forces_optlv_h": {
+      "file": "print-forces.c",
+      "line": 261,
+      "callees": []
+    },
+    "indent_pr": {
+      "file": "print-forces.c",
+      "line": 275,
+      "callees": []
+    },
+    "op_valid": {
+      "file": "print-forces.c",
+      "line": 296,
+      "callees": []
+    },
+    "ttlv_valid": {
+      "file": "print-forces.c",
+      "line": 344,
+      "callees": []
+    },
+    "tlv_valid": {
+      "file": "print-forces.c",
+      "line": 399,
+      "callees": []
+    },
+    "ilv_valid": {
+      "file": "print-forces.c",
+      "line": 413,
+      "callees": []
+    },
+    "get_forces_tom": {
+      "file": "print-forces.c",
+      "line": 469,
+      "callees": []
+    },
+    "pd_valid": {
+      "file": "print-forces.c",
+      "line": 500,
+      "callees": []
+    },
+    "chk_op_type": {
+      "file": "print-forces.c",
+      "line": 507,
+      "callees": []
+    },
+    "get_forces_pd": {
+      "file": "print-forces.c",
+      "line": 555,
+      "callees": []
+    },
+    "prestlv_print": {
+      "file": "print-forces.c",
+      "line": 626,
+      "callees": [
+        "indent_pr",
+        "tok2str"
+      ]
+    },
+    "fdatatlv_print": {
+      "file": "print-forces.c",
+      "line": 661,
+      "callees": [
+        "indent_pr",
+        "hex_print_with_offset"
+      ]
+    },
+    "sdatailv_print": {
+      "file": "print-forces.c",
+      "line": 693,
+      "callees": [
+        "indent_pr",
+        "ilv_valid",
+        "hex_print_with_offset"
+      ]
+    },
+    "sdatatlv_print": {
+      "file": "print-forces.c",
+      "line": 739,
+      "callees": [
+        "sdatailv_print"
+      ]
+    },
+    "pkeyitlv_print": {
+      "file": "print-forces.c",
+      "line": 765,
+      "callees": [
+        "indent_pr",
+        "tlv_valid",
+        "tok2str",
+        "fdatatlv_print"
+      ]
+    },
+    "pdatacnt_print": {
+      "file": "print-forces.c",
+      "line": 804,
+      "callees": [
+        "indent_pr",
+        "tlv_valid",
+        "tok2str",
+        "pd_valid",
+        "get_forces_pd",
+        "chk_op_type",
+        "hex_print_with_offset"
+      ]
+    },
+    "pdata_print": {
+      "file": "print-forces.c",
+      "line": 955,
+      "callees": [
+        "indent_pr",
+        "hex_print_with_offset",
+        "pdatacnt_print",
+        "recpdoptlv_print"
+      ]
+    },
+    "genoptlv_print": {
+      "file": "print-forces.c",
+      "line": 1019,
+      "callees": [
+        "indent_pr",
+        "tlv_valid",
+        "tok2str",
+        "ttlv_valid",
+        "pdata_print"
+      ]
+    },
+    "recpdoptlv_print": {
+      "file": "print-forces.c",
+      "line": 1061,
+      "callees": [
+        "tlv_valid",
+        "indent_pr",
+        "tok2str",
+        "pdata_print"
+      ]
+    },
+    "invoptlv_print": {
+      "file": "print-forces.c",
+      "line": 1111,
+      "callees": [
+        "indent_pr",
+        "hex_print_with_offset"
+      ]
+    },
+    "otlv_print": {
+      "file": "print-forces.c",
+      "line": 1126,
+      "callees": [
+        "indent_pr",
+        "get_forces_optlv_h",
+        "invoptlv_print"
+      ]
+    },
+    "asttlv_print": {
+      "file": "print-forces.c",
+      "line": 1169,
+      "callees": [
+        "indent_pr"
+      ]
+    },
+    "asrtlv_print": {
+      "file": "print-forces.c",
+      "line": 1224,
+      "callees": [
+        "indent_pr"
+      ]
+    },
+    "gentltlv_print": {
+      "file": "print-forces.c",
+      "line": 1274,
+      "callees": []
+    },
+    "print_metailv": {
+      "file": "print-forces.c",
+      "line": 1291,
+      "callees": [
+        "indent_pr",
+        "hex_print_with_offset"
+      ]
+    },
+    "print_metatlv": {
+      "file": "print-forces.c",
+      "line": 1316,
+      "callees": [
+        "indent_pr",
+        "ilv_valid",
+        "print_metailv"
+      ]
+    },
+    "print_reddata": {
+      "file": "print-forces.c",
+      "line": 1351,
+      "callees": [
+        "indent_pr",
+        "hex_print_with_offset"
+      ]
+    },
+    "redirect_print": {
+      "file": "print-forces.c",
+      "line": 1373,
+      "callees": [
+        "tlv_valid",
+        "print_metatlv",
+        "print_reddata"
+      ]
+    },
+    "lfbselect_print": {
+      "file": "print-forces.c",
+      "line": 1435,
+      "callees": [
+        "indent_pr",
+        "tok2str",
+        "tlv_valid",
+        "op_valid",
+        "otlv_print",
+        "invoptlv_print"
+      ]
+    },
+    "forces_type_print": {
+      "file": "print-forces.c",
+      "line": 1504,
+      "callees": [
+        "tlv_valid",
+        "ttlv_valid",
+        "tok2str"
+      ]
+    },
+    "forces_print": {
+      "file": "print-forces.c",
+      "line": 1583,
+      "callees": [
+        "tom_valid",
+        "get_forces_tom",
+        "ForCES_node",
+        "tok2str",
+        "forces_type_print",
+        "hex_print_with_offset"
+      ]
+    },
+    "parse_q922_addr": {
+      "file": "print-fr.c",
+      "line": 60,
+      "callees": []
+    },
+    "q922_string": {
+      "file": "print-fr.c",
+      "line": 106,
+      "callees": [
+        "parse_q922_addr"
+      ]
+    },
+    "fr_hdr_print": {
+      "file": "print-fr.c",
+      "line": 125,
+      "callees": [
+        "bittok2str",
+        "tok2str"
+      ]
+    },
+    "fr_if_print": {
+      "file": "print-fr.c",
+      "line": 153,
+      "callees": [
+        "fr_print"
+      ]
+    },
+    "fr_print": {
+      "file": "print-fr.c",
+      "line": 171,
+      "callees": [
+        "parse_q922_addr",
+        "fr_hdr_print",
+        "ethertype_print",
+        "ip_print",
+        "ip6_print",
+        "isoclns_print",
+        "snap_print",
+        "q933_print",
+        "frf15_print",
+        "ppp_print"
+      ]
+    },
+    "mfr_if_print": {
+      "file": "print-fr.c",
+      "line": 299,
+      "callees": [
+        "mfr_print"
+      ]
+    },
+    "mfr_print": {
+      "file": "print-fr.c",
+      "line": 361,
+      "callees": [
+        "bittok2str",
+        "tok2str",
+        "safeputchar",
+        "ts_print",
+        "print_unknown_data",
+        "fr_print"
+      ]
+    },
+    "frf15_print": {
+      "file": "print-fr.c",
+      "line": 481,
+      "callees": [
+        "bittok2str"
+      ]
+    },
+    "q933_print": {
+      "file": "print-fr.c",
+      "line": 634,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "fr_q933_print_ie_codeset_0_5": {
+      "file": "print-fr.c",
+      "line": 852,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "frag6_print": {
+      "file": "print-frag6.c",
+      "line": 16,
+      "callees": []
+    },
+    "ftp_print": {
+      "file": "print-ftp.c",
+      "line": 17,
+      "callees": [
+        "txtproto_print"
+      ]
+    },
+    "format_opt_class": {
+      "file": "print-geneve.c",
+      "line": 44,
+      "callees": []
+    },
+    "geneve_opts_print": {
+      "file": "print-geneve.c",
+      "line": 68,
+      "callees": [
+        "format_opt_class"
+      ]
+    },
+    "geneve_print": {
+      "file": "print-geneve.c",
+      "line": 111,
+      "callees": [
+        "bittok2str_nosep",
+        "tok2str",
+        "geneve_opts_print",
+        "ethertype_print",
+        "ether_print"
+      ]
+    },
+    "print_btp_body": {
+      "file": "print-geonet.c",
+      "line": 34,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_btp": {
+      "file": "print-geonet.c",
+      "line": 50,
+      "callees": []
+    },
+    "print_long_pos_vector": {
+      "file": "print-geonet.c",
+      "line": 59,
+      "callees": [
+        "linkaddr_string"
+      ]
+    },
+    "geonet_print": {
+      "file": "print-geonet.c",
+      "line": 80,
+      "callees": [
+        "print_long_pos_vector",
+        "print_btp",
+        "print_btp_body"
+      ]
+    },
+    "gre_print": {
+      "file": "print-gre.c",
+      "line": 55,
+      "callees": [
+        "gre_print_0",
+        "gre_print_1"
+      ]
+    },
+    "gre_print_0": {
+      "file": "print-gre.c",
+      "line": 84,
+      "callees": [
+        "bittok2str",
+        "gre_sre_print",
+        "tok2str",
+        "ip_print",
+        "ip6_print",
+        "mpls_print",
+        "ipx_print",
+        "atalk_print",
+        "isoclns_print",
+        "ether_print"
+      ]
+    },
+    "gre_print_1": {
+      "file": "print-gre.c",
+      "line": 211,
+      "callees": [
+        "bittok2str",
+        "tok2str",
+        "ppp_print"
+      ]
+    },
+    "gre_sre_print": {
+      "file": "print-gre.c",
+      "line": 295,
+      "callees": [
+        "gre_sre_ip_print",
+        "gre_sre_asn_print"
+      ]
+    },
+    "gre_sre_ip_print": {
+      "file": "print-gre.c",
+      "line": 319,
+      "callees": [
+        "addrtostr"
+      ]
+    },
+    "gre_sre_asn_print": {
+      "file": "print-gre.c",
+      "line": 356,
+      "callees": []
+    },
+    "hncp_print": {
+      "file": "print-hncp.c",
+      "line": 22,
+      "callees": [
+        "hncp_print_rec"
+      ]
+    },
+    "is_ipv4_mapped_address": {
+      "file": "print-hncp.c",
+      "line": 117,
+      "callees": []
+    },
+    "format_nid": {
+      "file": "print-hncp.c",
+      "line": 127,
+      "callees": []
+    },
+    "format_256": {
+      "file": "print-hncp.c",
+      "line": 138,
+      "callees": []
+    },
+    "format_ip6addr": {
+      "file": "print-hncp.c",
+      "line": 163,
+      "callees": [
+        "is_ipv4_mapped_address"
+      ]
+    },
+    "print_prefix": {
+      "file": "print-hncp.c",
+      "line": 172,
+      "callees": [
+        "is_ipv4_mapped_address",
+        "decode_prefix6"
+      ]
+    },
+    "print_dns_label": {
+      "file": "print-hncp.c",
+      "line": 207,
+      "callees": [
+        "safeputchar",
+        "safeputs"
+      ]
+    },
+    "dhcpv4_print": {
+      "file": "print-hncp.c",
+      "line": 232,
+      "callees": [
+        "tok2str",
+        "ns_nprint"
+      ]
+    },
+    "dhcpv6_print": {
+      "file": "print-hncp.c",
+      "line": 284,
+      "callees": [
+        "tok2str",
+        "ns_nprint"
+      ]
+    },
+    "is_in_line": {
+      "file": "print-hncp.c",
+      "line": 338,
+      "callees": []
+    },
+    "print_type_in_line": {
+      "file": "print-hncp.c",
+      "line": 344,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "hncp_print_rec": {
+      "file": "print-hncp.c",
+      "line": 368,
+      "callees": [
+        "is_in_line",
+        "print_type_in_line",
+        "tok2str",
+        "format_nid",
+        "format_interval",
+        "format_256",
+        "safeputs",
+        "print_prefix",
+        "print_dns_label",
+        "dhcpv4_print",
+        "dhcpv6_print",
+        "format_ip6addr",
+        "safeputchar"
+      ]
+    },
+    "hsrp_print": {
+      "file": "print-hsrp.c",
+      "line": 52,
+      "callees": [
+        "tok2str",
+        "unsigned_relts_print",
+        "fn_printn"
+      ]
+    },
+    "http_print": {
+      "file": "print-http.c",
+      "line": 60,
+      "callees": [
+        "txtproto_print"
+      ]
+    },
+    "icmp_tstamp_print": {
+      "file": "print-icmp.c",
+      "line": 257,
+      "callees": []
+    },
+    "icmp_print": {
+      "file": "print-icmp.c",
+      "line": 272,
+      "callees": [
+        "tcpport_string",
+        "udpport_string",
+        "tok2str",
+        "icmp_tstamp_print",
+        "in_cksum",
+        "in_cksum_shouldbe",
+        "ip_print",
+        "print_unknown_data"
+      ]
+    },
+    "get_rtpref": {
+      "file": "print-icmp6.c",
+      "line": 525,
+      "callees": []
+    },
+    "get_lifetime": {
+      "file": "print-icmp6.c",
+      "line": 538,
+      "callees": []
+    },
+    "print_lladdr": {
+      "file": "print-icmp6.c",
+      "line": 551,
+      "callees": []
+    },
+    "icmp6_cksum": {
+      "file": "print-icmp6.c",
+      "line": 566,
+      "callees": [
+        "nextproto6_cksum"
+      ]
+    },
+    "rpl_dio_printopt": {
+      "file": "print-icmp6.c",
+      "line": 594,
+      "callees": [
+        "tok2str",
+        "hex_print"
+      ]
+    },
+    "rpl_dio_print": {
+      "file": "print-icmp6.c",
+      "line": 634,
+      "callees": [
+        "tok2str",
+        "rpl_dio_printopt"
+      ]
+    },
+    "rpl_dao_print": {
+      "file": "print-icmp6.c",
+      "line": 663,
+      "callees": [
+        "rpl_dio_printopt"
+      ]
+    },
+    "rpl_daoack_print": {
+      "file": "print-icmp6.c",
+      "line": 708,
+      "callees": [
+        "rpl_dio_printopt"
+      ]
+    },
+    "rpl_print": {
+      "file": "print-icmp6.c",
+      "line": 752,
+      "callees": [
+        "rpl_dio_print",
+        "rpl_dao_print",
+        "rpl_daoack_print"
+      ]
+    },
+    "icmp6_print": {
+      "file": "print-icmp6.c",
+      "line": 807,
+      "callees": [
+        "icmp6_cksum",
+        "in_cksum_shouldbe",
+        "tok2str",
+        "get_upperlayer",
+        "tcpport_string",
+        "udpport_string",
+        "print_unknown_data",
+        "mld6_print",
+        "mldv2_query_print",
+        "icmp6_opt_print",
+        "bittok2str",
+        "get_rtpref",
+        "icmp6_rrenum_print",
+        "icmp6_nodeinfo_print",
+        "mldv2_report_print",
+        "rpl_print"
+      ]
+    },
+    "get_upperlayer": {
+      "file": "print-icmp6.c",
+      "line": 1101,
+      "callees": []
+    },
+    "icmp6_opt_print": {
+      "file": "print-icmp6.c",
+      "line": 1175,
+      "callees": [
+        "tok2str",
+        "print_lladdr",
+        "bittok2str",
+        "get_lifetime",
+        "print_unknown_data",
+        "ns_nprint",
+        "get_rtpref"
+      ]
+    },
+    "mld6_print": {
+      "file": "print-icmp6.c",
+      "line": 1328,
+      "callees": []
+    },
+    "mldv2_report_print": {
+      "file": "print-icmp6.c",
+      "line": 1344,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "mldv2_query_print": {
+      "file": "print-icmp6.c",
+      "line": 1402,
+      "callees": []
+    },
+    "dnsname_print": {
+      "file": "print-icmp6.c",
+      "line": 1468,
+      "callees": [
+        "safeputchar"
+      ]
+    },
+    "icmp6_nodeinfo_print": {
+      "file": "print-icmp6.c",
+      "line": 1504,
+      "callees": [
+        "safeputchar",
+        "dnsname_print"
+      ]
+    },
+    "icmp6_rrenum_print": {
+      "file": "print-icmp6.c",
+      "line": 1754,
+      "callees": [
+        "addrtostr6"
+      ]
+    },
+    "print_mtrace": {
+      "file": "print-igmp.c",
+      "line": 81,
+      "callees": []
+    },
+    "print_mresp": {
+      "file": "print-igmp.c",
+      "line": 103,
+      "callees": []
+    },
+    "print_igmpv3_report": {
+      "file": "print-igmp.c",
+      "line": 125,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_igmpv3_query": {
+      "file": "print-igmp.c",
+      "line": 179,
+      "callees": [
+        "unsigned_relts_print"
+      ]
+    },
+    "igmp_print": {
+      "file": "print-igmp.c",
+      "line": 235,
+      "callees": [
+        "print_igmpv3_query",
+        "print_igmpv3_report",
+        "dvmrp_print",
+        "pimv1_print",
+        "print_mresp",
+        "print_mtrace",
+        "in_cksum"
+      ]
+    },
+    "igrp_entry_print": {
+      "file": "print-igrp.c",
+      "line": 47,
+      "callees": []
+    },
+    "igrp_print": {
+      "file": "print-igrp.c",
+      "line": 83,
+      "callees": [
+        "tok2str",
+        "igrp_entry_print"
+      ]
+    },
+    "ip_printroute": {
+      "file": "print-ip.c",
+      "line": 36,
+      "callees": []
+    },
+    "ip_finddst": {
+      "file": "print-ip.c",
+      "line": 67,
+      "callees": []
+    },
+    "nextproto4_cksum": {
+      "file": "print-ip.c",
+      "line": 111,
+      "callees": [
+        "ip_finddst",
+        "in_cksum"
+      ]
+    },
+    "ip_printts": {
+      "file": "print-ip.c",
+      "line": 142,
+      "callees": []
+    },
+    "ip_optprint": {
+      "file": "print-ip.c",
+      "line": 209,
+      "callees": [
+        "tok2str",
+        "ip_printts",
+        "ip_printroute"
+      ]
+    },
+    "ip_print_demux": {
+      "file": "print-ip.c",
+      "line": 303,
+      "callees": [
+        "ah_print",
+        "esp_print",
+        "ipcomp_print",
+        "sctp_print",
+        "dccp_print",
+        "tcp_print",
+        "udp_print",
+        "icmp_print",
+        "igrp_print",
+        "eigrp_print",
+        "egp_print",
+        "ospf_print",
+        "igmp_print",
+        "ip_print",
+        "ip6_print",
+        "rsvp_print",
+        "gre_print",
+        "mobile_print",
+        "pim_print",
+        "carp_print",
+        "vrrp_print",
+        "pgm_print",
+        "netdb_protoname"
+      ]
+    },
+    "ip_print_inner": {
+      "file": "print-ip.c",
+      "line": 459,
+      "callees": [
+        "ip_print_demux"
+      ]
+    },
+    "ip_print": {
+      "file": "print-ip.c",
+      "line": 479,
+      "callees": [
+        "bittok2str",
+        "tok2str",
+        "ip_optprint",
+        "in_cksum",
+        "in_cksum_shouldbe",
+        "ip_print_demux",
+        "netdb_protoname"
+      ]
+    },
+    "ipN_print": {
+      "file": "print-ip.c",
+      "line": 631,
+      "callees": [
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "ip6_finddst": {
+      "file": "print-ip6.c",
+      "line": 21,
+      "callees": []
+    },
+    "nextproto6_cksum": {
+      "file": "print-ip6.c",
+      "line": 106,
+      "callees": [
+        "ip6_finddst",
+        "in_cksum"
+      ]
+    },
+    "ip6_print": {
+      "file": "print-ip6.c",
+      "line": 151,
+      "callees": [
+        "tok2str",
+        "hbhopt_print",
+        "dstopt_print",
+        "frag6_print",
+        "mobility_print",
+        "rt6_print",
+        "sctp_print",
+        "dccp_print",
+        "tcp_print",
+        "udp_print",
+        "icmp6_print",
+        "ah_print",
+        "esp_print",
+        "ipcomp_print",
+        "pim_print",
+        "ospf6_print",
+        "ip_print",
+        "pgm_print",
+        "gre_print",
+        "rsvp_print"
+      ]
+    },
+    "ip6_sopt_print": {
+      "file": "print-ip6opts.c",
+      "line": 17,
+      "callees": []
+    },
+    "ip6_opt_print": {
+      "file": "print-ip6opts.c",
+      "line": 61,
+      "callees": [
+        "ip6_sopt_print"
+      ]
+    },
+    "hbhopt_print": {
+      "file": "print-ip6opts.c",
+      "line": 146,
+      "callees": [
+        "ip6_opt_print"
+      ]
+    },
+    "dstopt_print": {
+      "file": "print-ip6opts.c",
+      "line": 166,
+      "callees": [
+        "ip6_opt_print"
+      ]
+    },
+    "ipcomp_print": {
+      "file": "print-ipcomp.c",
+      "line": 20,
+      "callees": []
+    },
+    "extract_ipfc_addrs": {
+      "file": "print-ipfc.c",
+      "line": 28,
+      "callees": []
+    },
+    "ipfc_hdr_print": {
+      "file": "print-ipfc.c",
+      "line": 38,
+      "callees": [
+        "etheraddr_string"
+      ]
+    },
+    "ipfc_print": {
+      "file": "print-ipfc.c",
+      "line": 53,
+      "callees": [
+        "extract_ipfc_addrs",
+        "ipfc_hdr_print",
+        "llc_print"
+      ]
+    },
+    "ipfc_if_print": {
+      "file": "print-ipfc.c",
+      "line": 93,
+      "callees": [
+        "ipfc_print"
+      ]
+    },
+    "ipnet_hdr_print": {
+      "file": "print-ipnet.c",
+      "line": 33,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "ipnet_print": {
+      "file": "print-ipnet.c",
+      "line": 56,
+      "callees": [
+        "ipnet_hdr_print",
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "ipnet_if_print": {
+      "file": "print-ipnet.c",
+      "line": 96,
+      "callees": [
+        "ipnet_print"
+      ]
+    },
+    "ipx_print": {
+      "file": "print-ipx.c",
+      "line": 48,
+      "callees": [
+        "ipxaddr_string",
+        "ipx_decode"
+      ]
+    },
+    "ipxaddr_string": {
+      "file": "print-ipx.c",
+      "line": 75,
+      "callees": []
+    },
+    "ipx_decode": {
+      "file": "print-ipx.c",
+      "line": 86,
+      "callees": [
+        "ipx_sap_print",
+        "ipx_rip_print",
+        "ipx_netbios_print",
+        "eigrp_print"
+      ]
+    },
+    "ipx_sap_print": {
+      "file": "print-ipx.c",
+      "line": 126,
+      "callees": [
+        "ipxsap_string",
+        "fn_printzp",
+        "ipxaddr_string"
+      ]
+    },
+    "ipx_rip_print": {
+      "file": "print-ipx.c",
+      "line": 178,
+      "callees": []
+    },
+    "iszero": {
+      "file": "print-isakmp.c",
+      "line": 659,
+      "callees": []
+    },
+    "cookie_find": {
+      "file": "print-isakmp.c",
+      "line": 670,
+      "callees": []
+    },
+    "cookie_record": {
+      "file": "print-isakmp.c",
+      "line": 684,
+      "callees": [
+        "cookie_find"
+      ]
+    },
+    "cookie_sidecheck": {
+      "file": "print-isakmp.c",
+      "line": 719,
+      "callees": []
+    },
+    "hexprint": {
+      "file": "print-isakmp.c",
+      "line": 757,
+      "callees": []
+    },
+    "rawprint": {
+      "file": "print-isakmp.c",
+      "line": 768,
+      "callees": [
+        "hexprint"
+      ]
+    },
+    "ike_show_somedata": {
+      "file": "print-isakmp.c",
+      "line": 781,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_attrmap_print": {
+      "file": "print-isakmp.c",
+      "line": 817,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_attr_print": {
+      "file": "print-isakmp.c",
+      "line": 870,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_sa_print": {
+      "file": "print-isakmp.c",
+      "line": 913,
+      "callees": [
+        "ikev1_sub_print"
+      ]
+    },
+    "ikev1_p_print": {
+      "file": "print-isakmp.c",
+      "line": 973,
+      "callees": [
+        "rawprint",
+        "ikev1_sub_print"
+      ]
+    },
+    "ikev1_t_print": {
+      "file": "print-isakmp.c",
+      "line": 1136,
+      "callees": [
+        "ikev1_attrmap_print",
+        "ikev1_attr_print"
+      ]
+    },
+    "ikev1_ke_print": {
+      "file": "print-isakmp.c",
+      "line": 1206,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_id_print": {
+      "file": "print-isakmp.c",
+      "line": 1231,
+      "callees": [
+        "netdb_protoname",
+        "safeputchar",
+        "rawprint"
+      ]
+    },
+    "ikev1_cert_print": {
+      "file": "print-isakmp.c",
+      "line": 1400,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_cr_print": {
+      "file": "print-isakmp.c",
+      "line": 1434,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_hash_print": {
+      "file": "print-isakmp.c",
+      "line": 1467,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_sig_print": {
+      "file": "print-isakmp.c",
+      "line": 1492,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_nonce_print": {
+      "file": "print-isakmp.c",
+      "line": 1517,
+      "callees": [
+        "rawprint",
+        "ike_show_somedata"
+      ]
+    },
+    "ikev1_n_print": {
+      "file": "print-isakmp.c",
+      "line": 1550,
+      "callees": [
+        "numstr",
+        "rawprint",
+        "ikev1_attrmap_print",
+        "ike_show_somedata"
+      ]
+    },
+    "ikev1_d_print": {
+      "file": "print-isakmp.c",
+      "line": 1698,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev1_vid_print": {
+      "file": "print-isakmp.c",
+      "line": 1742,
+      "callees": [
+        "rawprint"
+      ]
+    },
+    "ikev2_pay_print": {
+      "file": "print-isakmp.c",
+      "line": 1774,
+      "callees": []
+    },
+    "ikev2_gen_print": {
+      "file": "print-isakmp.c",
+      "line": 1780,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint"
+      ]
+    },
+    "ikev2_t_print": {
+      "file": "print-isakmp.c",
+      "line": 1803,
+      "callees": [
+        "ikev2_pay_print",
+        "ikev1_attrmap_print",
+        "ikev1_attr_print"
+      ]
+    },
+    "ikev2_p_print": {
+      "file": "print-isakmp.c",
+      "line": 1881,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint",
+        "ikev2_t_print"
+      ]
+    },
+    "ikev2_sa_print": {
+      "file": "print-isakmp.c",
+      "line": 1968,
+      "callees": [
+        "ikev2_pay_print",
+        "ikev2_p_print"
+      ]
+    },
+    "ikev2_ke_print": {
+      "file": "print-isakmp.c",
+      "line": 2044,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint"
+      ]
+    },
+    "ikev2_ID_print": {
+      "file": "print-isakmp.c",
+      "line": 2073,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint"
+      ]
+    },
+    "ikev2_cert_print": {
+      "file": "print-isakmp.c",
+      "line": 2158,
+      "callees": [
+        "ikev2_gen_print"
+      ]
+    },
+    "ikev2_cr_print": {
+      "file": "print-isakmp.c",
+      "line": 2168,
+      "callees": [
+        "ikev2_gen_print"
+      ]
+    },
+    "ikev2_auth_print": {
+      "file": "print-isakmp.c",
+      "line": 2178,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint",
+        "ike_show_somedata"
+      ]
+    },
+    "ikev2_nonce_print": {
+      "file": "print-isakmp.c",
+      "line": 2217,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint",
+        "ike_show_somedata"
+      ]
+    },
+    "ikev2_n_print": {
+      "file": "print-isakmp.c",
+      "line": 2247,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint",
+        "ike_show_somedata"
+      ]
+    },
+    "ikev2_d_print": {
+      "file": "print-isakmp.c",
+      "line": 2451,
+      "callees": [
+        "ikev2_gen_print"
+      ]
+    },
+    "ikev2_vid_print": {
+      "file": "print-isakmp.c",
+      "line": 2461,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint"
+      ]
+    },
+    "ikev2_TS_print": {
+      "file": "print-isakmp.c",
+      "line": 2496,
+      "callees": [
+        "ikev2_gen_print"
+      ]
+    },
+    "ikev2_e_print": {
+      "file": "print-isakmp.c",
+      "line": 2506,
+      "callees": [
+        "ikev2_pay_print",
+        "rawprint",
+        "esp_print_decrypt_buffer_by_ikev2",
+        "ikev2_sub_print"
+      ]
+    },
+    "ikev2_cp_print": {
+      "file": "print-isakmp.c",
+      "line": 2575,
+      "callees": [
+        "ikev2_gen_print"
+      ]
+    },
+    "ikev2_eap_print": {
+      "file": "print-isakmp.c",
+      "line": 2585,
+      "callees": [
+        "ikev2_gen_print"
+      ]
+    },
+    "ike_sub0_print": {
+      "file": "print-isakmp.c",
+      "line": 2595,
+      "callees": []
+    },
+    "ikev1_sub_print": {
+      "file": "print-isakmp.c",
+      "line": 2628,
+      "callees": [
+        "ike_sub0_print"
+      ]
+    },
+    "numstr": {
+      "file": "print-isakmp.c",
+      "line": 2668,
+      "callees": []
+    },
+    "ikev1_print": {
+      "file": "print-isakmp.c",
+      "line": 2676,
+      "callees": [
+        "cookie_find",
+        "iszero",
+        "cookie_record",
+        "ikev1_sub_print"
+      ]
+    },
+    "ikev2_sub0_print": {
+      "file": "print-isakmp.c",
+      "line": 2747,
+      "callees": [
+        "ikev2_e_print"
+      ]
+    },
+    "ikev2_sub_print": {
+      "file": "print-isakmp.c",
+      "line": 2784,
+      "callees": [
+        "ikev2_sub0_print"
+      ]
+    },
+    "ikev2_print": {
+      "file": "print-isakmp.c",
+      "line": 2825,
+      "callees": [
+        "ikev2_sub_print"
+      ]
+    },
+    "isakmp_print": {
+      "file": "print-isakmp.c",
+      "line": 2880,
+      "callees": [
+        "esp_print_decodesecret",
+        "hexprint",
+        "ikev1_print",
+        "ikev2_print"
+      ]
+    },
+    "isakmp_rfc3948_print": {
+      "file": "print-isakmp.c",
+      "line": 2942,
+      "callees": [
+        "isakmp_print",
+        "esp_print",
+        "ip_print_inner"
+      ]
+    },
+    "isoclns_print": {
+      "file": "print-isoclns.c",
+      "line": 637,
+      "callees": [
+        "tok2str",
+        "clnp_print",
+        "print_unknown_data",
+        "esis_print",
+        "isis_print",
+        "q933_print",
+        "ip_print",
+        "ip6_print",
+        "ppp_print"
+      ]
+    },
+    "clnp_print": {
+      "file": "print-isoclns.c",
+      "line": 727,
+      "callees": [
+        "isonsap_string",
+        "tok2str",
+        "osi_print_cksum",
+        "bittok2str",
+        "print_unknown_data"
+      ]
+    },
+    "esis_print": {
+      "file": "print-isoclns.c",
+      "line": 1039,
+      "callees": [
+        "tok2str",
+        "osi_print_cksum",
+        "print_unknown_data",
+        "isonsap_string",
+        "etheraddr_string",
+        "linkaddr_string"
+      ]
+    },
+    "isis_print_mcid": {
+      "file": "print-isoclns.c",
+      "line": 1318,
+      "callees": [
+        "fn_printzp"
+      ]
+    },
+    "isis_print_mt_port_cap_subtlv": {
+      "file": "print-isoclns.c",
+      "line": 1341,
+      "callees": [
+        "tok2str",
+        "isis_print_mcid"
+      ]
+    },
+    "isis_print_mt_capability_subtlv": {
+      "file": "print-isoclns.c",
+      "line": 1459,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "isis_print_id": {
+      "file": "print-isoclns.c",
+      "line": 1586,
+      "callees": []
+    },
+    "isis_print_metric_block": {
+      "file": "print-isoclns.c",
+      "line": 1613,
+      "callees": []
+    },
+    "isis_print_tlv_ip_reach": {
+      "file": "print-isoclns.c",
+      "line": 1636,
+      "callees": [
+        "mask2plen"
+      ]
+    },
+    "isis_print_ip_reach_subtlv": {
+      "file": "print-isoclns.c",
+      "line": 1700,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "isis_print_is_reach_subtlv": {
+      "file": "print-isoclns.c",
+      "line": 1747,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "print_unknown_data"
+      ]
+    },
+    "isis_print_ext_is_reach": {
+      "file": "print-isoclns.c",
+      "line": 1907,
+      "callees": [
+        "isis_print_id",
+        "isis_print_is_reach_subtlv"
+      ]
+    },
+    "isis_print_mtid": {
+      "file": "print-isoclns.c",
+      "line": 1954,
+      "callees": [
+        "tok2str",
+        "bittok2str"
+      ]
+    },
+    "isis_print_extd_ip_reach": {
+      "file": "print-isoclns.c",
+      "line": 1976,
+      "callees": [
+        "isis_print_ip_reach_subtlv"
+      ]
+    },
+    "isis_clear_checksum_lifetime": {
+      "file": "print-isoclns.c",
+      "line": 2075,
+      "callees": []
+    },
+    "isis_print": {
+      "file": "print-isoclns.c",
+      "line": 2088,
+      "callees": [
+        "tok2str",
+        "print_unknown_data",
+        "isis_print_id",
+        "osi_print_cksum",
+        "isonsap_string",
+        "isis_print_mtid",
+        "isis_print_ext_is_reach",
+        "isis_print_metric_block",
+        "isis_print_tlv_ip_reach",
+        "isis_print_extd_ip_reach",
+        "fn_printzp",
+        "signature_verify",
+        "isis_print_mt_port_cap_subtlv",
+        "isis_print_mt_capability_subtlv",
+        "bittok2str"
+      ]
+    },
+    "osi_print_cksum": {
+      "file": "print-isoclns.c",
+      "line": 3053,
+      "callees": [
+        "create_osi_cksum"
+      ]
+    },
+    "juniper_ggsn_print": {
+      "file": "print-juniper.c",
+      "line": 440,
+      "callees": [
+        "juniper_parse_header",
+        "tok2str",
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "juniper_es_print": {
+      "file": "print-juniper.c",
+      "line": 491,
+      "callees": [
+        "juniper_parse_header",
+        "tok2str",
+        "ip_print"
+      ]
+    },
+    "juniper_monitor_print": {
+      "file": "print-juniper.c",
+      "line": 568,
+      "callees": [
+        "juniper_parse_header",
+        "ip_heuristic_guess"
+      ]
+    },
+    "juniper_services_print": {
+      "file": "print-juniper.c",
+      "line": 607,
+      "callees": [
+        "juniper_parse_header",
+        "ip_heuristic_guess"
+      ]
+    },
+    "juniper_pppoe_print": {
+      "file": "print-juniper.c",
+      "line": 647,
+      "callees": [
+        "juniper_parse_header",
+        "ether_print"
+      ]
+    },
+    "juniper_ether_print": {
+      "file": "print-juniper.c",
+      "line": 665,
+      "callees": [
+        "juniper_parse_header",
+        "ether_print"
+      ]
+    },
+    "juniper_ppp_print": {
+      "file": "print-juniper.c",
+      "line": 683,
+      "callees": [
+        "juniper_parse_header",
+        "ppp_print"
+      ]
+    },
+    "juniper_frelay_print": {
+      "file": "print-juniper.c",
+      "line": 701,
+      "callees": [
+        "juniper_parse_header",
+        "fr_print"
+      ]
+    },
+    "juniper_chdlc_print": {
+      "file": "print-juniper.c",
+      "line": 719,
+      "callees": [
+        "juniper_parse_header",
+        "chdlc_print"
+      ]
+    },
+    "juniper_pppoe_atm_print": {
+      "file": "print-juniper.c",
+      "line": 737,
+      "callees": [
+        "juniper_parse_header",
+        "ethertype_print"
+      ]
+    },
+    "juniper_mlppp_print": {
+      "file": "print-juniper.c",
+      "line": 770,
+      "callees": [
+        "juniper_parse_header",
+        "ppp_print",
+        "ip_print",
+        "ip6_print",
+        "mpls_print",
+        "isoclns_print"
+      ]
+    },
+    "juniper_mfr_print": {
+      "file": "print-juniper.c",
+      "line": 827,
+      "callees": [
+        "juniper_parse_header",
+        "mfr_print",
+        "ip_print",
+        "ip6_print",
+        "mpls_print",
+        "isoclns_print"
+      ]
+    },
+    "juniper_mlfr_print": {
+      "file": "print-juniper.c",
+      "line": 889,
+      "callees": [
+        "juniper_parse_header",
+        "isoclns_print"
+      ]
+    },
+    "juniper_atm1_print": {
+      "file": "print-juniper.c",
+      "line": 926,
+      "callees": [
+        "juniper_parse_header",
+        "oam_print",
+        "llc_print",
+        "isoclns_print",
+        "ip_heuristic_guess"
+      ]
+    },
+    "juniper_atm2_print": {
+      "file": "print-juniper.c",
+      "line": 974,
+      "callees": [
+        "juniper_parse_header",
+        "oam_print",
+        "llc_print",
+        "ether_print",
+        "isoclns_print",
+        "juniper_ppp_heuristic_guess",
+        "ip_heuristic_guess"
+      ]
+    },
+    "juniper_ppp_heuristic_guess": {
+      "file": "print-juniper.c",
+      "line": 1030,
+      "callees": [
+        "ppp_print"
+      ]
+    },
+    "ip_heuristic_guess": {
+      "file": "print-juniper.c",
+      "line": 1058,
+      "callees": [
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "juniper_read_tlv_value": {
+      "file": "print-juniper.c",
+      "line": 1101,
+      "callees": []
+    },
+    "juniper_parse_header": {
+      "file": "print-juniper.c",
+      "line": 1148,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "juniper_read_tlv_value",
+        "ip_heuristic_guess"
+      ]
+    },
+    "c_print": {
+      "file": "print-krb.c",
+      "line": 75,
+      "callees": []
+    },
+    "krb4_print_hdr": {
+      "file": "print-krb.c",
+      "line": 104,
+      "callees": [
+        "c_print"
+      ]
+    },
+    "krb4_print": {
+      "file": "print-krb.c",
+      "line": 126,
+      "callees": [
+        "c_print",
+        "tok2str",
+        "krb4_print_hdr"
+      ]
+    },
+    "krb_print": {
+      "file": "print-krb.c",
+      "line": 204,
+      "callees": [
+        "krb4_print"
+      ]
+    },
+    "print_string": {
+      "file": "print-l2tp.c",
+      "line": 245,
+      "callees": []
+    },
+    "print_octets": {
+      "file": "print-l2tp.c",
+      "line": 254,
+      "callees": []
+    },
+    "print_16bits_val": {
+      "file": "print-l2tp.c",
+      "line": 263,
+      "callees": []
+    },
+    "print_32bits_val": {
+      "file": "print-l2tp.c",
+      "line": 269,
+      "callees": []
+    },
+    "l2tp_msgtype_print": {
+      "file": "print-l2tp.c",
+      "line": 278,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "l2tp_result_code_print": {
+      "file": "print-l2tp.c",
+      "line": 291,
+      "callees": [
+        "print_string"
+      ]
+    },
+    "l2tp_proto_ver_print": {
+      "file": "print-l2tp.c",
+      "line": 323,
+      "callees": []
+    },
+    "l2tp_framing_cap_print": {
+      "file": "print-l2tp.c",
+      "line": 334,
+      "callees": []
+    },
+    "l2tp_bearer_cap_print": {
+      "file": "print-l2tp.c",
+      "line": 351,
+      "callees": []
+    },
+    "l2tp_q931_cc_print": {
+      "file": "print-l2tp.c",
+      "line": 368,
+      "callees": [
+        "print_16bits_val",
+        "print_string"
+      ]
+    },
+    "l2tp_bearer_type_print": {
+      "file": "print-l2tp.c",
+      "line": 385,
+      "callees": []
+    },
+    "l2tp_framing_type_print": {
+      "file": "print-l2tp.c",
+      "line": 402,
+      "callees": []
+    },
+    "l2tp_packet_proc_delay_print": {
+      "file": "print-l2tp.c",
+      "line": 419,
+      "callees": []
+    },
+    "l2tp_proxy_auth_type_print": {
+      "file": "print-l2tp.c",
+      "line": 425,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "l2tp_proxy_auth_id_print": {
+      "file": "print-l2tp.c",
+      "line": 438,
+      "callees": []
+    },
+    "l2tp_call_errors_print": {
+      "file": "print-l2tp.c",
+      "line": 450,
+      "callees": []
+    },
+    "l2tp_accm_print": {
+      "file": "print-l2tp.c",
+      "line": 512,
+      "callees": []
+    },
+    "l2tp_ppp_discon_cc_print": {
+      "file": "print-l2tp.c",
+      "line": 542,
+      "callees": [
+        "tok2str",
+        "print_string"
+      ]
+    },
+    "l2tp_avp_print": {
+      "file": "print-l2tp.c",
+      "line": 571,
+      "callees": [
+        "print_octets",
+        "tok2str",
+        "l2tp_msgtype_print",
+        "l2tp_result_code_print",
+        "l2tp_proto_ver_print",
+        "l2tp_framing_cap_print",
+        "l2tp_bearer_cap_print",
+        "print_16bits_val",
+        "print_string",
+        "l2tp_q931_cc_print",
+        "print_32bits_val",
+        "l2tp_bearer_type_print",
+        "l2tp_framing_type_print",
+        "l2tp_packet_proc_delay_print",
+        "l2tp_proxy_auth_type_print",
+        "l2tp_proxy_auth_id_print",
+        "l2tp_call_errors_print",
+        "l2tp_accm_print",
+        "l2tp_ppp_discon_cc_print"
+      ]
+    },
+    "l2tp_print": {
+      "file": "print-l2tp.c",
+      "line": 740,
+      "callees": [
+        "l2tp_avp_print",
+        "ppp_print"
+      ]
+    },
+    "lane_hdr_print": {
+      "file": "print-lane.c",
+      "line": 49,
+      "callees": []
+    },
+    "lane_print": {
+      "file": "print-lane.c",
+      "line": 56,
+      "callees": [
+        "tok2str",
+        "ether_print"
+      ]
+    },
+    "lane_if_print": {
+      "file": "print-lane.c",
+      "line": 84,
+      "callees": [
+        "lane_print"
+      ]
+    },
+    "ldp_tlv_print": {
+      "file": "print-ldp.c",
+      "line": 171,
+      "callees": [
+        "tok2str",
+        "decode_prefix4",
+        "decode_prefix6",
+        "safeputchar",
+        "bittok2str",
+        "print_unknown_data"
+      ]
+    },
+    "ldp_print": {
+      "file": "print-ldp.c",
+      "line": 471,
+      "callees": [
+        "ldp_pdu_print"
+      ]
+    },
+    "ldp_pdu_print": {
+      "file": "print-ldp.c",
+      "line": 485,
+      "callees": [
+        "tok2str",
+        "ldp_tlv_print",
+        "print_unknown_data"
+      ]
+    },
+    "lisp_print": {
+      "file": "print-lisp.c",
+      "line": 134,
+      "callees": [
+        "lisp_hdr_flag",
+        "extract_lisp_type",
+        "is_xtr_data_present",
+        "tok2str",
+        "hex_print",
+        "action_flag",
+        "loc_hdr_flag",
+        "hex_print_with_offset"
+      ]
+    },
+    "extract_lisp_type": {
+      "file": "print-lisp.c",
+      "line": 286,
+      "callees": []
+    },
+    "is_xtr_data_present": {
+      "file": "print-lisp.c",
+      "line": 291,
+      "callees": []
+    },
+    "lisp_hdr_flag": {
+      "file": "print-lisp.c",
+      "line": 303,
+      "callees": [
+        "extract_lisp_type",
+        "tok2str",
+        "bittok2str"
+      ]
+    },
+    "action_flag": {
+      "file": "print-lisp.c",
+      "line": 325,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "loc_hdr_flag": {
+      "file": "print-lisp.c",
+      "line": 341,
+      "callees": [
+        "bittok2str"
+      ]
+    },
+    "llc_print": {
+      "file": "print-llc.c",
+      "line": 120,
+      "callees": [
+        "ipx_print",
+        "tok2str",
+        "snap_print",
+        "stp_print",
+        "ip_print",
+        "netbeui_print",
+        "isoclns_print"
+      ]
+    },
+    "oui_to_struct_tok": {
+      "file": "print-llc.c",
+      "line": 318,
+      "callees": []
+    },
+    "snap_print": {
+      "file": "print-llc.c",
+      "line": 333,
+      "callees": [
+        "tok2str",
+        "oui_to_struct_tok",
+        "ethertype_print",
+        "cdp_print",
+        "dtp_print",
+        "udld_print",
+        "vtp_print",
+        "stp_print",
+        "ether_print",
+        "token_print",
+        "fddi_print"
+      ]
+    },
+    "print_ets_priority_assignment_table": {
+      "file": "print-lldp.c",
+      "line": 580,
+      "callees": []
+    },
+    "print_tc_bandwidth_table": {
+      "file": "print-lldp.c",
+      "line": 591,
+      "callees": []
+    },
+    "print_tsa_assignment_table": {
+      "file": "print-lldp.c",
+      "line": 601,
+      "callees": []
+    },
+    "lldp_private_8021_print": {
+      "file": "print-lldp.c",
+      "line": 612,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "safeputs",
+        "print_ets_priority_assignment_table",
+        "print_tc_bandwidth_table",
+        "print_tsa_assignment_table"
+      ]
+    },
+    "lldp_private_8023_print": {
+      "file": "print-lldp.c",
+      "line": 813,
+      "callees": [
+        "tok2str",
+        "bittok2str"
+      ]
+    },
+    "lldp_extract_latlon": {
+      "file": "print-lldp.c",
+      "line": 879,
+      "callees": []
+    },
+    "lldp_private_iana_print": {
+      "file": "print-lldp.c",
+      "line": 893,
+      "callees": [
+        "tok2str",
+        "fn_printn"
+      ]
+    },
+    "lldp_private_tia_print": {
+      "file": "print-lldp.c",
+      "line": 923,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "lldp_extract_latlon",
+        "safeputs",
+        "print_unknown_data"
+      ]
+    },
+    "lldp_private_dcbx_print": {
+      "file": "print-lldp.c",
+      "line": 1103,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "lldp_network_addr_print": {
+      "file": "print-lldp.c",
+      "line": 1264,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "lldp_mgmt_addr_tlv_print": {
+      "file": "print-lldp.c",
+      "line": 1309,
+      "callees": [
+        "lldp_network_addr_print",
+        "tok2str",
+        "safeputs"
+      ]
+    },
+    "lldp_print": {
+      "file": "print-lldp.c",
+      "line": 1369,
+      "callees": [
+        "tok2str",
+        "etheraddr_string",
+        "safeputs",
+        "lldp_network_addr_print",
+        "bittok2str",
+        "lldp_mgmt_addr_tlv_print",
+        "lldp_private_8021_print",
+        "lldp_private_8023_print",
+        "lldp_private_iana_print",
+        "lldp_private_tia_print",
+        "lldp_private_dcbx_print",
+        "print_unknown_data"
+      ]
+    },
+    "lmp_print_data_link_subobjs": {
+      "file": "print-lmp.c",
+      "line": 313,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "lmp_print": {
+      "file": "print-lmp.c",
+      "line": 380,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "lmp_print_data_link_subobjs",
+        "print_unknown_data"
+      ]
+    },
+    "loopback_message_print": {
+      "file": "print-loopback.c",
+      "line": 29,
+      "callees": [
+        "tok2str",
+        "etheraddr_string"
+      ]
+    },
+    "loopback_print": {
+      "file": "print-loopback.c",
+      "line": 80,
+      "callees": [
+        "loopback_message_print"
+      ]
+    },
+    "lspping_print": {
+      "file": "print-lspping.c",
+      "line": 282,
+      "callees": [
+        "tok2str",
+        "ts_print",
+        "bgp_vpn_rd_print",
+        "print_unknown_data"
+      ]
+    },
+    "lwapp_control_print": {
+      "file": "print-lwapp.c",
+      "line": 120,
+      "callees": [
+        "bittok2str",
+        "etheraddr_string",
+        "tok2str"
+      ]
+    },
+    "lwapp_data_print": {
+      "file": "print-lwapp.c",
+      "line": 241,
+      "callees": [
+        "bittok2str",
+        "print_unknown_data"
+      ]
+    },
+    "lwres_printname": {
+      "file": "print-lwres.c",
+      "line": 152,
+      "callees": [
+        "safeputchar"
+      ]
+    },
+    "lwres_printnamelen": {
+      "file": "print-lwres.c",
+      "line": 175,
+      "callees": [
+        "lwres_printname"
+      ]
+    },
+    "lwres_printbinlen": {
+      "file": "print-lwres.c",
+      "line": 194,
+      "callees": []
+    },
+    "lwres_printaddr": {
+      "file": "print-lwres.c",
+      "line": 217,
+      "callees": []
+    },
+    "lwres_print": {
+      "file": "print-lwres.c",
+      "line": 256,
+      "callees": [
+        "tok2str",
+        "lwres_printname",
+        "lwres_printaddr",
+        "lwres_printnamelen",
+        "unsigned_relts_print",
+        "lwres_printbinlen"
+      ]
+    },
+    "tag_value_print": {
+      "file": "print-m3ua.c",
+      "line": 189,
+      "callees": []
+    },
+    "m3ua_tags_print": {
+      "file": "print-m3ua.c",
+      "line": 219,
+      "callees": [
+        "tok2str",
+        "tag_value_print"
+      ]
+    },
+    "m3ua_print": {
+      "file": "print-m3ua.c",
+      "line": 257,
+      "callees": [
+        "tok2str",
+        "m3ua_tags_print"
+      ]
+    },
+    "medsa_print_full": {
+      "file": "print-medsa.c",
+      "line": 58,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "medsa_print": {
+      "file": "print-medsa.c",
+      "line": 111,
+      "callees": [
+        "medsa_print_full",
+        "llc_print",
+        "tok2str",
+        "ethertype_print"
+      ]
+    },
+    "mobile_print": {
+      "file": "print-mobile.c",
+      "line": 29,
+      "callees": [
+        "in_cksum"
+      ]
+    },
+    "mobility_opt_print": {
+      "file": "print-mobility.c",
+      "line": 87,
+      "callees": []
+    },
+    "mobility_print": {
+      "file": "print-mobility.c",
+      "line": 172,
+      "callees": [
+        "tok2str",
+        "mobility_opt_print"
+      ]
+    },
+    "mpcp_print": {
+      "file": "print-mpcp.c",
+      "line": 108,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "print_unknown_data"
+      ]
+    },
+    "mpls_print": {
+      "file": "print-mpls.c",
+      "line": 31,
+      "callees": [
+        "ip_print",
+        "ip6_print",
+        "isoclns_print"
+      ]
+    },
+    "dummy_print": {
+      "file": "print-mptcp.c",
+      "line": 136,
+      "callees": []
+    },
+    "mp_capable_print": {
+      "file": "print-mptcp.c",
+      "line": 143,
+      "callees": []
+    },
+    "mp_join_print": {
+      "file": "print-mptcp.c",
+      "line": 167,
+      "callees": []
+    },
+    "mp_dss_print": {
+      "file": "print-mptcp.c",
+      "line": 207,
+      "callees": []
+    },
+    "add_addr_print": {
+      "file": "print-mptcp.c",
+      "line": 283,
+      "callees": []
+    },
+    "remove_addr_print": {
+      "file": "print-mptcp.c",
+      "line": 313,
+      "callees": []
+    },
+    "mp_prio_print": {
+      "file": "print-mptcp.c",
+      "line": 330,
+      "callees": []
+    },
+    "mp_fail_print": {
+      "file": "print-mptcp.c",
+      "line": 349,
+      "callees": []
+    },
+    "mp_fast_close_print": {
+      "file": "print-mptcp.c",
+      "line": 360,
+      "callees": []
+    },
+    "mptcp_print": {
+      "file": "print-mptcp.c",
+      "line": 386,
+      "callees": []
+    },
+    "msdp_print": {
+      "file": "print-msdp.c",
+      "line": 17,
+      "callees": [
+        "ip_print"
+      ]
+    },
+    "msnlb_print": {
+      "file": "print-msnlb.c",
+      "line": 24,
+      "callees": []
+    },
+    "nflog_hdr_print": {
+      "file": "print-nflog.c",
+      "line": 24,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "nflog_if_print": {
+      "file": "print-nflog.c",
+      "line": 44,
+      "callees": [
+        "nflog_hdr_print",
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "print_nfsaddr": {
+      "file": "print-nfs.c",
+      "line": 170,
+      "callees": []
+    },
+    "parse_sattr3": {
+      "file": "print-nfs.c",
+      "line": 201,
+      "callees": []
+    },
+    "print_sattr3": {
+      "file": "print-nfs.c",
+      "line": 270,
+      "callees": []
+    },
+    "nfsreply_print": {
+      "file": "print-nfs.c",
+      "line": 290,
+      "callees": [
+        "print_nfsaddr",
+        "nfsreply_print_noaddr"
+      ]
+    },
+    "nfsreply_print_noaddr": {
+      "file": "print-nfs.c",
+      "line": 321,
+      "callees": [
+        "xid_map_find",
+        "interp_reply",
+        "tok2str"
+      ]
+    },
+    "parsereq": {
+      "file": "print-nfs.c",
+      "line": 383,
+      "callees": []
+    },
+    "parsefh": {
+      "file": "print-nfs.c",
+      "line": 409,
+      "callees": [
+        "nfs_printfh"
+      ]
+    },
+    "parsefn": {
+      "file": "print-nfs.c",
+      "line": 431,
+      "callees": [
+        "fn_printn"
+      ]
+    },
+    "parsefhn": {
+      "file": "print-nfs.c",
+      "line": 463,
+      "callees": [
+        "parsefh",
+        "parsefn"
+      ]
+    },
+    "nfsreq_print_noaddr": {
+      "file": "print-nfs.c",
+      "line": 474,
+      "callees": [
+        "xid_map_enter",
+        "tok2str",
+        "parsereq",
+        "parsefh",
+        "parsefhn",
+        "parse_sattr3",
+        "parsefn",
+        "print_sattr3"
+      ]
+    },
+    "nfs_printfh": {
+      "file": "print-nfs.c",
+      "line": 721,
+      "callees": [
+        "Parse_fh"
+      ]
+    },
+    "xid_map_enter": {
+      "file": "print-nfs.c",
+      "line": 794,
+      "callees": []
+    },
+    "xid_map_find": {
+      "file": "print-nfs.c",
+      "line": 837,
+      "callees": []
+    },
+    "parserep": {
+      "file": "print-nfs.c",
+      "line": 896,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "parsestatus": {
+      "file": "print-nfs.c",
+      "line": 928,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "parsefattr": {
+      "file": "print-nfs.c",
+      "line": 950,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "parseattrstat": {
+      "file": "print-nfs.c",
+      "line": 1019,
+      "callees": [
+        "parsestatus",
+        "parsefattr"
+      ]
+    },
+    "parsediropres": {
+      "file": "print-nfs.c",
+      "line": 1034,
+      "callees": [
+        "parsestatus",
+        "parsefh",
+        "parsefattr"
+      ]
+    },
+    "parselinkres": {
+      "file": "print-nfs.c",
+      "line": 1052,
+      "callees": [
+        "parsestatus",
+        "parse_post_op_attr",
+        "parsefn"
+      ]
+    },
+    "parsestatfs": {
+      "file": "print-nfs.c",
+      "line": 1069,
+      "callees": [
+        "parsestatus",
+        "parse_post_op_attr"
+      ]
+    },
+    "parserddires": {
+      "file": "print-nfs.c",
+      "line": 1122,
+      "callees": [
+        "parsestatus"
+      ]
+    },
+    "parse_wcc_attr": {
+      "file": "print-nfs.c",
+      "line": 1147,
+      "callees": []
+    },
+    "parse_pre_op_attr": {
+      "file": "print-nfs.c",
+      "line": 1160,
+      "callees": [
+        "parse_wcc_attr"
+      ]
+    },
+    "parse_post_op_attr": {
+      "file": "print-nfs.c",
+      "line": 1180,
+      "callees": [
+        "parsefattr"
+      ]
+    },
+    "parse_wcc_data": {
+      "file": "print-nfs.c",
+      "line": 1196,
+      "callees": [
+        "parse_pre_op_attr",
+        "parse_post_op_attr"
+      ]
+    },
+    "parsecreateopres": {
+      "file": "print-nfs.c",
+      "line": 1210,
+      "callees": [
+        "parsestatus",
+        "parse_wcc_data",
+        "parsefh",
+        "parse_post_op_attr"
+      ]
+    },
+    "parsewccres": {
+      "file": "print-nfs.c",
+      "line": 1241,
+      "callees": [
+        "parsestatus",
+        "parse_wcc_data"
+      ]
+    },
+    "parsev3rddirres": {
+      "file": "print-nfs.c",
+      "line": 1252,
+      "callees": [
+        "parsestatus",
+        "parse_post_op_attr"
+      ]
+    },
+    "parsefsinfo": {
+      "file": "print-nfs.c",
+      "line": 1276,
+      "callees": [
+        "parsestatus",
+        "parse_post_op_attr"
+      ]
+    },
+    "parsepathconf": {
+      "file": "print-nfs.c",
+      "line": 1314,
+      "callees": [
+        "parsestatus",
+        "parse_post_op_attr"
+      ]
+    },
+    "interp_reply": {
+      "file": "print-nfs.c",
+      "line": 1345,
+      "callees": [
+        "tok2str",
+        "parserep",
+        "parseattrstat",
+        "parsewccres",
+        "parsestatus",
+        "parse_post_op_attr",
+        "parsefh",
+        "parsediropres",
+        "parselinkres",
+        "parse_wcc_data",
+        "parsecreateopres",
+        "parsev3rddirres",
+        "parserddires",
+        "parsestatfs",
+        "parsefsinfo",
+        "parsepathconf"
+      ]
+    },
+    "nsh_print": {
+      "file": "print-nsh.c",
+      "line": 27,
+      "callees": [
+        "bittok2str_nosep",
+        "ip_print",
+        "ip6_print",
+        "ether_print"
+      ]
+    },
+    "ntp_print": {
+      "file": "print-ntp.c",
+      "line": 114,
+      "callees": [
+        "tok2str",
+        "p_sfix",
+        "fn_printn",
+        "p_ntp_time",
+        "p_ntp_delta"
+      ]
+    },
+    "p_sfix": {
+      "file": "print-ntp.c",
+      "line": 235,
+      "callees": []
+    },
+    "p_ntp_time": {
+      "file": "print-ntp.c",
+      "line": 252,
+      "callees": []
+    },
+    "p_ntp_delta": {
+      "file": "print-ntp.c",
+      "line": 285,
+      "callees": [
+        "p_ntp_time"
+      ]
+    },
+    "null_hdr_print": {
+      "file": "print-null.c",
+      "line": 23,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "null_if_print": {
+      "file": "print-null.c",
+      "line": 38,
+      "callees": [
+        "null_hdr_print",
+        "ip_print",
+        "ip6_print",
+        "isoclns_print",
+        "atalk_print",
+        "ipx_print"
+      ]
+    },
+    "deserialize_gw_speed": {
+      "file": "print-olsr.c",
+      "line": 148,
+      "callees": []
+    },
+    "olsr_print_lq_neighbor4": {
+      "file": "print-olsr.c",
+      "line": 176,
+      "callees": []
+    },
+    "olsr_print_lq_neighbor6": {
+      "file": "print-olsr.c",
+      "line": 200,
+      "callees": []
+    },
+    "olsr_print_neighbor": {
+      "file": "print-olsr.c",
+      "line": 225,
+      "callees": []
+    },
+    "olsr_print": {
+      "file": "print-olsr.c",
+      "line": 250,
+      "callees": [
+        "tok2str",
+        "olsr_print_neighbor",
+        "olsr_print_lq_neighbor6",
+        "olsr_print_lq_neighbor4",
+        "mask62plen",
+        "deserialize_gw_speed",
+        "mask2plen",
+        "fn_printn",
+        "print_unknown_data"
+      ]
+    },
+    "vlan_str": {
+      "file": "print-openflow-1.0.c",
+      "line": 639,
+      "callees": []
+    },
+    "pcp_str": {
+      "file": "print-openflow-1.0.c",
+      "line": 652,
+      "callees": []
+    },
+    "of10_bitmap_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 660,
+      "callees": []
+    },
+    "of10_data_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 678,
+      "callees": [
+        "hex_and_ascii_print"
+      ]
+    },
+    "of10_bsn_message_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 696,
+      "callees": [
+        "tok2str",
+        "fn_printn"
+      ]
+    },
+    "of10_bsn_actions_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 825,
+      "callees": [
+        "tok2str",
+        "ieee8021q_tci_string"
+      ]
+    },
+    "of10_vendor_action_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 886,
+      "callees": [
+        "of_vendor_name"
+      ]
+    },
+    "of10_vendor_message_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 915,
+      "callees": [
+        "of_vendor_name"
+      ]
+    },
+    "of10_vendor_data_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 945,
+      "callees": [
+        "of_vendor_name",
+        "of10_data_print"
+      ]
+    },
+    "of10_packet_data_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 970,
+      "callees": [
+        "ether_print"
+      ]
+    },
+    "of10_phy_ports_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 993,
+      "callees": [
+        "tok2str",
+        "etheraddr_string",
+        "fn_print",
+        "of10_bitmap_print"
+      ]
+    },
+    "of10_queue_props_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1068,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "of10_queues_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1144,
+      "callees": [
+        "of10_queue_props_print"
+      ]
+    },
+    "of10_match_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1192,
+      "callees": [
+        "tok2str",
+        "etheraddr_string",
+        "vlan_str",
+        "pcp_str"
+      ]
+    },
+    "of10_actions_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1296,
+      "callees": [
+        "tok2str",
+        "vlan_str",
+        "pcp_str",
+        "etheraddr_string",
+        "of10_vendor_action_print"
+      ]
+    },
+    "of10_features_reply_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1462,
+      "callees": [
+        "of10_bitmap_print",
+        "of10_phy_ports_print"
+      ]
+    },
+    "of10_flow_mod_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1500,
+      "callees": [
+        "of10_match_print",
+        "tok2str",
+        "of10_bitmap_print",
+        "of10_actions_print"
+      ]
+    },
+    "of10_port_mod_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1558,
+      "callees": [
+        "tok2str",
+        "etheraddr_string",
+        "of10_bitmap_print"
+      ]
+    },
+    "of10_stats_request_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1595,
+      "callees": [
+        "tok2str",
+        "of10_match_print",
+        "of10_vendor_data_print"
+      ]
+    },
+    "of10_desc_stats_reply_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1679,
+      "callees": [
+        "fn_print"
+      ]
+    },
+    "of10_flow_stats_reply_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1726,
+      "callees": [
+        "tok2str",
+        "of10_match_print",
+        "of10_actions_print"
+      ]
+    },
+    "of10_aggregate_stats_reply_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1807,
+      "callees": []
+    },
+    "of10_table_stats_reply_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1840,
+      "callees": [
+        "tok2str",
+        "fn_print",
+        "of10_bitmap_print"
+      ]
+    },
+    "of10_port_stats_reply_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1899,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "of10_queue_stats_reply_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 1984,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "of10_stats_reply_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 2032,
+      "callees": [
+        "tok2str",
+        "of10_bitmap_print"
+      ]
+    },
+    "of10_packet_out_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 2072,
+      "callees": [
+        "tok2str",
+        "of10_actions_print",
+        "of10_packet_data_print"
+      ]
+    },
+    "of10_packet_in_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 2110,
+      "callees": [
+        "tok2str",
+        "of10_packet_data_print"
+      ]
+    },
+    "of10_flow_removed_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 2143,
+      "callees": [
+        "of10_match_print",
+        "tok2str"
+      ]
+    },
+    "of10_error_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 2197,
+      "callees": [
+        "tok2str",
+        "of10_data_print"
+      ]
+    },
+    "of10_header_body_print": {
+      "file": "print-openflow-1.0.c",
+      "line": 2229,
+      "callees": [
+        "tok2str",
+        "of10_port_mod_print",
+        "of10_flow_removed_print",
+        "of10_phy_ports_print",
+        "of10_features_reply_print",
+        "of10_data_print",
+        "of10_error_print",
+        "of10_vendor_message_print",
+        "of10_packet_in_print",
+        "of10_stats_request_print",
+        "of10_stats_reply_print",
+        "of10_packet_out_print",
+        "of10_flow_mod_print",
+        "of10_queues_print"
+      ]
+    },
+    "of_vendor_name": {
+      "file": "print-openflow.c",
+      "line": 32,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "of_header_print": {
+      "file": "print-openflow.c",
+      "line": 39,
+      "callees": []
+    },
+    "of_header_body_print": {
+      "file": "print-openflow.c",
+      "line": 48,
+      "callees": [
+        "of_header_print",
+        "of10_header_body_print"
+      ]
+    },
+    "openflow_print": {
+      "file": "print-openflow.c",
+      "line": 98,
+      "callees": [
+        "of_header_body_print"
+      ]
+    },
+    "ospf_print_grace_lsa": {
+      "file": "print-ospf.c",
+      "line": 162,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "ospf_print_te_lsa": {
+      "file": "print-ospf.c",
+      "line": 245,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "print_unknown_data"
+      ]
+    },
+    "ospf_print_lshdr": {
+      "file": "print-ospf.c",
+      "line": 491,
+      "callees": [
+        "tok2str",
+        "bittok2str"
+      ]
+    },
+    "ospf_print_tos_metrics": {
+      "file": "print-ospf.c",
+      "line": 557,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "ospf_print_lsa": {
+      "file": "print-ospf.c",
+      "line": 585,
+      "callees": [
+        "ospf_print_lshdr",
+        "bittok2str",
+        "ospf_print_tos_metrics",
+        "tok2str",
+        "print_unknown_data",
+        "ospf_print_grace_lsa",
+        "ospf_print_te_lsa"
+      ]
+    },
+    "ospf_decode_lls": {
+      "file": "print-ospf.c",
+      "line": 858,
+      "callees": [
+        "tok2str",
+        "bittok2str"
+      ]
+    },
+    "ospf_decode_v2": {
+      "file": "print-ospf.c",
+      "line": 950,
+      "callees": [
+        "bittok2str",
+        "ospf_print_lshdr",
+        "tok2str",
+        "ospf_print_lsa"
+      ]
+    },
+    "ospf_print": {
+      "file": "print-ospf.c",
+      "line": 1077,
+      "callees": [
+        "tok2str",
+        "safeputs",
+        "ospf_decode_v2",
+        "ospf_decode_lls"
+      ]
+    },
+    "ospf6_print_ls_type": {
+      "file": "print-ospf6.c",
+      "line": 348,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "ospf6_print_lshdr": {
+      "file": "print-ospf6.c",
+      "line": 360,
+      "callees": [
+        "ospf6_print_ls_type"
+      ]
+    },
+    "ospf6_print_lsaprefix": {
+      "file": "print-ospf6.c",
+      "line": 382,
+      "callees": [
+        "bittok2str"
+      ]
+    },
+    "ospf6_print_lsa": {
+      "file": "print-ospf6.c",
+      "line": 421,
+      "callees": [
+        "ospf6_print_lshdr",
+        "bittok2str",
+        "ospf6_print_lsaprefix",
+        "ospf6_print_ls_type",
+        "ospf_print_grace_lsa",
+        "ospf_print_te_lsa",
+        "print_unknown_data"
+      ]
+    },
+    "ospf6_decode_v3": {
+      "file": "print-ospf6.c",
+      "line": 690,
+      "callees": [
+        "bittok2str",
+        "ospf6_print_lshdr",
+        "ospf6_print_ls_type",
+        "ospf6_print_lsa"
+      ]
+    },
+    "ospf6_print_lls": {
+      "file": "print-ospf6.c",
+      "line": 813,
+      "callees": []
+    },
+    "ospf6_decode_at": {
+      "file": "print-ospf6.c",
+      "line": 844,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "ospf6_decode_v3_trailer": {
+      "file": "print-ospf6.c",
+      "line": 891,
+      "callees": [
+        "ospf6_print_lls",
+        "ospf6_decode_at"
+      ]
+    },
+    "ospf6_print": {
+      "file": "print-ospf6.c",
+      "line": 918,
+      "callees": [
+        "tok2str",
+        "ospf6_decode_v3",
+        "ospf6_decode_v3_trailer"
+      ]
+    },
+    "otv_print": {
+      "file": "print-otv.c",
+      "line": 18,
+      "callees": [
+        "ether_print"
+      ]
+    },
+    "pflog_print": {
+      "file": "print-pflog.c",
+      "line": 69,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "pflog_if_print": {
+      "file": "print-pflog.c",
+      "line": 88,
+      "callees": [
+        "pflog_print",
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "pgm_print": {
+      "file": "print-pgm.c",
+      "line": 130,
+      "callees": [
+        "tcpport_string",
+        "addrtostr",
+        "addrtostr6",
+        "zmtp1_print_datagram"
+      ]
+    },
+    "pimv1_join_prune_print": {
+      "file": "print-pim.c",
+      "line": 116,
+      "callees": [
+        "unsigned_relts_print"
+      ]
+    },
+    "pimv1_print": {
+      "file": "print-pim.c",
+      "line": 221,
+      "callees": [
+        "tok2str",
+        "unsigned_relts_print",
+        "pimv1_join_prune_print"
+      ]
+    },
+    "cisco_autorp_print": {
+      "file": "print-pim.c",
+      "line": 310,
+      "callees": [
+        "unsigned_relts_print"
+      ]
+    },
+    "pim_print": {
+      "file": "print-pim.c",
+      "line": 410,
+      "callees": [
+        "tok2str",
+        "pimv2_print"
+      ]
+    },
+    "pimv2_addr_print": {
+      "file": "print-pim.c",
+      "line": 457,
+      "callees": []
+    },
+    "pimv2_check_checksum": {
+      "file": "print-pim.c",
+      "line": 562,
+      "callees": [
+        "in_cksum",
+        "nextproto6_cksum"
+      ]
+    },
+    "pimv2_print": {
+      "file": "print-pim.c",
+      "line": 592,
+      "callees": [
+        "pimv2_check_checksum",
+        "tok2str",
+        "unsigned_relts_print",
+        "pimv2_addr_print",
+        "print_unknown_data",
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "pktap_header_print": {
+      "file": "print-pktap.c",
+      "line": 39,
+      "callees": []
+    },
+    "pktap_if_print": {
+      "file": "print-pktap.c",
+      "line": 62,
+      "callees": [
+        "pktap_header_print",
+        "lookup_printer"
+      ]
+    },
+    "ppi_header_print": {
+      "file": "print-ppi.c",
+      "line": 25,
+      "callees": []
+    },
+    "ppi_print": {
+      "file": "print-ppi.c",
+      "line": 50,
+      "callees": [
+        "ppi_header_print",
+        "lookup_printer"
+      ]
+    },
+    "ppi_if_print": {
+      "file": "print-ppi.c",
+      "line": 105,
+      "callees": [
+        "ppi_print"
+      ]
+    },
+    "handle_ctrl_proto": {
+      "file": "print-ppp.c",
+      "line": 382,
+      "callees": [
+        "tok2str",
+        "print_unknown_data",
+        "fn_printn"
+      ]
+    },
+    "print_lcp_config_options": {
+      "file": "print-ppp.c",
+      "line": 544,
+      "callees": [
+        "tok2str",
+        "print_unknown_data",
+        "etheraddr_string"
+      ]
+    },
+    "handle_mlppp": {
+      "file": "print-ppp.c",
+      "line": 768,
+      "callees": [
+        "bittok2str"
+      ]
+    },
+    "handle_chap": {
+      "file": "print-ppp.c",
+      "line": 791,
+      "callees": [
+        "tok2str",
+        "safeputchar"
+      ]
+    },
+    "handle_pap": {
+      "file": "print-ppp.c",
+      "line": 865,
+      "callees": [
+        "tok2str",
+        "safeputchar"
+      ]
+    },
+    "handle_bap": {
+      "file": "print-ppp.c",
+      "line": 966,
+      "callees": []
+    },
+    "print_ipcp_config_options": {
+      "file": "print-ppp.c",
+      "line": 975,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "print_ip6cp_config_options": {
+      "file": "print-ppp.c",
+      "line": 1109,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "print_ccp_config_options": {
+      "file": "print-ppp.c",
+      "line": 1166,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "print_bacp_config_options": {
+      "file": "print-ppp.c",
+      "line": 1258,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "ppp_hdlc": {
+      "file": "print-ppp.c",
+      "line": 1309,
+      "callees": [
+        "ip_print",
+        "ip6_print",
+        "handle_ppp"
+      ]
+    },
+    "handle_ppp": {
+      "file": "print-ppp.c",
+      "line": 1386,
+      "callees": [
+        "ppp_hdlc",
+        "handle_ctrl_proto",
+        "handle_mlppp",
+        "handle_chap",
+        "handle_pap",
+        "handle_bap",
+        "ip_print",
+        "ip6_print",
+        "ipx_print",
+        "isoclns_print",
+        "mpls_print",
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "ppp_print": {
+      "file": "print-ppp.c",
+      "line": 1448,
+      "callees": [
+        "tok2str",
+        "handle_ppp"
+      ]
+    },
+    "ppp_if_print": {
+      "file": "print-ppp.c",
+      "line": 1516,
+      "callees": [
+        "ppp_print"
+      ]
+    },
+    "ppp_hdlc_if_print": {
+      "file": "print-ppp.c",
+      "line": 1540,
+      "callees": [
+        "tok2str",
+        "handle_ppp",
+        "chdlc_if_print"
+      ]
+    },
+    "ppp_bsdos_if_print": {
+      "file": "print-ppp.c",
+      "line": 1603,
+      "callees": [
+        "tok2str",
+        "vjc_print",
+        "ip_print",
+        "ip6_print",
+        "mpls_print"
+      ]
+    },
+    "pppoe_if_print": {
+      "file": "print-pppoe.c",
+      "line": 66,
+      "callees": [
+        "pppoe_print"
+      ]
+    },
+    "pppoe_print": {
+      "file": "print-pppoe.c",
+      "line": 72,
+      "callees": [
+        "tok2str",
+        "ppp_print"
+      ]
+    },
+    "pptp_bearer_cap_print": {
+      "file": "print-pptp.c",
+      "line": 218,
+      "callees": []
+    },
+    "pptp_bearer_type_print": {
+      "file": "print-pptp.c",
+      "line": 234,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "pptp_call_id_print": {
+      "file": "print-pptp.c",
+      "line": 242,
+      "callees": []
+    },
+    "pptp_call_ser_print": {
+      "file": "print-pptp.c",
+      "line": 249,
+      "callees": []
+    },
+    "pptp_cause_code_print": {
+      "file": "print-pptp.c",
+      "line": 256,
+      "callees": []
+    },
+    "pptp_conn_speed_print": {
+      "file": "print-pptp.c",
+      "line": 263,
+      "callees": []
+    },
+    "pptp_err_code_print": {
+      "file": "print-pptp.c",
+      "line": 281,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "pptp_firm_rev_print": {
+      "file": "print-pptp.c",
+      "line": 292,
+      "callees": []
+    },
+    "pptp_framing_cap_print": {
+      "file": "print-pptp.c",
+      "line": 299,
+      "callees": []
+    },
+    "pptp_framing_type_print": {
+      "file": "print-pptp.c",
+      "line": 320,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "pptp_hostname_print": {
+      "file": "print-pptp.c",
+      "line": 328,
+      "callees": []
+    },
+    "pptp_id_print": {
+      "file": "print-pptp.c",
+      "line": 335,
+      "callees": []
+    },
+    "pptp_max_channel_print": {
+      "file": "print-pptp.c",
+      "line": 342,
+      "callees": []
+    },
+    "pptp_peer_call_id_print": {
+      "file": "print-pptp.c",
+      "line": 349,
+      "callees": []
+    },
+    "pptp_phy_chan_id_print": {
+      "file": "print-pptp.c",
+      "line": 356,
+      "callees": []
+    },
+    "pptp_pkt_proc_delay_print": {
+      "file": "print-pptp.c",
+      "line": 363,
+      "callees": []
+    },
+    "pptp_proto_ver_print": {
+      "file": "print-pptp.c",
+      "line": 370,
+      "callees": []
+    },
+    "pptp_recv_winsiz_print": {
+      "file": "print-pptp.c",
+      "line": 379,
+      "callees": []
+    },
+    "pptp_result_code_print": {
+      "file": "print-pptp.c",
+      "line": 427,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "pptp_subaddr_print": {
+      "file": "print-pptp.c",
+      "line": 447,
+      "callees": []
+    },
+    "pptp_vendor_print": {
+      "file": "print-pptp.c",
+      "line": 454,
+      "callees": []
+    },
+    "pptp_sccrq_print": {
+      "file": "print-pptp.c",
+      "line": 464,
+      "callees": [
+        "pptp_proto_ver_print",
+        "pptp_framing_cap_print",
+        "pptp_bearer_cap_print",
+        "pptp_max_channel_print",
+        "pptp_firm_rev_print",
+        "pptp_hostname_print",
+        "pptp_vendor_print"
+      ]
+    },
+    "pptp_sccrp_print": {
+      "file": "print-pptp.c",
+      "line": 492,
+      "callees": [
+        "pptp_proto_ver_print",
+        "pptp_result_code_print",
+        "pptp_err_code_print",
+        "pptp_framing_cap_print",
+        "pptp_bearer_cap_print",
+        "pptp_max_channel_print",
+        "pptp_firm_rev_print",
+        "pptp_hostname_print",
+        "pptp_vendor_print"
+      ]
+    },
+    "pptp_stopccrq_print": {
+      "file": "print-pptp.c",
+      "line": 523,
+      "callees": []
+    },
+    "pptp_stopccrp_print": {
+      "file": "print-pptp.c",
+      "line": 557,
+      "callees": [
+        "pptp_result_code_print",
+        "pptp_err_code_print"
+      ]
+    },
+    "pptp_echorq_print": {
+      "file": "print-pptp.c",
+      "line": 575,
+      "callees": [
+        "pptp_id_print"
+      ]
+    },
+    "pptp_echorp_print": {
+      "file": "print-pptp.c",
+      "line": 590,
+      "callees": [
+        "pptp_id_print",
+        "pptp_result_code_print",
+        "pptp_err_code_print"
+      ]
+    },
+    "pptp_ocrq_print": {
+      "file": "print-pptp.c",
+      "line": 610,
+      "callees": [
+        "pptp_call_id_print",
+        "pptp_call_ser_print",
+        "pptp_bearer_type_print",
+        "pptp_framing_type_print",
+        "pptp_recv_winsiz_print",
+        "pptp_pkt_proc_delay_print",
+        "pptp_subaddr_print"
+      ]
+    },
+    "pptp_ocrp_print": {
+      "file": "print-pptp.c",
+      "line": 646,
+      "callees": [
+        "pptp_call_id_print",
+        "pptp_peer_call_id_print",
+        "pptp_result_code_print",
+        "pptp_err_code_print",
+        "pptp_cause_code_print",
+        "pptp_conn_speed_print",
+        "pptp_recv_winsiz_print",
+        "pptp_pkt_proc_delay_print",
+        "pptp_phy_chan_id_print"
+      ]
+    },
+    "pptp_icrq_print": {
+      "file": "print-pptp.c",
+      "line": 677,
+      "callees": [
+        "pptp_call_id_print",
+        "pptp_call_ser_print",
+        "pptp_bearer_type_print",
+        "pptp_phy_chan_id_print",
+        "pptp_subaddr_print"
+      ]
+    },
+    "pptp_icrp_print": {
+      "file": "print-pptp.c",
+      "line": 708,
+      "callees": [
+        "pptp_call_id_print",
+        "pptp_peer_call_id_print",
+        "pptp_result_code_print",
+        "pptp_err_code_print",
+        "pptp_recv_winsiz_print",
+        "pptp_pkt_proc_delay_print"
+      ]
+    },
+    "pptp_iccn_print": {
+      "file": "print-pptp.c",
+      "line": 734,
+      "callees": [
+        "pptp_peer_call_id_print",
+        "pptp_conn_speed_print",
+        "pptp_recv_winsiz_print",
+        "pptp_pkt_proc_delay_print",
+        "pptp_framing_type_print"
+      ]
+    },
+    "pptp_ccrq_print": {
+      "file": "print-pptp.c",
+      "line": 758,
+      "callees": [
+        "pptp_call_id_print"
+      ]
+    },
+    "pptp_cdn_print": {
+      "file": "print-pptp.c",
+      "line": 774,
+      "callees": [
+        "pptp_call_id_print",
+        "pptp_result_code_print",
+        "pptp_err_code_print",
+        "pptp_cause_code_print"
+      ]
+    },
+    "pptp_wen_print": {
+      "file": "print-pptp.c",
+      "line": 798,
+      "callees": [
+        "pptp_peer_call_id_print"
+      ]
+    },
+    "pptp_sli_print": {
+      "file": "print-pptp.c",
+      "line": 826,
+      "callees": [
+        "pptp_peer_call_id_print"
+      ]
+    },
+    "pptp_print": {
+      "file": "print-pptp.c",
+      "line": 846,
+      "callees": [
+        "pptp_sccrq_print",
+        "pptp_sccrp_print",
+        "pptp_stopccrq_print",
+        "pptp_stopccrp_print",
+        "pptp_echorq_print",
+        "pptp_echorp_print",
+        "pptp_ocrq_print",
+        "pptp_ocrp_print",
+        "pptp_icrq_print",
+        "pptp_icrp_print",
+        "pptp_iccn_print",
+        "pptp_ccrq_print",
+        "pptp_cdn_print",
+        "pptp_wen_print",
+        "pptp_sli_print"
+      ]
+    },
+    "print_attr_string": {
+      "file": "print-radius.c",
+      "line": 436,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_vendor_attr": {
+      "file": "print-radius.c",
+      "line": 498,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_attr_num": {
+      "file": "print-radius.c",
+      "line": 563,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_attr_address": {
+      "file": "print-radius.c",
+      "line": 686,
+      "callees": []
+    },
+    "print_attr_time": {
+      "file": "print-radius.c",
+      "line": 730,
+      "callees": []
+    },
+    "print_attr_strange": {
+      "file": "print-radius.c",
+      "line": 763,
+      "callees": []
+    },
+    "radius_attrs_print": {
+      "file": "print-radius.c",
+      "line": 834,
+      "callees": [
+        "print_unknown_data"
+      ]
+    },
+    "radius_print": {
+      "file": "print-radius.c",
+      "line": 895,
+      "callees": [
+        "tok2str",
+        "radius_attrs_print"
+      ]
+    },
+    "raw_if_print": {
+      "file": "print-raw.c",
+      "line": 15,
+      "callees": [
+        "ipN_print"
+      ]
+    },
+    "resp_print": {
+      "file": "print-resp.c",
+      "line": 132,
+      "callees": [
+        "resp_parse"
+      ]
+    },
+    "resp_parse": {
+      "file": "print-resp.c",
+      "line": 155,
+      "callees": [
+        "resp_print_simple_string",
+        "resp_print_integer",
+        "resp_print_error",
+        "resp_print_bulk_string",
+        "resp_print_bulk_array",
+        "resp_print_inline"
+      ]
+    },
+    "resp_print_simple_string": {
+      "file": "print-resp.c",
+      "line": 182,
+      "callees": [
+        "resp_print_string_error_integer"
+      ]
+    },
+    "resp_print_integer": {
+      "file": "print-resp.c",
+      "line": 187,
+      "callees": [
+        "resp_print_string_error_integer"
+      ]
+    },
+    "resp_print_error": {
+      "file": "print-resp.c",
+      "line": 192,
+      "callees": [
+        "resp_print_string_error_integer"
+      ]
+    },
+    "resp_print_string_error_integer": {
+      "file": "print-resp.c",
+      "line": 197,
+      "callees": []
+    },
+    "resp_print_bulk_string": {
+      "file": "print-resp.c",
+      "line": 220,
+      "callees": []
+    },
+    "resp_print_bulk_array": {
+      "file": "print-resp.c",
+      "line": 262,
+      "callees": [
+        "resp_parse"
+      ]
+    },
+    "resp_print_inline": {
+      "file": "print-resp.c",
+      "line": 301,
+      "callees": []
+    },
+    "resp_get_length": {
+      "file": "print-resp.c",
+      "line": 330,
+      "callees": []
+    },
+    "rip_entry_print_v1": {
+      "file": "print-rip.c",
+      "line": 58,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "rip_entry_print_v2": {
+      "file": "print-rip.c",
+      "line": 89,
+      "callees": [
+        "print_unknown_data",
+        "tok2str",
+        "mask2plen"
+      ]
+    },
+    "rip_print": {
+      "file": "print-rip.c",
+      "line": 139,
+      "callees": [
+        "print_unknown_data",
+        "tok2str",
+        "rip_entry_print_v1",
+        "rip_entry_print_v2"
+      ]
+    },
+    "IN6_IS_ADDR_UNSPECIFIED": {
+      "file": "print-ripng.c",
+      "line": 43,
+      "callees": []
+    },
+    "rip6_entry_print": {
+      "file": "print-ripng.c",
+      "line": 50,
+      "callees": []
+    },
+    "ripng_print": {
+      "file": "print-ripng.c",
+      "line": 62,
+      "callees": [
+        "IN6_IS_ADDR_UNSPECIFIED",
+        "rip6_entry_print"
+      ]
+    },
+    "indent_string": {
+      "file": "print-rpki-rtr.c",
+      "line": 101,
+      "callees": []
+    },
+    "rpki_rtr_pdu_print": {
+      "file": "print-rpki-rtr.c",
+      "line": 138,
+      "callees": [
+        "indent_string",
+        "tok2str",
+        "fn_printn",
+        "print_unknown_data"
+      ]
+    },
+    "rpki_rtr_print": {
+      "file": "print-rpki-rtr.c",
+      "line": 317,
+      "callees": [
+        "rpki_rtr_pdu_print"
+      ]
+    },
+    "rrcp_print": {
+      "file": "print-rrcp.c",
+      "line": 50,
+      "callees": [
+        "tok2str",
+        "etheraddr_string"
+      ]
+    },
+    "rsvp_intserv_print": {
+      "file": "print-rsvp.c",
+      "line": 444,
+      "callees": [
+        "tok2str",
+        "print_unknown_data"
+      ]
+    },
+    "rsvp_clear_checksum": {
+      "file": "print-rsvp.c",
+      "line": 556,
+      "callees": []
+    },
+    "rsvp_obj_print": {
+      "file": "print-rsvp.c",
+      "line": 565,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "safeputchar",
+        "rsvp_intserv_print",
+        "print_unknown_data",
+        "signature_verify"
+      ]
+    },
+    "rsvp_print": {
+      "file": "print-rsvp.c",
+      "line": 1736,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "rsvp_obj_print",
+        "print_unknown_data"
+      ]
+    },
+    "rt6_print": {
+      "file": "print-rt6.c",
+      "line": 19,
+      "callees": []
+    },
+    "rtsp_print": {
+      "file": "print-rtsp.c",
+      "line": 32,
+      "callees": [
+        "txtproto_print"
+      ]
+    },
+    "rx_print": {
+      "file": "print-rx.c",
+      "line": 483,
+      "callees": [
+        "tok2str",
+        "rx_cache_insert",
+        "fs_print",
+        "cb_print",
+        "prot_print",
+        "vldb_print",
+        "kauth_print",
+        "vol_print",
+        "bos_print",
+        "rx_cache_find",
+        "fs_reply_print",
+        "cb_reply_print",
+        "prot_reply_print",
+        "vldb_reply_print",
+        "kauth_reply_print",
+        "vol_reply_print",
+        "bos_reply_print",
+        "rx_ack_print"
+      ]
+    },
+    "rx_cache_insert": {
+      "file": "print-rx.c",
+      "line": 616,
+      "callees": []
+    },
+    "rx_cache_find": {
+      "file": "print-rx.c",
+      "line": 641,
+      "callees": []
+    },
+    "fs_print": {
+      "file": "print-rx.c",
+      "line": 811,
+      "callees": [
+        "tok2str",
+        "acl_print"
+      ]
+    },
+    "fs_reply_print": {
+      "file": "print-rx.c",
+      "line": 974,
+      "callees": [
+        "tok2str",
+        "acl_print"
+      ]
+    },
+    "acl_print": {
+      "file": "print-rx.c",
+      "line": 1043,
+      "callees": [
+        "fn_print"
+      ]
+    },
+    "cb_print": {
+      "file": "print-rx.c",
+      "line": 1112,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "cb_reply_print": {
+      "file": "print-rx.c",
+      "line": 1188,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "prot_print": {
+      "file": "print-rx.c",
+      "line": 1229,
+      "callees": [
+        "is_ubik",
+        "ubik_print",
+        "tok2str"
+      ]
+    },
+    "prot_reply_print": {
+      "file": "print-rx.c",
+      "line": 1361,
+      "callees": [
+        "is_ubik",
+        "ubik_reply_print",
+        "tok2str"
+      ]
+    },
+    "vldb_print": {
+      "file": "print-rx.c",
+      "line": 1459,
+      "callees": [
+        "is_ubik",
+        "ubik_print",
+        "tok2str"
+      ]
+    },
+    "vldb_reply_print": {
+      "file": "print-rx.c",
+      "line": 1546,
+      "callees": [
+        "is_ubik",
+        "ubik_reply_print",
+        "tok2str",
+        "intoa"
+      ]
+    },
+    "kauth_print": {
+      "file": "print-rx.c",
+      "line": 1724,
+      "callees": [
+        "is_ubik",
+        "ubik_print",
+        "tok2str"
+      ]
+    },
+    "kauth_reply_print": {
+      "file": "print-rx.c",
+      "line": 1811,
+      "callees": [
+        "is_ubik",
+        "ubik_reply_print",
+        "tok2str"
+      ]
+    },
+    "vol_print": {
+      "file": "print-rx.c",
+      "line": 1854,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "vol_reply_print": {
+      "file": "print-rx.c",
+      "line": 2051,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "bos_print": {
+      "file": "print-rx.c",
+      "line": 2177,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "bos_reply_print": {
+      "file": "print-rx.c",
+      "line": 2262,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "is_ubik": {
+      "file": "print-rx.c",
+      "line": 2298,
+      "callees": []
+    },
+    "ubik_print": {
+      "file": "print-rx.c",
+      "line": 2310,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "ubik_reply_print": {
+      "file": "print-rx.c",
+      "line": 2415,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "rx_ack_print": {
+      "file": "print-rx.c",
+      "line": 2468,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "isForCES_port": {
+      "file": "print-sctp.c",
+      "line": 379,
+      "callees": []
+    },
+    "sctp_print": {
+      "file": "print-sctp.c",
+      "line": 391,
+      "callees": [
+        "isForCES_port",
+        "tok2str",
+        "forces_print",
+        "m3ua_print"
+      ]
+    },
+    "print_sflow_counter_generic": {
+      "file": "print-sflow.c",
+      "line": 261,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_sflow_counter_ethernet": {
+      "file": "print-sflow.c",
+      "line": 310,
+      "callees": []
+    },
+    "print_sflow_counter_token_ring": {
+      "file": "print-sflow.c",
+      "line": 344,
+      "callees": []
+    },
+    "print_sflow_counter_basevg": {
+      "file": "print-sflow.c",
+      "line": 351,
+      "callees": []
+    },
+    "print_sflow_counter_vlan": {
+      "file": "print-sflow.c",
+      "line": 391,
+      "callees": []
+    },
+    "print_sflow_counter_processor": {
+      "file": "print-sflow.c",
+      "line": 425,
+      "callees": []
+    },
+    "sflow_print_counter_records": {
+      "file": "print-sflow.c",
+      "line": 450,
+      "callees": [
+        "tok2str",
+        "print_sflow_counter_generic",
+        "print_sflow_counter_ethernet",
+        "print_sflow_counter_token_ring",
+        "print_sflow_counter_basevg",
+        "print_sflow_counter_vlan",
+        "print_sflow_counter_processor",
+        "print_unknown_data"
+      ]
+    },
+    "sflow_print_counter_sample": {
+      "file": "print-sflow.c",
+      "line": 532,
+      "callees": [
+        "sflow_print_counter_records"
+      ]
+    },
+    "sflow_print_expanded_counter_sample": {
+      "file": "print-sflow.c",
+      "line": 567,
+      "callees": [
+        "sflow_print_counter_records"
+      ]
+    },
+    "print_sflow_raw_packet": {
+      "file": "print-sflow.c",
+      "line": 597,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_sflow_ethernet_frame": {
+      "file": "print-sflow.c",
+      "line": 623,
+      "callees": []
+    },
+    "print_sflow_extended_switch_data": {
+      "file": "print-sflow.c",
+      "line": 645,
+      "callees": []
+    },
+    "sflow_print_flow_records": {
+      "file": "print-sflow.c",
+      "line": 668,
+      "callees": [
+        "tok2str",
+        "print_sflow_raw_packet",
+        "print_sflow_extended_switch_data",
+        "print_sflow_ethernet_frame",
+        "print_unknown_data"
+      ]
+    },
+    "sflow_print_flow_sample": {
+      "file": "print-sflow.c",
+      "line": 757,
+      "callees": [
+        "sflow_print_flow_records"
+      ]
+    },
+    "sflow_print_expanded_flow_sample": {
+      "file": "print-sflow.c",
+      "line": 797,
+      "callees": [
+        "sflow_print_flow_records"
+      ]
+    },
+    "sflow_print": {
+      "file": "print-sflow.c",
+      "line": 829,
+      "callees": [
+        "tok2str",
+        "sflow_print_flow_sample",
+        "sflow_print_counter_sample",
+        "sflow_print_expanded_flow_sample",
+        "sflow_print_expanded_counter_sample",
+        "print_unknown_data"
+      ]
+    },
+    "sip_print": {
+      "file": "print-sip.c",
+      "line": 35,
+      "callees": [
+        "txtproto_print"
+      ]
+    },
+    "sl_if_print": {
+      "file": "print-sl.c",
+      "line": 36,
+      "callees": [
+        "sliplink_print",
+        "ip_print",
+        "ip6_print"
+      ]
+    },
+    "sl_bsdos_if_print": {
+      "file": "print-sl.c",
+      "line": 76,
+      "callees": [
+        "sliplink_print",
+        "ip_print"
+      ]
+    },
+    "sliplink_print": {
+      "file": "print-sl.c",
+      "line": 103,
+      "callees": [
+        "compressed_sl_print"
+      ]
+    },
+    "print_sl_change": {
+      "file": "print-sl.c",
+      "line": 169,
+      "callees": []
+    },
+    "print_sl_winchange": {
+      "file": "print-sl.c",
+      "line": 183,
+      "callees": []
+    },
+    "compressed_sl_print": {
+      "file": "print-sl.c",
+      "line": 200,
+      "callees": [
+        "print_sl_change",
+        "print_sl_winchange"
+      ]
+    },
+    "sll_print": {
+      "file": "print-sll.c",
+      "line": 52,
+      "callees": [
+        "tok2str",
+        "etheraddr_string"
+      ]
+    },
+    "sll_if_print": {
+      "file": "print-sll.c",
+      "line": 96,
+      "callees": [
+        "sll_print",
+        "ipx_print",
+        "llc_print",
+        "ieee8021q_tci_string",
+        "tok2str",
+        "ethertype_print"
+      ]
+    },
+    "slow_print": {
+      "file": "print-slow.c",
+      "line": 226,
+      "callees": [
+        "tok2str",
+        "print_unknown_data",
+        "slow_oam_print",
+        "slow_marker_lacp_print"
+      ]
+    },
+    "slow_marker_lacp_print": {
+      "file": "print-slow.c",
+      "line": 328,
+      "callees": [
+        "tok2str",
+        "etheraddr_string",
+        "bittok2str",
+        "print_unknown_data"
+      ]
+    },
+    "slow_oam_print": {
+      "file": "print-slow.c",
+      "line": 466,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "print_unknown_data"
+      ]
+    },
+    "smbfind": {
+      "file": "print-smb.c",
+      "line": 60,
+      "callees": []
+    },
+    "smbfindint": {
+      "file": "print-smb.c",
+      "line": 72,
+      "callees": []
+    },
+    "trans2_findfirst": {
+      "file": "print-smb.c",
+      "line": 84,
+      "callees": [
+        "smb_fdata",
+        "smb_print_data"
+      ]
+    },
+    "trans2_qfsinfo": {
+      "file": "print-smb.c",
+      "line": 102,
+      "callees": [
+        "smb_fdata",
+        "smb_print_data"
+      ]
+    },
+    "print_trans2": {
+      "file": "print-smb.c",
+      "line": 165,
+      "callees": [
+        "smbfindint",
+        "smb_fdata"
+      ]
+    },
+    "print_browse": {
+      "file": "print-smb.c",
+      "line": 234,
+      "callees": [
+        "smb_fdata"
+      ]
+    },
+    "print_ipc": {
+      "file": "print-smb.c",
+      "line": 316,
+      "callees": [
+        "smb_fdata"
+      ]
+    },
+    "print_trans": {
+      "file": "print-smb.c",
+      "line": 328,
+      "callees": [
+        "smb_fdata",
+        "print_browse",
+        "print_ipc"
+      ]
+    },
+    "print_negprot": {
+      "file": "print-smb.c",
+      "line": 390,
+      "callees": [
+        "smb_fdata",
+        "smb_print_data"
+      ]
+    },
+    "print_sesssetup": {
+      "file": "print-smb.c",
+      "line": 431,
+      "callees": [
+        "smb_fdata",
+        "smb_print_data"
+      ]
+    },
+    "print_lockingandx": {
+      "file": "print-smb.c",
+      "line": 475,
+      "callees": [
+        "smb_fdata",
+        "smb_print_data"
+      ]
+    },
+    "print_smb": {
+      "file": "print-smb.c",
+      "line": 782,
+      "callees": [
+        "smbfind",
+        "smb_fdata",
+        "nt_errstr",
+        "smb_errstr",
+        "smb_print_data"
+      ]
+    },
+    "nbt_tcp_print": {
+      "file": "print-smb.c",
+      "line": 913,
+      "callees": [
+        "smb_fdata",
+        "print_smb"
+      ]
+    },
+    "nbt_udp137_print": {
+      "file": "print-smb.c",
+      "line": 1084,
+      "callees": [
+        "tok2str",
+        "smb_fdata",
+        "smb_print_data"
+      ]
+    },
+    "smb_tcp_print": {
+      "file": "print-smb.c",
+      "line": 1220,
+      "callees": [
+        "print_smb"
+      ]
+    },
+    "nbt_udp138_print": {
+      "file": "print-smb.c",
+      "line": 1261,
+      "callees": [
+        "smb_fdata",
+        "print_smb"
+      ]
+    },
+    "netbeui_print": {
+      "file": "print-smb.c",
+      "line": 1351,
+      "callees": [
+        "smb_fdata",
+        "print_smb"
+      ]
+    },
+    "ipx_netbios_print": {
+      "file": "print-smb.c",
+      "line": 1447,
+      "callees": [
+        "smb_fdata",
+        "print_smb"
+      ]
+    },
+    "smtp_print": {
+      "file": "print-smtp.c",
+      "line": 17,
+      "callees": [
+        "txtproto_print"
+      ]
+    },
+    "asn1_parse": {
+      "file": "print-snmp.c",
+      "line": 307,
+      "callees": []
+    },
+    "asn1_print_octets": {
+      "file": "print-snmp.c",
+      "line": 547,
+      "callees": []
+    },
+    "asn1_print_string": {
+      "file": "print-snmp.c",
+      "line": 564,
+      "callees": [
+        "fn_printn"
+      ]
+    },
+    "asn1_print": {
+      "file": "print-snmp.c",
+      "line": 598,
+      "callees": [
+        "asn1_print_octets",
+        "asn1_print_string"
+      ]
+    },
+    "asn1_decode": {
+      "file": "print-snmp.c",
+      "line": 722,
+      "callees": [
+        "asn1_parse",
+        "asn1_print"
+      ]
+    },
+    "smi_decode_oid": {
+      "file": "print-snmp.c",
+      "line": 769,
+      "callees": []
+    },
+    "smi_check_type": {
+      "file": "print-snmp.c",
+      "line": 807,
+      "callees": []
+    },
+    "smi_check_a_range": {
+      "file": "print-snmp.c",
+      "line": 820,
+      "callees": []
+    },
+    "smi_check_range": {
+      "file": "print-snmp.c",
+      "line": 870,
+      "callees": [
+        "smi_check_a_range"
+      ]
+    },
+    "smi_print_variable": {
+      "file": "print-snmp.c",
+      "line": 897,
+      "callees": [
+        "asn1_print",
+        "smi_decode_oid"
+      ]
+    },
+    "smi_print_value": {
+      "file": "print-snmp.c",
+      "line": 931,
+      "callees": [
+        "asn1_print",
+        "smi_check_type",
+        "smi_check_range",
+        "smi_decode_oid"
+      ]
+    },
+    "varbind_print": {
+      "file": "print-snmp.c",
+      "line": 1043,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "smi_print_variable",
+        "smi_print_value"
+      ]
+    },
+    "snmppdu_print": {
+      "file": "print-snmp.c",
+      "line": 1137,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "varbind_print"
+      ]
+    },
+    "trappdu_print": {
+      "file": "print-snmp.c",
+      "line": 1212,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "varbind_print"
+      ]
+    },
+    "pdu_print": {
+      "file": "print-snmp.c",
+      "line": 1301,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "trappdu_print",
+        "snmppdu_print"
+      ]
+    },
+    "scopedpdu_print": {
+      "file": "print-snmp.c",
+      "line": 1361,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "asn1_print_octets",
+        "asn1_print_string",
+        "pdu_print"
+      ]
+    },
+    "community_print": {
+      "file": "print-snmp.c",
+      "line": 1415,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "asn1_print_string",
+        "pdu_print"
+      ]
+    },
+    "usm_print": {
+      "file": "print-snmp.c",
+      "line": 1447,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "asn1_print_string"
+      ]
+    },
+    "v3msg_print": {
+      "file": "print-snmp.c",
+      "line": 1545,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "usm_print",
+        "scopedpdu_print"
+      ]
+    },
+    "snmp_print": {
+      "file": "print-snmp.c",
+      "line": 1680,
+      "callees": [
+        "asn1_parse",
+        "asn1_print",
+        "community_print",
+        "v3msg_print"
+      ]
+    },
+    "stp_print_bridge_id": {
+      "file": "print-stp.c",
+      "line": 81,
+      "callees": []
+    },
+    "stp_print_config_bpdu": {
+      "file": "print-stp.c",
+      "line": 93,
+      "callees": [
+        "bittok2str",
+        "stp_print_bridge_id",
+        "tok2str"
+      ]
+    },
+    "stp_print_mstp_bpdu": {
+      "file": "print-stp.c",
+      "line": 168,
+      "callees": [
+        "bittok2str",
+        "tok2str",
+        "stp_print_bridge_id",
+        "fn_printzp"
+      ]
+    },
+    "stp_print_spb_bpdu": {
+      "file": "print-stp.c",
+      "line": 274,
+      "callees": [
+        "fn_printzp"
+      ]
+    },
+    "stp_print": {
+      "file": "print-stp.c",
+      "line": 325,
+      "callees": [
+        "tok2str",
+        "stp_print_config_bpdu",
+        "stp_print_mstp_bpdu",
+        "stp_print_spb_bpdu"
+      ]
+    },
+    "sunatm_if_print": {
+      "file": "print-sunatm.c",
+      "line": 30,
+      "callees": [
+        "atm_print"
+      ]
+    },
+    "sunrpcrequest_print": {
+      "file": "print-sunrpc.c",
+      "line": 70,
+      "callees": [
+        "tok2str",
+        "progstr"
+      ]
+    },
+    "progstr": {
+      "file": "print-sunrpc.c",
+      "line": 132,
+      "callees": []
+    },
+    "symantec_hdr_print": {
+      "file": "print-symantec.c",
+      "line": 23,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "symantec_if_print": {
+      "file": "print-symantec.c",
+      "line": 50,
+      "callees": [
+        "symantec_hdr_print",
+        "ethertype_print"
+      ]
+    },
+    "syslog_print": {
+      "file": "print-syslog.c",
+      "line": 62,
+      "callees": [
+        "tok2str",
+        "safeputchar",
+        "print_unknown_data"
+      ]
+    },
+    "tcp_cksum": {
+      "file": "print-tcp.c",
+      "line": 118,
+      "callees": [
+        "nextproto4_cksum"
+      ]
+    },
+    "tcp6_cksum": {
+      "file": "print-tcp.c",
+      "line": 128,
+      "callees": [
+        "nextproto6_cksum"
+      ]
+    },
+    "tcp_print": {
+      "file": "print-tcp.c",
+      "line": 138,
+      "callees": [
+        "tcpport_string",
+        "bittok2str_nosep",
+        "tcp_cksum",
+        "in_cksum_shouldbe",
+        "tcp6_cksum",
+        "tok2str",
+        "tcp_verify_signature",
+        "mptcp_print",
+        "print_tcp_fastopen_option",
+        "print_tcp_rst_data",
+        "zmtp1_print",
+        "resp_print",
+        "telnet_print",
+        "smtp_print",
+        "bgp_print",
+        "pptp_print",
+        "nbt_tcp_print",
+        "smb_tcp_print",
+        "beep_print",
+        "openflow_print",
+        "ftp_print",
+        "http_print",
+        "rtsp_print",
+        "ns_print",
+        "msdp_print",
+        "rpki_rtr_print",
+        "ldp_print",
+        "nfsreq_print_noaddr",
+        "nfsreply_print_noaddr"
+      ]
+    },
+    "print_tcp_rst_data": {
+      "file": "print-tcp.c",
+      "line": 725,
+      "callees": [
+        "safeputchar"
+      ]
+    },
+    "print_tcp_fastopen_option": {
+      "file": "print-tcp.c",
+      "line": 744,
+      "callees": []
+    },
+    "tcp_verify_signature": {
+      "file": "print-tcp.c",
+      "line": 769,
+      "callees": []
+    },
+    "telnet_parse": {
+      "file": "print-telnet.c",
+      "line": 334,
+      "callees": []
+    },
+    "telnet_print": {
+      "file": "print-telnet.c",
+      "line": 453,
+      "callees": [
+        "telnet_parse",
+        "hex_print_with_offset"
+      ]
+    },
+    "tftp_print": {
+      "file": "print-tftp.c",
+      "line": 63,
+      "callees": [
+        "tok2str",
+        "fn_printztn"
+      ]
+    },
+    "timed_print": {
+      "file": "print-timed.c",
+      "line": 72,
+      "callees": [
+        "fn_print"
+      ]
+    },
+    "print_payload": {
+      "file": "print-tipc.c",
+      "line": 135,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_internal": {
+      "file": "print-tipc.c",
+      "line": 200,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "print_link_conf": {
+      "file": "print-tipc.c",
+      "line": 268,
+      "callees": [
+        "tok2str"
+      ]
+    },
+    "tipc_print": {
+      "file": "print-tipc.c",
+      "line": 314,
+      "callees": [
+        "print_payload",
+        "print_link_conf",
+        "print_internal"
+      ]
+    },
+    "extract_token_addrs": {
+      "file": "print-token.c",
+      "line": 47,
+      "callees": []
+    },
+    "token_hdr_print": {
+      "file": "print-token.c",
+      "line": 55,
+      "callees": [
+        "etheraddr_string"
+      ]
+    },
+    "token_print": {
+      "file": "print-token.c",
+      "line": 96,
+      "callees": [
+        "extract_token_addrs",
+        "token_hdr_print",
+        "llc_print"
+      ]
+    },
+    "token_if_print": {
+      "file": "print-token.c",
+      "line": 187,
+      "callees": [
+        "token_print"
+      ]
+    },
+    "udld_print": {
+      "file": "print-udld.c",
+      "line": 57,
+      "callees": [
+        "tok2str",
+        "bittok2str",
+        "fn_printzp",
+        "fn_printn"
+      ]
+    },
+    "vat_print": {
+      "file": "print-udp.c",
+      "line": 75,
+      "callees": []
+    },
+    "rtp_print": {
+      "file": "print-udp.c",
+      "line": 113,
+      "callees": []
+    },
+    "rtcp_print": {
+      "file": "print-udp.c",
+      "line": 195,
+      "callees": []
+    },
+    "udp_cksum": {
+      "file": "print-udp.c",
+      "line": 277,
+      "callees": [
+        "nextproto4_cksum"
+      ]
+    },
+    "udp6_cksum": {
+      "file": "print-udp.c",
+      "line": 285,
+      "callees": [
+        "nextproto6_cksum"
+      ]
+    },
+    "udpipaddr_print": {
+      "file": "print-udp.c",
+      "line": 292,
+      "callees": [
+        "udpport_string"
+      ]
+    },
+    "udp_print": {
+      "file": "print-udp.c",
+      "line": 345,
+      "callees": [
+        "udpipaddr_print",
+        "vat_print",
+        "wb_print",
+        "sunrpcrequest_print",
+        "nfsreply_print",
+        "rtp_print",
+        "rtcp_print",
+        "snmp_print",
+        "cnfp_print",
+        "tftp_print",
+        "aodv_print",
+        "radius_print",
+        "vxlan_print",
+        "pgm_print",
+        "lmp_print",
+        "nfsreq_print_noaddr",
+        "nfsreply_print_noaddr",
+        "udp_cksum",
+        "in_cksum_shouldbe",
+        "udp6_cksum",
+        "ns_print",
+        "timed_print",
+        "bootp_print",
+        "rip_print",
+        "isakmp_print",
+        "isakmp_rfc3948_print",
+        "ntp_print",
+        "krb_print",
+        "l2tp_print",
+        "nbt_udp137_print",
+        "nbt_udp138_print",
+        "zephyr_print",
+        "rx_print",
+        "ripng_print",
+        "dhcp6_print",
+        "ahcp_print",
+        "babel_print",
+        "hncp_print",
+        "cisco_autorp_print",
+        "hsrp_print",
+        "lwres_print",
+        "ldp_print",
+        "olsr_print",
+        "lspping_print",
+        "bfd_print",
+        "vqp_print",
+        "sflow_print",
+        "lwapp_control_print",
+        "lwapp_data_print",
+        "sip_print",
+        "syslog_print",
+        "otv_print",
+        "geneve_print",
+        "lisp_print",
+        "vxlan_gpe_print",
+        "llap_print"
+      ]
+    },
+    "get_direction": {
+      "file": "print-usb.c",
+      "line": 20,
+      "callees": []
+    },
+    "usb_header_print": {
+      "file": "print-usb.c",
+      "line": 64,
+      "callees": [
+        "get_direction"
+      ]
+    },
+    "usb_linux_48_byte_print": {
+      "file": "print-usb.c",
+      "line": 111,
+      "callees": [
+        "usb_header_print"
+      ]
+    },
+    "usb_linux_64_byte_print": {
+      "file": "print-usb.c",
+      "line": 127,
+      "callees": [
+        "usb_header_print"
+      ]
+    },
+    "vjc_print": {
+      "file": "print-vjc.c",
+      "line": 18,
+      "callees": []
+    },
+    "vqp_print": {
+      "file": "print-vqp.c",
+      "line": 75,
+      "callees": [
+        "tok2str",
+        "safeputs",
+        "etheraddr_string",
+        "print_unknown_data"
+      ]
+    },
+    "vrrp_print": {
+      "file": "print-vrrp.c",
+      "line": 39,
+      "callees": [
+        "tok2str",
+        "in_cksum",
+        "nextproto4_cksum",
+        "fn_printn"
+      ]
+    },
+    "vtp_print": {
+      "file": "print-vtp.c",
+      "line": 99,
+      "callees": [
+        "tok2str",
+        "fn_printzp",
+        "print_unknown_data"
+      ]
+    },
+    "vxlan_gpe_print": {
+      "file": "print-vxlan-gpe.c",
+      "line": 28,
+      "callees": [
+        "bittok2str_nosep",
+        "ip_print",
+        "ip6_print",
+        "ether_print",
+        "nsh_print",
+        "mpls_print"
+      ]
+    },
+    "vxlan_print": {
+      "file": "print-vxlan.c",
+      "line": 22,
+      "callees": [
+        "ether_print"
+      ]
+    },
+    "wb_id": {
+      "file": "print-wb.c",
+      "line": 141,
+      "callees": [
+        "fn_print"
+      ]
+    },
+    "wb_rreq": {
+      "file": "print-wb.c",
+      "line": 187,
+      "callees": []
+    },
+    "wb_preq": {
+      "file": "print-wb.c",
+      "line": 204,
+      "callees": []
+    },
+    "wb_prep": {
+      "file": "print-wb.c",
+      "line": 219,
+      "callees": []
+    },
+    "wb_dops": {
+      "file": "print-wb.c",
+      "line": 272,
+      "callees": []
+    },
+    "wb_rrep": {
+      "file": "print-wb.c",
+      "line": 309,
+      "callees": [
+        "wb_dops"
+      ]
+    },
+    "wb_drawop": {
+      "file": "print-wb.c",
+      "line": 334,
+      "callees": [
+        "wb_dops"
+      ]
+    },
+    "wb_print": {
+      "file": "print-wb.c",
+      "line": 357,
+      "callees": [
+        "wb_id",
+        "wb_rreq",
+        "wb_rrep",
+        "wb_drawop",
+        "wb_preq",
+        "wb_prep"
+      ]
+    },
+    "parse_field": {
+      "file": "print-zephyr.c",
+      "line": 65,
+      "callees": []
+    },
+    "z_triple": {
+      "file": "print-zephyr.c",
+      "line": 97,
+      "callees": []
+    },
+    "str_to_lower": {
+      "file": "print-zephyr.c",
+      "line": 107,
+      "callees": []
+    },
+    "zephyr_print": {
+      "file": "print-zephyr.c",
+      "line": 124,
+      "callees": [
+        "parse_field",
+        "tok2str",
+        "str_to_lower",
+        "z_triple"
+      ]
+    },
+    "zmtp1_print_frame": {
+      "file": "print-zeromq.c",
+      "line": 21,
+      "callees": [
+        "hex_and_ascii_print"
+      ]
+    },
+    "zmtp1_print": {
+      "file": "print-zeromq.c",
+      "line": 83,
+      "callees": [
+        "zmtp1_print_frame"
+      ]
+    },
+    "zmtp1_print_intermediate_part": {
+      "file": "print-zeromq.c",
+      "line": 95,
+      "callees": [
+        "hex_and_ascii_print"
+      ]
+    },
+    "zmtp1_print_datagram": {
+      "file": "print-zeromq.c",
+      "line": 138,
+      "callees": [
+        "zmtp1_print_intermediate_part",
+        "zmtp1_print_frame"
+      ]
+    },
+    "init_print": {
+      "file": "print.c",
+      "line": 215,
+      "callees": [
+        "init_addrtoname",
+        "init_checksum"
+      ]
+    },
+    "lookup_printer": {
+      "file": "print.c",
+      "line": 225,
+      "callees": []
+    },
+    "has_printer": {
+      "file": "print.c",
+      "line": 247,
+      "callees": [
+        "lookup_printer"
+      ]
+    },
+    "get_if_printer": {
+      "file": "print.c",
+      "line": 253,
+      "callees": [
+        "lookup_printer"
+      ]
+    },
+    "pretty_print_packet": {
+      "file": "print.c",
+      "line": 273,
+      "callees": [
+        "ts_print",
+        "hex_and_ascii_print",
+        "hex_print",
+        "ascii_print"
+      ]
+    },
+    "ndo_default_print": {
+      "file": "print.c",
+      "line": 329,
+      "callees": [
+        "hex_and_ascii_print"
+      ]
+    },
+    "ndo_error": {
+      "file": "print.c",
+      "line": 336,
+      "callees": [
+        "nd_cleanup"
+      ]
+    },
+    "ndo_warning": {
+      "file": "print.c",
+      "line": 357,
+      "callees": []
+    },
+    "ndo_printf": {
+      "file": "print.c",
+      "line": 375,
+      "callees": [
+        "ndo_error"
+      ]
+    },
+    "ndo_set_function_pointers": {
+      "file": "print.c",
+      "line": 390,
+      "callees": []
+    },
+    "signature_compute_hmac_md5": {
+      "file": "signature.c",
+      "line": 30,
+      "callees": []
+    },
+    "signature_verify": {
+      "file": "signature.c",
+      "line": 80,
+      "callees": [
+        "signature_compute_hmac_md5"
+      ]
+    },
+    "interpret_dos_date": {
+      "file": "smbutil.c",
+      "line": 21,
+      "callees": []
+    },
+    "int_unix_date": {
+      "file": "smbutil.c",
+      "line": 40,
+      "callees": [
+        "interpret_dos_date"
+      ]
+    },
+    "make_unix_date": {
+      "file": "smbutil.c",
+      "line": 57,
+      "callees": [
+        "int_unix_date"
+      ]
+    },
+    "make_unix_date2": {
+      "file": "smbutil.c",
+      "line": 68,
+      "callees": [
+        "int_unix_date"
+      ]
+    },
+    "interpret_long_date": {
+      "file": "smbutil.c",
+      "line": 79,
+      "callees": []
+    },
+    "name_interpret": {
+      "file": "smbutil.c",
+      "line": 103,
+      "callees": []
+    },
+    "name_ptr": {
+      "file": "smbutil.c",
+      "line": 142,
+      "callees": []
+    },
+    "name_extract": {
+      "file": "smbutil.c",
+      "line": 180,
+      "callees": [
+        "name_ptr",
+        "name_interpret"
+      ]
+    },
+    "name_len": {
+      "file": "smbutil.c",
+      "line": 193,
+      "callees": []
+    },
+    "print_asc": {
+      "file": "smbutil.c",
+      "line": 219,
+      "callees": [
+        "safeputchar"
+      ]
+    },
+    "name_type_str": {
+      "file": "smbutil.c",
+      "line": 228,
+      "callees": []
+    },
+    "smb_print_data": {
+      "file": "smbutil.c",
+      "line": 245,
+      "callees": [
+        "print_asc"
+      ]
+    },
+    "write_bits": {
+      "file": "smbutil.c",
+      "line": 294,
+      "callees": []
+    },
+    "unistr": {
+      "file": "smbutil.c",
+      "line": 312,
+      "callees": []
+    },
+    "smb_fdata1": {
+      "file": "smbutil.c",
+      "line": 399,
+      "callees": [
+        "write_bits",
+        "unistr",
+        "name_extract",
+        "name_len",
+        "name_type_str",
+        "make_unix_date",
+        "make_unix_date2",
+        "interpret_long_date"
+      ]
+    },
+    "smb_fdata": {
+      "file": "smbutil.c",
+      "line": 759,
+      "callees": [
+        "smb_fdata1",
+        "smb_print_data"
+      ]
+    },
+    "smb_errstr": {
+      "file": "smbutil.c",
+      "line": 949,
+      "callees": []
+    },
+    "nt_errstr": {
+      "file": "smbutil.c",
+      "line": 1837,
+      "callees": []
+    },
+    "strtoaddr": {
+      "file": "strtoaddr.c",
+      "line": 32,
+      "callees": []
+    },
+    "strtoaddr6": {
+      "file": "strtoaddr.c",
+      "line": 94,
+      "callees": [
+        "strtoaddr"
+      ]
+    },
+    "pcap_set_parser_debug": {
+      "file": "tcpdump.c",
+      "line": 195,
+      "callees": []
+    },
+    "error": {
+      "file": "tcpdump.c",
+      "line": 223,
+      "callees": [
+        "exit_tcpdump"
+      ]
+    },
+    "warning": {
+      "file": "tcpdump.c",
+      "line": 242,
+      "callees": []
+    },
+    "exit_tcpdump": {
+      "file": "tcpdump.c",
+      "line": 258,
+      "callees": [
+        "nd_cleanup"
+      ]
+    },
+    "show_tstamp_types_and_exit": {
+      "file": "tcpdump.c",
+      "line": 266,
+      "callees": [
+        "error",
+        "exit_tcpdump"
+      ]
+    },
+    "show_dlts_and_exit": {
+      "file": "tcpdump.c",
+      "line": 299,
+      "callees": [
+        "error",
+        "has_printer",
+        "exit_tcpdump"
+      ]
+    },
+    "show_devices_and_exit": {
+      "file": "tcpdump.c",
+      "line": 343,
+      "callees": [
+        "error",
+        "bittok2str",
+        "exit_tcpdump"
+      ]
+    },
+    "droproot": {
+      "file": "tcpdump.c",
+      "line": 461,
+      "callees": [
+        "exit_tcpdump"
+      ]
+    },
+    "getWflagChars": {
+      "file": "tcpdump.c",
+      "line": 525,
+      "callees": []
+    },
+    "MakeFilename": {
+      "file": "tcpdump.c",
+      "line": 540,
+      "callees": [
+        "error"
+      ]
+    },
+    "get_next_file": {
+      "file": "tcpdump.c",
+      "line": 571,
+      "callees": []
+    },
+    "tstamp_precision_from_string": {
+      "file": "tcpdump.c",
+      "line": 587,
+      "callees": []
+    },
+    "tstamp_precision_to_string": {
+      "file": "tcpdump.c",
+      "line": 599,
+      "callees": []
+    },
+    "set_dumper_capsicum_rights": {
+      "file": "tcpdump.c",
+      "line": 618,
+      "callees": [
+        "error"
+      ]
+    },
+    "copy_argv": {
+      "file": "tcpdump.c",
+      "line": 635,
+      "callees": [
+        "error"
+      ]
+    },
+    "read_infile": {
+      "file": "tcpdump.c",
+      "line": 671,
+      "callees": [
+        "error"
+      ]
+    },
+    "parse_interface_number": {
+      "file": "tcpdump.c",
+      "line": 707,
+      "callees": [
+        "error"
+      ]
+    },
+    "find_interface_by_number": {
+      "file": "tcpdump.c",
+      "line": 727,
+      "callees": [
+        "error"
+      ]
+    },
+    "open_interface": {
+      "file": "tcpdump.c",
+      "line": 749,
+      "callees": [
+        "error",
+        "show_tstamp_types_and_exit",
+        "tstamp_precision_to_string",
+        "warning"
+      ]
+    },
+    "cleanup": {
+      "file": "tcpdump.c",
+      "line": 1758,
+      "callees": [
+        "info",
+        "exit_tcpdump"
+      ]
+    },
+    "child_cleanup": {
+      "file": "tcpdump.c",
+      "line": 1786,
+      "callees": []
+    },
+    "info": {
+      "file": "tcpdump.c",
+      "line": 1793,
+      "callees": []
+    },
+    "compress_savefile": {
+      "file": "tcpdump.c",
+      "line": 1841,
+      "callees": []
+    },
+    "dump_packet_and_trunc": {
+      "file": "tcpdump.c",
+      "line": 1885,
+      "callees": [
+        "error",
+        "compress_savefile",
+        "info",
+        "exit_tcpdump",
+        "MakeFilename",
+        "set_dumper_capsicum_rights",
+        "pcap_dump_ftell"
+      ]
+    },
+    "dump_packet": {
+      "file": "tcpdump.c",
+      "line": 2056,
+      "callees": [
+        "info"
+      ]
+    },
+    "print_packet": {
+      "file": "tcpdump.c",
+      "line": 2074,
+      "callees": [
+        "pretty_print_packet",
+        "info"
+      ]
+    },
+    "requestinfo": {
+      "file": "tcpdump.c",
+      "line": 2099,
+      "callees": [
+        "info"
+      ]
+    },
+    "verbose_stats_dump": {
+      "file": "tcpdump.c",
+      "line": 2110,
+      "callees": []
+    },
+    "print_version": {
+      "file": "tcpdump.c",
+      "line": 2125,
+      "callees": [
+        "nd_smi_version_string"
+      ]
+    },
+    "print_usage": {
+      "file": "tcpdump.c",
+      "line": 2172,
+      "callees": [
+        "print_version"
+      ]
+    },
+    "fn_print_char": {
+      "file": "util-print.c",
+      "line": 36,
+      "callees": []
+    },
+    "fn_print": {
+      "file": "util-print.c",
+      "line": 51,
+      "callees": []
+    },
+    "fn_printztn": {
+      "file": "util-print.c",
+      "line": 79,
+      "callees": []
+    },
+    "fn_printn": {
+      "file": "util-print.c",
+      "line": 115,
+      "callees": []
+    },
+    "fn_printzp": {
+      "file": "util-print.c",
+      "line": 138,
+      "callees": []
+    },
+    "ts_format": {
+      "file": "util-print.c",
+      "line": 168,
+      "callees": []
+    },
+    "ts_unix_format": {
+      "file": "util-print.c",
+      "line": 203,
+      "callees": []
+    },
+    "ts_print": {
+      "file": "util-print.c",
+      "line": 238,
+      "callees": [
+        "ts_format",
+        "ts_unix_format"
+      ]
+    },
+    "unsigned_relts_print": {
+      "file": "util-print.c",
+      "line": 316,
+      "callees": []
+    },
+    "signed_relts_print": {
+      "file": "util-print.c",
+      "line": 340,
+      "callees": [
+        "unsigned_relts_print"
+      ]
+    },
+    "print_unknown_data": {
+      "file": "util-print.c",
+      "line": 360,
+      "callees": [
+        "hex_print"
+      ]
+    },
+    "tok2strbuf": {
+      "file": "util-print.c",
+      "line": 380,
+      "callees": []
+    },
+    "tok2str": {
+      "file": "util-print.c",
+      "line": 399,
+      "callees": [
+        "tok2strbuf"
+      ]
+    },
+    "bittok2str_internal": {
+      "file": "util-print.c",
+      "line": 413,
+      "callees": []
+    },
+    "bittok2str_nosep": {
+      "file": "util-print.c",
+      "line": 460,
+      "callees": [
+        "bittok2str_internal"
+      ]
+    },
+    "bittok2str": {
+      "file": "util-print.c",
+      "line": 468,
+      "callees": [
+        "bittok2str_internal"
+      ]
+    },
+    "tok2strary_internal": {
+      "file": "util-print.c",
+      "line": 476,
+      "callees": []
+    },
+    "mask2plen": {
+      "file": "util-print.c",
+      "line": 492,
+      "callees": []
+    },
+    "mask62plen": {
+      "file": "util-print.c",
+      "line": 517,
+      "callees": []
+    },
+    "fetch_token": {
+      "file": "util-print.c",
+      "line": 548,
+      "callees": []
+    },
+    "print_txt_line": {
+      "file": "util-print.c",
+      "line": 607,
+      "callees": []
+    },
+    "txtproto_print": {
+      "file": "util-print.c",
+      "line": 658,
+      "callees": [
+        "fetch_token",
+        "ascii_strcasecmp",
+        "print_txt_line"
+      ]
+    },
+    "safeputs": {
+      "file": "util-print.c",
+      "line": 720,
+      "callees": [
+        "safeputchar"
+      ]
+    },
+    "safeputchar": {
+      "file": "util-print.c",
+      "line": 733,
+      "callees": []
+    },
+    "unaligned_memcpy": {
+      "file": "util-print.c",
+      "line": 742,
+      "callees": []
+    },
+    "unaligned_memcmp": {
+      "file": "util-print.c",
+      "line": 749,
+      "callees": []
+    }
+  }
+}

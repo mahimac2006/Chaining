@@ -1,0 +1,3 @@
+KLEE: WARNING: undefined reference to function: smb_tcp_print
+KLEE: WARNING ONCE: Alignment of memory from call "calloc" is not modelled. Using alignment of 8.
+KLEE: WARNING ONCE: calling external: smb_tcp_print(133686585278464, 133549146324992, 12) at driver.c:30 5

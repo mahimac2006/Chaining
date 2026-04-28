@@ -1,0 +1,178 @@
+[
+  {
+    "id": "049_print-802_11.c_1150_local_cpp_cwe-120-overflow",
+    "entry_function": "ieee802_11_if_print",
+    "crash_function": "ieee802_11_if_print",
+    "crash_file": "print-802_11.c",
+    "crash_line": 2140,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/049_print-802_11.c_1150_local_cpp_cwe-120-overflow/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/049_print-802_11.c_1150_local_cpp_cwe-120-overflow/asan_real/replay_bin"
+  },
+  {
+    "id": "052_print-802_11.c_1180_local_cpp_cwe-120-overflow",
+    "entry_function": "ieee802_11_if_print",
+    "crash_function": "ieee802_11_print",
+    "crash_file": "print-802_11.c",
+    "crash_line": 2059,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/052_print-802_11.c_1180_local_cpp_cwe-120-overflow/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/052_print-802_11.c_1180_local_cpp_cwe-120-overflow/asan_real/replay_bin"
+  },
+  {
+    "id": "055_print-bgp.c_1248_local_cpp_cwe-120-overflow",
+    "entry_function": "bgp_print",
+    "crash_function": "bgp_print",
+    "crash_file": "print-bgp.c",
+    "crash_line": 2797,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/055_print-bgp.c_1248_local_cpp_cwe-120-overflow/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/055_print-bgp.c_1248_local_cpp_cwe-120-overflow/asan_real/replay_bin"
+  },
+  {
+    "id": "058_print-bgp.c_1173_local_cpp_cwe-120-overflow",
+    "entry_function": "bgp_print",
+    "crash_function": "bgp_print",
+    "crash_file": "print-bgp.c",
+    "crash_line": 2797,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/058_print-bgp.c_1173_local_cpp_cwe-120-overflow/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/058_print-bgp.c_1173_local_cpp_cwe-120-overflow/asan_real/replay_bin"
+  },
+  {
+    "id": "092_print-beep.c_45_local_cpp_cwe-125-oob-read",
+    "entry_function": "beep_print",
+    "crash_function": "beep_print",
+    "crash_file": "print-beep.c",
+    "crash_line": 67,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/092_print-beep.c_45_local_cpp_cwe-125-oob-read/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/092_print-beep.c_45_local_cpp_cwe-125-oob-read/asan_real/replay_bin"
+  },
+  {
+    "id": "093_print-cdp.c_322_local_cpp_cwe-125-oob-read",
+    "entry_function": "cdp_print",
+    "crash_function": "cdp_print",
+    "crash_file": "print-cdp.c",
+    "crash_line": 107,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/093_print-cdp.c_322_local_cpp_cwe-125-oob-read/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/093_print-cdp.c_322_local_cpp_cwe-125-oob-read/asan_real/replay_bin"
+  },
+  {
+    "id": "094_print-cip.c_80_local_cpp_cwe-125-oob-read",
+    "entry_function": "cip_if_print",
+    "crash_function": "cip_print",
+    "crash_file": "print-cip.c",
+    "crash_line": 50,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/094_print-cip.c_80_local_cpp_cwe-125-oob-read/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/094_print-cip.c_80_local_cpp_cwe-125-oob-read/asan_real/replay_bin"
+  },
+  {
+    "id": "096_print-babel.c_127_local_cpp_cwe-125-oob-read",
+    "entry_function": "babel_print",
+    "crash_function": "babel_print",
+    "crash_file": "print-babel.c",
+    "crash_line": 52,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/096_print-babel.c_127_local_cpp_cwe-125-oob-read/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/096_print-babel.c_127_local_cpp_cwe-125-oob-read/asan_real/replay_bin"
+  },
+  {
+    "id": "102_print-smb.c_1260_local_cpp_cwe-125-oob-read",
+    "entry_function": "smb_tcp_print",
+    "crash_function": "",
+    "crash_file": "",
+    "crash_line": 0,
+    "error_type": "SEGV",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/102_print-smb.c_1260_local_cpp_cwe-125-oob-read/asan_real/replay_driver.c",
+    "replay_bin": null
+  },
+  {
+    "id": "171_print-bgp.c_2810_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check",
+    "entry_function": "bgp_print",
+    "crash_function": "bgp_print",
+    "crash_file": "print-bgp.c",
+    "crash_line": 2797,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/171_print-bgp.c_2810_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/171_print-bgp.c_2810_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_bin"
+  },
+  {
+    "id": "217_print-dvmrp.c_79_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check",
+    "entry_function": "dvmrp_print",
+    "crash_function": "dvmrp_print",
+    "crash_file": "print-dvmrp.c",
+    "crash_line": 75,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/217_print-dvmrp.c_79_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/217_print-dvmrp.c_79_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_bin"
+  },
+  {
+    "id": "219_print-dvmrp.c_80_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check",
+    "entry_function": "dvmrp_print",
+    "crash_function": "dvmrp_print",
+    "crash_file": "print-dvmrp.c",
+    "crash_line": 75,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/219_print-dvmrp.c_80_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/219_print-dvmrp.c_80_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_bin"
+  },
+  {
+    "id": "233_print-802_11.c_1596_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check",
+    "entry_function": "ieee802_11_if_print",
+    "crash_function": "ieee802_11_if_print",
+    "crash_file": "print-802_11.c",
+    "crash_line": 2140,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/233_print-802_11.c_1596_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/233_print-802_11.c_1596_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_bin"
+  },
+  {
+    "id": "353_print-bgp.c_1240_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check",
+    "entry_function": "bgp_print",
+    "crash_function": "bgp_print",
+    "crash_file": "print-bgp.c",
+    "crash_line": 2797,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/353_print-bgp.c_1240_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/353_print-bgp.c_1240_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_bin"
+  },
+  {
+    "id": "354_print-bgp.c_1241_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check",
+    "entry_function": "bgp_print",
+    "crash_function": "bgp_print",
+    "crash_file": "print-bgp.c",
+    "crash_line": 2797,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/354_print-bgp.c_1241_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/354_print-bgp.c_1241_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_bin"
+  },
+  {
+    "id": "370_print-bgp.c_1183_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check",
+    "entry_function": "bgp_print",
+    "crash_function": "bgp_print",
+    "crash_file": "print-bgp.c",
+    "crash_line": 2797,
+    "error_type": "heap-buffer-overflow",
+    "asan_confirmed": true,
+    "replay_driver": "confirmed/tcpdump-4.9.2/370_print-bgp.c_1183_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_driver.c",
+    "replay_bin": "confirmed/tcpdump-4.9.2/370_print-bgp.c_1183_local_cpp_cwe-125-cursor-lookahead-missing-bytes-check/asan_real/replay_bin"
+  }
+]

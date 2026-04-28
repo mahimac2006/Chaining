@@ -1,0 +1,1 @@
+{"thought":"I need to correct the response format and provide a single tool call only.", "tool":"WriteStubs", "args":{"code":"#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n#include <stdint.h>\n#include <klee/klee.h>\n\n/* No additional stubs required for this harness. */\n"}}
