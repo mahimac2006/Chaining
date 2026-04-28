@@ -3,24 +3,10 @@
 Adds bug **chaining** on top of the 16 confirmed tcpdump 4.9.2
 bugs in `confirmed/tcpdump-4.9.2/`.
 
-> **Chain (definition).** A chain `A → B` exists when the function
+> A chain `A → B` exists when the function
 > that contains bug A can transitively call the function that
 > contains bug B in tcpdump's source. That is the necessary
 > condition for a single execution to trip both bugs in sequence.
-
----
-
-## Table of contents
-
-1. [Folder layout](#1-folder-layout)
-2. [How to run](#2-how-to-run)
-3. [What each step does](#3-what-each-step-does)
-4. [Results](#4-results)
-5. [Limitations](#5-limitations)
-6. [Next step — concrete validation](#6-next-step--concrete-validation)
-7. [Later — pipeline integration](#7-later--pipeline-integration)
-
----
 
 ## 1. Folder layout
 
@@ -126,28 +112,6 @@ Highlights from the matrix:
 - **092, 093, 096, 102** are leaves — application-layer dissectors
   that don't dispatch onward, so they show up only as destinations.
 
-Full matrix and sample call paths:
-[`output/reaches_matrix.md`](output/reaches_matrix.md).
-
----
-
-## 5. Limitations
-
-1. **Direct calls only.** tcpdump also dispatches through function-
-   pointer tables (e.g. link-type → printer, port → application
-   printer). The current graph does not follow function pointers,
-   so the 86/82 numbers are a lower bound on real reachability.
-2. **Macros are not expanded.** Calls hidden inside macros are
-   missed.
-3. **Same-name `static` functions in different files are merged.**
-   Rare in tcpdump and benign for the bugs we're chaining.
-4. **Reachability is necessary, not sufficient.** A statically
-   reachable pair doesn't yet prove that one execution actually
-   triggers both bugs — only that the source permits it. That
-   stronger claim is the next step.
-
----
-
 ## 6. Next step — concrete validation
 
 For each statically-reachable pair (A, B), produce a single
@@ -157,29 +121,6 @@ and reports both crashes. Compiled against the **real** tcpdump
 under `confirmed/<bug>/asan_real/`), so the call edges in the
 binary match the call edges in the static graph.
 
-Approach in broad strokes:
-
-1. Compile real tcpdump from the source already in `confirmed/`,
-   with ASan enabled, into a static archive.
-2. For each statically-reachable pair, generate a small chain
-   driver: lift A's setup buffer + entry-function call from its
-   replay driver, then lift B's, and put both in one `main`.
-3. Link the chain driver against the ASan-instrumented archive.
-4. Run with ASan in continue-on-error mode and parse the output
-   for two distinct crash reports — one matching A's expected
-   crash site, one matching B's.
-5. Record pass / fail / build-fail / timeout per pair into
-   `output/concrete_chains.json` and add a column to the matrix.
-
-Estimated effort: roughly half a day to a day, mostly because
-getting the real tcpdump build green under ASan is the unknown.
-Once it builds, generating and running 82 pair binaries is
-quick.
-
-This step needs only a Linux toolchain with `clang -fsanitize=address`
-(Docker recommended for reproducibility, not required). It does
-not depend on any other repository or pipeline.
-
 ---
 
 ## 7. Later — pipeline integration
@@ -188,24 +129,3 @@ Once the concrete validation is settled and trusted, the same
 three-step analysis can be added to **SAILOR** as a new phase
 that runs after its existing detection pipeline:
 
-- **A new flag/subcommand on `sailor.sh`** (e.g. `sailor.sh chain`
-  or `sailor.sh all --with-chains`) that invokes the chain
-  scripts on whichever project SAILOR just finished analyzing.
-- **Project-aware scripts.** The current scripts hard-code the
-  tcpdump paths; they'd take a `--project-dir` argument so the
-  same code runs on any project SAILOR has confirmed bugs for.
-- **Per-project build recipes.** SAILOR already keeps per-project
-  build configs in `configs/`. Each project that wants concrete
-  chain validation would get a small companion file describing
-  how to build its source as an ASan archive — same pattern
-  SAILOR already uses for its own builds.
-- **Surfacing results.** SAILOR's per-project `summary.tsv` would
-  gain `chains_static` / `chains_concrete` columns alongside the
-  existing detection counts.
-- **Run order.** The chain phase only needs the confirmed-bug
-  output to exist, so it slots in as a cheap post-processing step
-  at the very end of the pipeline. It never blocks earlier phases.
-
-Estimated effort to wire in: roughly a day, once the analysis
-itself is stable. No new analysis logic — only argparse cleanup
-and the per-project build recipes.
