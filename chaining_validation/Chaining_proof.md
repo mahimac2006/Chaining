@@ -1,6 +1,6 @@
 # Chaining Validation
 
-Concrete proof that statically identified bug chains in tcpdump 4.9.2 are physically exploitable in a single continuous execution. This extends the SAILOR-confirmed bugs and static call-graph analysis by demonstrating that two isolated memory vulnerabilities can be triggered sequentially within one process.
+We want to validate chains found by Claude in the call graph. To do this, we want to create a harness and test the chained path and see if the chained bugs are reported by Address Sanitizer. If they are, we have validated the chain.
 
 ---
 
