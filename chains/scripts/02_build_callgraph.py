@@ -15,10 +15,9 @@ Approach (regex-based, no compiler):
      and that we have seen as a function definition somewhere in the
      tree. The intersection is the direct call graph.
 
-Limitations (documented up front):
+Limitations:
   - Indirect calls through function-pointer tables (e.g. tcpdump's
-    if_printer / port-based dispatch) are NOT captured. v1 covers
-    direct calls only. We can augment later with table edges.
+    if_printer / port-based dispatch) are NOT captured. 
   - Macros that expand to function calls are mostly invisible.
 
 Output: chains/output/callgraph.json with shape:
