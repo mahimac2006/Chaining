@@ -1,8 +1,8 @@
 # Chaining Validation (Simple Guide)
 
-This folder demonstrates **runtime staged chaining** for tcpdump 4.9.2.
+This folder demonstrates chaining validation for tcpdump 4.9.2.
 
-Runtime staged chaining means:
+In this setup, each proof does:
 1. trigger bug A,
 2. keep the same process alive,
 3. trigger bug B.
