@@ -83,19 +83,4 @@ make check
 
 ---
 
-## Environment
-
 - Intended environment: Linux (glibc) with `libpcap-dev`.
-- macOS usually fails to compile this setup directly because the included tcpdump `config.h` is Linux-oriented.
-
----
-
-## Relation to static chains
-
-Static analysis outputs are in:
-
-- `chains/output/static_chains.json`
-- [chains/output/reaches_matrix.md](../chains/output/reaches_matrix.md)
-
-Static chains say "A can reach B in call graph."
-These runtime drivers are concrete staged tests for selected pairs.
