@@ -1,4 +1,4 @@
-# Chaining Validation (Simple Guide)
+# Chaining Validation
 
 This folder demonstrates chaining validation for tcpdump 4.9.2.
 
@@ -9,6 +9,10 @@ In this setup, each proof does:
 
 This is different from "single input" chaining. Here, the driver explicitly runs two stages.
 This validates static chain hypotheses by checking whether both staged bugs are reported by AddressSanitizer in one process run.
+
+In other words, this project demonstrates a practical and reproducible form of
+vulnerability chaining for offensive/security testing workflows: trigger A, keep
+execution alive, and then reach/crash B in the same run.
 
 ---
 
@@ -41,6 +45,12 @@ If a driver run shows 2 ASan errors, that proves:
 
 - both stages executed in one process run,
 - memory errors were observed in both stages of the staged flow.
+
+Why this is useful:
+
+- it turns B validation into a deterministic two-stage workflow (A then B),
+- it avoids process restart and keeps analysis in one execution timeline,
+- it provides repeatable multi-bug crash evidence for exploit-chain style reporting.
 
 It does **not** prove:
 
@@ -81,6 +91,55 @@ Run all staged drivers and check for 2 ASan errors each:
 make check
 ```
 
+Generate a concise reproducibility report:
+
+```bash
+make check
+# then see staged_chain_results.csv
+```
+
+The report file `staged_chain_results.csv` is the finalized deliverable for
+the staged-runtime claim ("A then B in one process"), not for causal-help.
+
 ---
 
 - Intended environment: Linux (glibc) with `libpcap-dev`.
+<<<<<<< HEAD
+=======
+- macOS usually fails to compile this setup directly because the included tcpdump `config.h` is Linux-oriented.
+
+---
+
+## Relation to static chains
+
+Static analysis outputs are in:
+
+- `chains/output/static_chains.json`
+- [chains/output/reaches_matrix.md](../chains/output/reaches_matrix.md)
+
+Static chains say "A can reach B in call graph."
+These runtime drivers are concrete staged tests for selected pairs.
+
+---
+
+## Final claim boundary
+
+- Confirmed: a useful staged runtime chain model for selected pairs
+  (`049 -> 093`, `049 -> 092`, `049 -> 058`, `049 -> 055`) with reproducible
+  two-error runs in one process.
+- Confirmed: this model makes B easier to test and reproduce operationally
+  (same process, fixed sequence, deterministic replay harness).
+- Not claimed: a strict causal probability lift where triggering A increases the
+  natural likelihood of reaching B under uncontrolled fuzzing.
+
+---
+
+## Suggested presentation wording
+
+If you need one clear sentence for slides:
+
+> We established a reproducible staged chaining method in tcpdump where bug A
+> is used as a first-stage trigger and bug B is then reliably reached/crashed in
+> the same process, giving a practical multi-bug chain even when single-dispatch
+> natural chaining is sparse.
+>>>>>>> 25cf953 (commit)
