@@ -49,10 +49,6 @@ Why this is useful:
 - it avoids process restart and keeps analysis in one execution timeline,
 - it provides repeatable multi-bug crash evidence for exploit-chain style reporting.
 
-It does **not** prove:
-
-- one packet naturally hit both bugs with one parser entry call.
-
 ---
 
 ## How a driver works
