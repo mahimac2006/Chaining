@@ -122,14 +122,3 @@ These runtime drivers are concrete staged tests for selected pairs.
 - Not claimed: a strict causal probability lift where triggering A increases the
   natural likelihood of reaching B under uncontrolled fuzzing.
 
----
-
-## Suggested presentation wording
-
-If you need one clear sentence for slides:
-
-> We established a reproducible staged chaining method in tcpdump where bug A
-> is used as a first-stage trigger and bug B is then reliably reached/crashed in
-> the same process, giving a practical multi-bug chain even when single-dispatch
-> natural chaining is sparse.
->>>>>>> 25cf953 (commit)
