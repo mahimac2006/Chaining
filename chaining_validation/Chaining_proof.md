@@ -97,9 +97,6 @@ the staged-runtime claim ("A then B in one process"), not for causal-help.
 ---
 
 - Intended environment: Linux (glibc) with `libpcap-dev`.
-<<<<<<< HEAD
-=======
-- macOS usually fails to compile this setup directly because the included tcpdump `config.h` is Linux-oriented.
 
 ---
 
