@@ -7,9 +7,6 @@ In this setup, each proof does:
 2. keep the same process alive,
 3. trigger bug B.
 
-This is different from "single input" chaining. Here, the driver explicitly runs two stages.
-This validates static chain hypotheses by checking whether both staged bugs are reported by AddressSanitizer in one process run.
-
 In other words, this project demonstrates a practical and reproducible form of
 vulnerability chaining for offensive/security testing workflows: trigger A, keep
 execution alive, and then reach/crash B in the same run.
