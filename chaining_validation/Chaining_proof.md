@@ -112,13 +112,12 @@ These runtime drivers are concrete staged tests for selected pairs.
 
 ---
 
-## Final claim boundary
+## Conclusion
 
 - Confirmed: a useful staged runtime chain model for selected pairs
   (`049 -> 093`, `049 -> 092`, `049 -> 058`, `049 -> 055`) with reproducible
   two-error runs in one process.
 - Confirmed: this model makes B easier to test and reproduce operationally
   (same process, fixed sequence, deterministic replay harness).
-- Not claimed: a strict causal probability lift where triggering A increases the
-  natural likelihood of reaching B under uncontrolled fuzzing.
+
 
