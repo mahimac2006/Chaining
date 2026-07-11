@@ -1,4 +1,4 @@
-ASan Confirmed Specs: 16
+ASan Confirmed Specs: 12
 ============================================================
 
 1. 049_print-802_11.c_1150_local_cpp_cwe-120-overflow
