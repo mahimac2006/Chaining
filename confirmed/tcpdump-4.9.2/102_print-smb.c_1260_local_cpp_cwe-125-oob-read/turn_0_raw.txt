@@ -1,1 +1,0 @@
-{"thought":"Read the vulnerability model once via SA context to get source_context, goto labels, and driver_hint before writing the driver.", "tool":"ReadSAContext", "args":{}}
