@@ -1,1 +1,0 @@
-{"thought":"Compile and run KLEE now; fix any concrete issues from the first build/run.", "tool":"CompileSlice", "args": {}}
