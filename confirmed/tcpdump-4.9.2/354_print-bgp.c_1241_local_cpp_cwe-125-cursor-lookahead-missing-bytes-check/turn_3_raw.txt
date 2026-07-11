@@ -1,1 +1,0 @@
-{"thought":"Need exact target spine case/labels and relevant helper function path names; use source grep on parser.c for probe sink and labels, plus maybe bgp_attr_print snippet if not in gathered excerpt. One grep call can search both patterns.","tool":"GrepSource","args":{"pattern":"SAILOR_PROBE_SINK|goto encoding_error|goto oom|goto error","file":"parser.c"}}

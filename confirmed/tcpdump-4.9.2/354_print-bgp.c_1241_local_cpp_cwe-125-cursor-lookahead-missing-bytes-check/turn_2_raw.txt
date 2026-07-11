@@ -1,1 +1,0 @@
-{"thought":"Need harness-specific source excerpts once. Gather decode_clnp_prefix and bgp_print plus needed struct types from summary if present.","tool":"GatherCode","args":{"functions":"bgp_print,decode_clnp_prefix","types":"netdissect_options"}}

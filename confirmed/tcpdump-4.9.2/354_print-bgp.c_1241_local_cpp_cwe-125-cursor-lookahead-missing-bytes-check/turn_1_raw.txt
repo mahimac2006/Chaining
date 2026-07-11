@@ -1,2 +1,0 @@
-{"tool":"ReadSAContext","args":{"file":"spec.json"}}
-{"tool":"GatherCode","args":{"functions":"bgp_print,decode_clnp_prefix","types":"netdissect_options"}}

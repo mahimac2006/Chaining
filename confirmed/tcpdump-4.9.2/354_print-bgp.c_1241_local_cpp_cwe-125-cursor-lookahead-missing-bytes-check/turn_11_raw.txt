@@ -1,1 +1,0 @@
-{"thought": "Now compile; harness self-contained and driver still includes harness_types.h causing issue maybe. Need remove driver include if compile fails, but let's see. ", "tool": "CompileSlice", "args": {}}
