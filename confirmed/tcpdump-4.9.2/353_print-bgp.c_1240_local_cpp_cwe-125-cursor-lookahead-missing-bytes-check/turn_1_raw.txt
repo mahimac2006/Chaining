@@ -1,1 +1,0 @@
-{"thought":"Need specific source context; use ReadSAContext(vulnerability_summary.json).","tool":"ReadSAContext","args":{"file":"vulnerability_summary.json"}}
