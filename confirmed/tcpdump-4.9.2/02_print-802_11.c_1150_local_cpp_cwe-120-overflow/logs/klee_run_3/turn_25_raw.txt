@@ -1,1 +1,0 @@
-{"tool": "ExploreKleeOutput", "args": {"file": "test000001.assert.err"}}
